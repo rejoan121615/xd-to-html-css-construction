@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.texts__pro, #new__user .collapse__sec .coll__btn {
+  font-family: "Heebo", sans-serif;
+  color: #353D4A;
+}
+
+#new__user {
+  background-color: #383B3E;
+}
+#new__user .brand__icon img {
+  width: 111px;
+}
+#new__user .collapse__sec {
+  background-color: #262729;
+  border-top: 0.25px solid #8c8c8d;
+  padding-top: 0.45rem !important;
+  padding-bottom: 0.45rem !important;
+}
+#new__user .collapse__sec .file__icon {
+  width: 24px;
+}
+#new__user .collapse__sec .coll__btn {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  margin-left: 8px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */

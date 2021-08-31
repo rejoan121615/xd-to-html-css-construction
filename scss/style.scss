@@ -1,0 +1,60 @@
+// fonts 
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$prim__f: 'Heebo', sans-serif;
+
+// colors 
+$main__text: #353D4A;
+$dark__500: #383B3E;
+$dark: #262729;
+$border: #8c8c8d;
+
+// extend 
+.texts__pro {
+    font-family: $prim__f;
+    color: $main__text;
+}
+
+// mixing 
+@mixin maxresp($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin minresp ($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+//------------------ new user style section ---------------------- 
+#new__user {
+    background-color: #383B3E;
+    // images brand logo 
+    .brand__icon {
+        img {
+            width: 111px;
+        }
+    }
+    // collapse btn 
+    .collapse__sec {
+        background-color: $dark;
+        border-top: 0.25px solid $border;
+        padding-top: 0.45rem!important;
+        padding-bottom: 0.45rem!important;
+        // icon 
+        .file__icon {
+            width: 24px;
+        }
+        // collapse btn style 
+        .coll__btn {
+           @extend .texts__pro;
+           font-size: 14px;
+           text-align: left;
+           font-weight: 400; 
+           margin-left: 8px;
+           text-transform: uppercase;
+        }
+    }   
+}

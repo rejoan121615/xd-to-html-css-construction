@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.texts__pro, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3 {
+.texts__pro, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3, #add__new__item .container .save__cancel button p, #order__details__table .order__details .accordion .sm__title .title, #order__details__table .order__details .accordion .sm__title .ord__title__btn {
   font-family: "Heebo", sans-serif;
   color: #353d4a;
 }
@@ -13,6 +13,10 @@
   .container {
     max-width: 1720px !important;
   }
+}
+
+.border__bottom {
+  border-bottom: 3px solid #d2d4d6 !important;
 }
 
 #head {
@@ -76,6 +80,143 @@
 }
 #order__details__table .order__header .row .cus__border {
   border-bottom: 3px solid #d2d4d6;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .collapse:not(.show) {
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .btn:not(:disabled):not(.disabled) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #order__details__table .order__details .row {
+    margin: 0px !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .user__column .date {
+    height: 50%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .user__column #collapseOne {
+    height: 50%;
+    border-top: 3px solid #d2d4d6 !important;
+  }
+}
+#order__details__table .order__details .accordion .sm__title {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 40px 1fr 3fr 40px;
+  grid-template-rows: 1fr;
+}
+#order__details__table .order__details .accordion .sm__title .title, #order__details__table .order__details .accordion .sm__title .ord__title__btn {
+  font-weight: bold;
+  color: #383b3e;
+  font-size: 15px;
+  text-transform: capitalize;
+  justify-self: flex-start;
+}
+#order__details__table .order__details .accordion .sm__title .icon {
+  width: 22px;
+  justify-self: flex-start;
+}
+#order__details__table .order__details .accordion .sm__title .ord__title__btn {
+  padding: 6px 26px;
+  border-radius: 25px;
+  justify-self: center;
+  border: 1.2px solid #383b3e;
+  color: #383b3e;
+  font-weight: 400;
+}
+#order__details__table .order__details .accordion .sm__title .selected {
+  color: #2bc454;
+  border: 2px solid #2bc454;
+  font-weight: bold;
+}
+#order__details__table .order__details .accordion .list-group .list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .accordion .list-group .list-group-item:last-child {
+    border-bottom: 2px solid transparent !important;
+  }
+}
+#order__details__table .order__details .accordion .order__sm__texts, #order__details__table .order__details .accordion .inputed__data {
+  color: #C3C3C3 !important;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .accordion .order__sm__texts, #order__details__table .order__details .accordion .inputed__data {
+    font-size: calc(16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)));
+  }
+}
+
+#add__new__item .container .add {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  #add__new__item .container .add {
+    padding-bottom: 200px;
+    padding-top: 50px;
+  }
+}
+#add__new__item .container .add .plus__icon {
+  width: 55px;
+}
+#add__new__item .container .add h1 {
+  color: #383b3e;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#add__new__item .container .save__cancel {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+#add__new__item .container .save__cancel button {
+  border: 0px;
+  border-radius: 50px;
+  padding: 15px 45px;
+  background-color: #2bc454;
+  display: flex;
+  align-items: center;
+}
+#add__new__item .container .save__cancel button img {
+  width: 30px;
+}
+#add__new__item .container .save__cancel button p {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 25px;
+  color: white;
+  margin-bottom: 0px !important;
+  margin-left: 10px;
+}
+#add__new__item .container .save__cancel #cancel__btn {
+  background-color: white;
+  border: 1px solid #a3aab8;
+  border-radius: 50px;
+  padding: 7px 18px;
+  margin-top: 25px;
+}
+#add__new__item .container .save__cancel #cancel__btn img {
+  width: 13.5px;
+}
+#add__new__item .container .save__cancel #cancel__btn p {
+  font-size: 16px;
+  color: #a3aab8;
+  font-weight: 300;
 }
 
 footer {

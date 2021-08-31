@@ -35,9 +35,6 @@ $xxl: 1800px; //xtra xtra large
         @content;
     }
 }
-@mixin resp($width) {
-    @include minresp($width);
-}
 // common style
 .container {
     @include minresp(1400px) {
@@ -46,6 +43,10 @@ $xxl: 1800px; //xtra xtra large
     @include minresp(1800px) {
         max-width: 1720px !important;
     }
+}
+
+.border__bottom {
+    border-bottom: 3px solid #d2d4d6 !important;
 }
 
 //------------------ new user style section ----------------------
@@ -93,6 +94,7 @@ $xxl: 1800px; //xtra xtra large
 }
 // main order table section --------------------
 #order__details__table {
+    // table header
     .order__header {
         .row {
             @include minresp($md) {
@@ -113,8 +115,169 @@ $xxl: 1800px; //xtra xtra large
             }
         }
     }
-}
+    // table details
+    .order__details {
+        .collapse:not(.show) {
+            @include minresp($md) {
+                display: block;
+            }
+        }
+        .btn:not(:disabled):not(.disabled) {
+            @include minresp($md) {
+                display: none;
+            }
+        }
+        .row {
+            @include maxresp($md) {
+                margin: 0px!important;
+            }
+        }
 
+        // list style 
+        
+        // first column style 
+        .user__column {
+            .date {
+                @include minresp($md) {
+                    height: 50%;
+                }
+            }
+            #collapseOne {
+            @include minresp($md) {
+              height: 50%;  
+              border-top: 3px solid #d2d4d6 !important
+            }
+        }
+
+        }
+        // accordion style 
+        .accordion {
+            .sm__title {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 40px 1fr 3fr 40px;
+                grid-template-rows: 1fr;
+                .title {
+                    @extend .texts__pro;
+                    font-weight: bold;
+                    color: $dark__500;
+                    font-size: 15px;
+                    text-transform: capitalize;
+                    justify-self: flex-start;
+                }
+                .icon {
+                    width: 22px;
+                    justify-self: flex-start;
+                }
+                .ord__title__btn {
+                    padding: 6px 26px;
+                    border-radius: 25px;
+                    @extend .title;
+                    justify-self: center;
+                    border: 1.2px solid $dark__500;
+                    color: $dark__500;
+                    font-weight: 400;
+                    // color: ;
+                }
+                .selected {
+                    color: #2bc454;
+                    border: 2px solid #2bc454;
+                    font-weight: bold;
+                }
+            }
+
+            // accordion body
+            .list-group {
+                .list-group-item {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .list-group-item:last-child {
+                    @include minresp($md) {
+                        border-bottom: 2px solid transparent!important;
+                    }
+                }
+            }
+
+            // small text 
+            .order__sm__texts , .inputed__data {
+                color: #C3C3C3!important;
+                @include minresp($md) {
+                      font-size: calc(16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)));
+                }
+            }
+        }
+    }
+}
+// add new item section  -------------------------------
+#add__new__item {
+    .container {
+        // add section
+        .add {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            @include minresp ($md) {
+                padding-bottom: 200px;
+                padding-top: 50px;
+            }
+            .plus__icon {
+                width: 55px;
+            }
+            h1 {
+                color: #383b3e;
+                text-transform: uppercase;
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+        }
+        // save and cancel section
+        .save__cancel {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 35px;
+            button {
+                border: 0px;
+                border-radius: 50px;
+                padding: 15px 45px;
+                background-color: #2bc454;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 30px;
+                }
+                p {
+                    text-transform: capitalize;
+                    @extend .texts__pro;
+                    font-weight: 800;
+                    font-size: 25px;
+                    color: white;
+                    margin-bottom: 0px !important;
+                    margin-left: 10px;
+                }
+            }
+            #cancel__btn {
+                background-color: white;
+                border: 1px solid #a3aab8;
+                border-radius: 50px;
+                padding: 7px 18px;
+                margin-top: 25px;
+                img {
+                    width: 13.5px;
+                }
+                p {
+                    font-size: 16px;
+                    color: #a3aab8;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
 // footer section
 footer {
     background-color: $dark__500;

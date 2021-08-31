@@ -91,17 +91,30 @@ $xxl: 1800px; //xtra xtra large
         }
     }
 }
-// main order table section
-#order__details {
+// main order table section --------------------
+#order__details__table {
     .order__header {
         .row {
             @include minresp($md) {
                 background-color: #374051;
             }
             border-radius: 25px 25px 0px 0px;
+            // border-bottom: 2px solid $dark__500;
+            aside {
+                h2 {
+                    color: $main__text !important;
+                    @include minresp($lg) {
+                        color: white !important;
+                    }
+                }
+            }
+            .cus__border {
+                border-bottom: 3px solid lighten($dark__500, $amount: 60);
+            }
         }
     }
 }
+
 // footer section
 footer {
     background-color: $dark__500;

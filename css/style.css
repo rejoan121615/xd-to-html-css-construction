@@ -58,13 +58,24 @@
   font-size: 12px;
 }
 
-#order__details .order__header .row {
+#order__details__table .order__header .row {
   border-radius: 25px 25px 0px 0px;
 }
 @media only screen and (min-width: 992px) {
-  #order__details .order__header .row {
+  #order__details__table .order__header .row {
     background-color: #374051;
   }
+}
+#order__details__table .order__header .row aside h2 {
+  color: #353d4a !important;
+}
+@media only screen and (min-width: 1200px) {
+  #order__details__table .order__header .row aside h2 {
+    color: white !important;
+  }
+}
+#order__details__table .order__header .row .cus__border {
+  border-bottom: 3px solid #d2d4d6;
 }
 
 footer {

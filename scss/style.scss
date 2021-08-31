@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $prim__f: "Heebo", sans-serif;
+// body style
 
 // colors
 $main__text: #353d4a;
@@ -36,6 +37,18 @@ $xxl: 1800px; //xtra xtra large
     }
 }
 // common style
+body {
+    @include minresp($md) {
+        background-color: #f5f5f5;
+    }
+}
+a,
+button {
+    outline: none;
+}
+p {
+    margin-bottom: 0px;
+}
 .container {
     @include minresp(1400px) {
         max-width: 1320px !important;
@@ -48,12 +61,20 @@ $xxl: 1800px; //xtra xtra large
 .border__bottom {
     border-bottom: 3px solid #d2d4d6 !important;
 }
-
+// active mark
+.active__mark {
+    background-color: #262729;
+}
 //------------------ new user style section ----------------------
 #head {
     background-color: $dark__500;
     // navbar
     #navbar {
+        .container {
+            @include minresp($xxl) {
+                max-width: 1830px !important;
+            }
+        }
         .row {
             img {
                 width: 50px;
@@ -64,10 +85,44 @@ $xxl: 1800px; //xtra xtra large
             .brand__icon {
                 width: 115px;
                 @include minresp($xl) {
-                    width: 135px;
+                    width: 150px;
                 }
                 @include minresp($xxl) {
-                    width: 150px;
+                    width: 168px;
+                }
+            }
+        }
+        // user section
+        .user__section {
+            .user {
+                h3 {
+                    @extend .texts__pro;
+                    margin-left: 8px;
+                    margin-right: 15px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    @include minresp($lg) {
+                        margin-left: 15px;
+                        margin-right: 20px;
+                    }
+                    @include minresp($xl) {
+                        font-size: 19px;
+                    }
+                    @include maxresp($xxl) {
+                        font-size: 20px;
+                    }
+                }
+                .user__img {
+                    width: 25px;
+                    @include minresp($lg) {
+                        width: 28px;
+                    }
+                    @include minresp($xl) {
+                        width: 30px;
+                    }
+                }
+                .arrow {
+                    width: 18px;
                 }
             }
         }
@@ -94,6 +149,22 @@ $xxl: 1800px; //xtra xtra large
 }
 // main order table section --------------------
 #order__details__table {
+    @include minresp($md) {
+        // overflow: hidden;
+        margin-top: 60px;
+    }
+    @include minresp($lg) {
+        margin-top: 75px;
+    }
+    @include minresp($xl) {
+        margin-top: 90px;
+    }
+    @include minresp($xxl) {
+        margin-top: 110px;
+    }
+    .container {
+        background-color: white;
+    }
     // table header
     .order__header {
         .row {
@@ -105,13 +176,20 @@ $xxl: 1800px; //xtra xtra large
             aside {
                 h2 {
                     color: $main__text !important;
-                    @include minresp($lg) {
+                    font-size: 20px;
+                    @include minresp($md) {
                         color: white !important;
                     }
+                }
+                .number {
+                    font-weight: 400;
                 }
             }
             .cus__border {
                 border-bottom: 3px solid lighten($dark__500, $amount: 60);
+                @include minresp($md) {
+                    border-bottom: 3px solid transparent;
+                }
             }
         }
     }
@@ -129,35 +207,77 @@ $xxl: 1800px; //xtra xtra large
         }
         .row {
             @include maxresp($md) {
-                margin: 0px!important;
+                margin: 0px !important;
+            }
+        }
+        // date
+        .date {
+            .date__wrap {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: flex-start;
+                @include minresp(400px) {
+                    justify-content: space-between;
+                    flex-flow: row wrap;
+                    align-items: center;
+                }
+                // @include resp ($md) {
+                //     flex-direction: ;
+                // }
+            }
+            .order__sm__texts {
+                color: #989898 !important;
+                @include minresp($md) {
+                    font-size: calc(
+                        16px + (22 - 16) * ((100vw - 900px) / (1950 - 900))
+                    );
+                }
+            }
+            input {
+                padding: 3px 8px;
+                border: 1px solid #353d4a;
+                margin-left: 0px;
+                border-radius: 25px;
+                margin-top: 5px;
             }
         }
 
-        // list style 
-        
-        // first column style 
+        // list style
+
+        // first column style
         .user__column {
+            .accordion {
+                margin-top: 10px;
+                @include minresp($md) {
+                    margin-top: 0px;
+                }
+            }
             .date {
                 @include minresp($md) {
-                    height: 50%;
+                    height: 44.5%;
+                }
+                @include minresp($xl) {
+                    height: 38%;
                 }
             }
             #collapseOne {
-            @include minresp($md) {
-              height: 50%;  
-              border-top: 3px solid #d2d4d6 !important
+                @include minresp($md) {
+                    height: 50%;
+                    // border-top: 3px solid #d2d4d6 !important;
+                }
             }
         }
-
-        }
-        // accordion style 
+        // accordion style
         .accordion {
             .sm__title {
                 display: grid;
                 align-items: center;
                 justify-items: center;
-                grid-template-columns: 40px 1fr 3fr 40px;
+                grid-template-columns: 30px 1fr 3fr 20px;
                 grid-template-rows: 1fr;
+                @include minresp(400px) {
+                    grid-template-columns: 45px 1fr 3fr 45px;
+                }
                 .title {
                     @extend .texts__pro;
                     font-weight: bold;
@@ -171,13 +291,16 @@ $xxl: 1800px; //xtra xtra large
                     justify-self: flex-start;
                 }
                 .ord__title__btn {
-                    padding: 6px 26px;
+                    padding: 5px 12px;
                     border-radius: 25px;
-                    @extend .title;
                     justify-self: center;
-                    border: 1.2px solid $dark__500;
-                    color: $dark__500;
+                    border: 1.2px solid #383b3e;
+                    color: #383b3e;
                     font-weight: 400;
+                    font-size: 13px;
+                    @include minresp(400px) {
+                        font-size: 15px;
+                    }
                     // color: ;
                 }
                 .selected {
@@ -185,26 +308,81 @@ $xxl: 1800px; //xtra xtra large
                     border: 2px solid #2bc454;
                     font-weight: bold;
                 }
-            }
-
-            // accordion body
-            .list-group {
-                .list-group-item {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                .list-group-item:last-child {
-                    @include minresp($md) {
-                        border-bottom: 2px solid transparent!important;
+                .accordion__icon {
+                    width: 20px;
+                    img {
+                        width: 16px;
                     }
                 }
             }
 
-            // small text 
-            .order__sm__texts , .inputed__data {
-                color: #C3C3C3!important;
+            // large title
+            .lg__title {
+            }
+
+            // accordion body
+            .list-group {
                 @include minresp($md) {
-                      font-size: calc(16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)));
+                    // align-items: center;
+                }
+                .list-group-title {
+                    @include minresp($md) {
+                        align-items: center;
+                    }
+                    @include minresp($xl) {
+                        flex-direction: row !important;
+                    }
+                    p {
+                        @extend .texts__pro;
+                        color: $main__text;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                    button {
+                        border-radius: 25px;
+                        border: 2px solid green !important;
+                        padding: 2.5px 17px;
+                        transition: all 0.8s linear;
+                        background-color: transparent;
+                        img {
+                            width: 20px;
+                        }
+                        span {
+                            @extend .texts__pro;
+                            font-weight: bold;
+                            color: green;
+                            margin-left: 10px;
+                        }
+                        &:hover {
+                            background-color: green;
+                            span {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .list-group-item {
+                    display: flex;
+                    justify-content: space-between;
+                    @include minresp($md) {
+                        padding: 10px 0px;
+                    }
+                }
+                .list-group-item:last-child {
+                    @include minresp($md) {
+                        border-bottom: 2px solid transparent !important;
+                    }
+                }
+            }
+
+            // small text
+            .order__sm__texts,
+            .inputed__data {
+                color: #989898 !important;
+                @include minresp($md) {
+                    font-size: calc(
+                        16px + (22 - 16) * ((100vw - 900px) / (1950 - 900))
+                    );
                 }
             }
         }
@@ -218,9 +396,17 @@ $xxl: 1800px; //xtra xtra large
             padding-top: 100px;
             padding-bottom: 100px;
             text-align: center;
-            @include minresp ($md) {
+            @include minresp($md) {
                 padding-bottom: 200px;
                 padding-top: 50px;
+            }
+            @include minresp($lg) {
+                padding-bottom: 235px;
+                padding-top: 70px;
+            }
+            @include minresp($xl) {
+                padding-bottom: 260px;
+                padding-top: 85px;
             }
             .plus__icon {
                 width: 55px;
@@ -284,10 +470,10 @@ footer {
     .brand__icon {
         width: 115px;
         @include minresp($xl) {
-            width: 135px;
+            width: 150px;
         }
         @include minresp($xxl) {
-            width: 150px;
+            width: 168px;
         }
     }
     // container

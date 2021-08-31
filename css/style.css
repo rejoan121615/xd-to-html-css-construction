@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.texts__pro, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3, #add__new__item .container .save__cancel button p, #order__details__table .order__details .accordion .sm__title .title, #order__details__table .order__details .accordion .sm__title .ord__title__btn {
+.texts__pro, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3, #add__new__item .container .save__cancel button p, #order__details__table .order__details .accordion .list-group .list-group-title button span, #order__details__table .order__details .accordion .list-group .list-group-title p, #order__details__table .order__details .accordion .sm__title .title, #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
   font-family: "Heebo", sans-serif;
   color: #353d4a;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #f5f5f5;
+  }
+}
+
+a,
+button {
+  outline: none;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -19,8 +34,17 @@
   border-bottom: 3px solid #d2d4d6 !important;
 }
 
+.active__mark {
+  background-color: #262729;
+}
+
 #head {
   background-color: #383b3e;
+}
+@media only screen and (min-width: 1800px) {
+  #head #navbar .container {
+    max-width: 1830px !important;
+  }
 }
 #head #navbar .row img {
   width: 50px;
@@ -35,13 +59,51 @@
 }
 @media only screen and (min-width: 1400px) {
   #head #navbar .row .brand__icon {
-    width: 135px;
+    width: 150px;
   }
 }
 @media only screen and (min-width: 1800px) {
   #head #navbar .row .brand__icon {
-    width: 150px;
+    width: 168px;
   }
+}
+#head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
+  margin-left: 8px;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 1200px) {
+  #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
+    font-size: 20px;
+  }
+}
+#head #navbar .user__section .user .user__img {
+  width: 25px;
+}
+@media only screen and (min-width: 1200px) {
+  #head #navbar .user__section .user .user__img {
+    width: 28px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #head #navbar .user__section .user .user__img {
+    width: 30px;
+  }
+}
+#head #navbar .user__section .user .arrow {
+  width: 18px;
 }
 #head .sm__accordion {
   font-family: "Heebo", sans-serif;
@@ -62,6 +124,29 @@
   font-size: 12px;
 }
 
+@media only screen and (min-width: 992px) {
+  #order__details__table {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #order__details__table {
+    margin-top: 75px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #order__details__table {
+    margin-top: 90px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #order__details__table {
+    margin-top: 110px;
+  }
+}
+#order__details__table .container {
+  background-color: white;
+}
 #order__details__table .order__header .row {
   border-radius: 25px 25px 0px 0px;
 }
@@ -72,14 +157,23 @@
 }
 #order__details__table .order__header .row aside h2 {
   color: #353d4a !important;
+  font-size: 20px;
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   #order__details__table .order__header .row aside h2 {
     color: white !important;
   }
 }
+#order__details__table .order__header .row aside .number {
+  font-weight: 400;
+}
 #order__details__table .order__header .row .cus__border {
   border-bottom: 3px solid #d2d4d6;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__header .row .cus__border {
+    border-bottom: 3px solid transparent;
+  }
 }
 @media only screen and (min-width: 992px) {
   #order__details__table .order__details .collapse:not(.show) {
@@ -96,25 +190,69 @@
     margin: 0px !important;
   }
 }
+#order__details__table .order__details .date .date__wrap {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 400px) {
+  #order__details__table .order__details .date .date__wrap {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}
+#order__details__table .order__details .date .order__sm__texts {
+  color: #989898 !important;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .date .order__sm__texts {
+    font-size: calc( 16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)) );
+  }
+}
+#order__details__table .order__details .date input {
+  padding: 3px 8px;
+  border: 1px solid #353d4a;
+  margin-left: 0px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+#order__details__table .order__details .user__column .accordion {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .user__column .accordion {
+    margin-top: 0px;
+  }
+}
 @media only screen and (min-width: 992px) {
   #order__details__table .order__details .user__column .date {
-    height: 50%;
+    height: 44.5%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #order__details__table .order__details .user__column .date {
+    height: 38%;
   }
 }
 @media only screen and (min-width: 992px) {
   #order__details__table .order__details .user__column #collapseOne {
     height: 50%;
-    border-top: 3px solid #d2d4d6 !important;
   }
 }
 #order__details__table .order__details .accordion .sm__title {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-columns: 40px 1fr 3fr 40px;
+  grid-template-columns: 30px 1fr 3fr 20px;
   grid-template-rows: 1fr;
 }
-#order__details__table .order__details .accordion .sm__title .title, #order__details__table .order__details .accordion .sm__title .ord__title__btn {
+@media only screen and (min-width: 400px) {
+  #order__details__table .order__details .accordion .sm__title {
+    grid-template-columns: 45px 1fr 3fr 45px;
+  }
+}
+#order__details__table .order__details .accordion .sm__title .title {
   font-weight: bold;
   color: #383b3e;
   font-size: 15px;
@@ -126,33 +264,88 @@
   justify-self: flex-start;
 }
 #order__details__table .order__details .accordion .sm__title .ord__title__btn {
-  padding: 6px 26px;
+  padding: 5px 12px;
   border-radius: 25px;
   justify-self: center;
   border: 1.2px solid #383b3e;
   color: #383b3e;
   font-weight: 400;
+  font-size: 13px;
+}
+@media only screen and (min-width: 400px) {
+  #order__details__table .order__details .accordion .sm__title .ord__title__btn {
+    font-size: 15px;
+  }
 }
 #order__details__table .order__details .accordion .sm__title .selected {
   color: #2bc454;
   border: 2px solid #2bc454;
   font-weight: bold;
 }
+#order__details__table .order__details .accordion .sm__title .accordion__icon {
+  width: 20px;
+}
+#order__details__table .order__details .accordion .sm__title .accordion__icon img {
+  width: 16px;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .accordion .list-group .list-group-title {
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #order__details__table .order__details .accordion .list-group .list-group-title {
+    flex-direction: row !important;
+  }
+}
+#order__details__table .order__details .accordion .list-group .list-group-title p {
+  color: #353d4a;
+  font-weight: bold;
+  font-size: 20px;
+}
+#order__details__table .order__details .accordion .list-group .list-group-title button {
+  border-radius: 25px;
+  border: 2px solid green !important;
+  padding: 2.5px 17px;
+  transition: all 0.8s linear;
+  background-color: transparent;
+}
+#order__details__table .order__details .accordion .list-group .list-group-title button img {
+  width: 20px;
+}
+#order__details__table .order__details .accordion .list-group .list-group-title button span {
+  font-weight: bold;
+  color: green;
+  margin-left: 10px;
+}
+#order__details__table .order__details .accordion .list-group .list-group-title button:hover {
+  background-color: green;
+}
+#order__details__table .order__details .accordion .list-group .list-group-title button:hover span {
+  color: white;
+}
 #order__details__table .order__details .accordion .list-group .list-group-item {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (min-width: 992px) {
+  #order__details__table .order__details .accordion .list-group .list-group-item {
+    padding: 10px 0px;
+  }
 }
 @media only screen and (min-width: 992px) {
   #order__details__table .order__details .accordion .list-group .list-group-item:last-child {
     border-bottom: 2px solid transparent !important;
   }
 }
-#order__details__table .order__details .accordion .order__sm__texts, #order__details__table .order__details .accordion .inputed__data {
-  color: #C3C3C3 !important;
+#order__details__table .order__details .accordion .order__sm__texts,
+#order__details__table .order__details .accordion .inputed__data {
+  color: #989898 !important;
 }
 @media only screen and (min-width: 992px) {
-  #order__details__table .order__details .accordion .order__sm__texts, #order__details__table .order__details .accordion .inputed__data {
-    font-size: calc(16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)));
+  #order__details__table .order__details .accordion .order__sm__texts,
+#order__details__table .order__details .accordion .inputed__data {
+    font-size: calc( 16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)) );
   }
 }
 
@@ -165,6 +358,18 @@
   #add__new__item .container .add {
     padding-bottom: 200px;
     padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #add__new__item .container .add {
+    padding-bottom: 235px;
+    padding-top: 70px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #add__new__item .container .add {
+    padding-bottom: 260px;
+    padding-top: 85px;
   }
 }
 #add__new__item .container .add .plus__icon {
@@ -227,12 +432,12 @@ footer .brand__icon {
 }
 @media only screen and (min-width: 1400px) {
   footer .brand__icon {
-    width: 135px;
+    width: 150px;
   }
 }
 @media only screen and (min-width: 1800px) {
   footer .brand__icon {
-    width: 150px;
+    width: 168px;
   }
 }
 footer .container {

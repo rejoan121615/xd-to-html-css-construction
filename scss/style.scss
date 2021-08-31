@@ -37,16 +37,13 @@ $border: #8c8c8d;
             width: 111px;
         }
     }
-    // collapse btn 
-    .collapse__sec {
+    .accrdion__column {
         background-color: $dark;
-        border-top: 0.25px solid $border;
-        padding-top: 0.45rem!important;
-        padding-bottom: 0.45rem!important;
+    }
+    // collapse btn 
+    #orderAccrodion {
         // icon 
-        .file__icon {
-            width: 24px;
-        }
+        
         // collapse btn style 
         .coll__btn {
            @extend .texts__pro;
@@ -56,5 +53,8 @@ $border: #8c8c8d;
            margin-left: 8px;
            text-transform: uppercase;
         }
-    }   
+    }  
+    .file__icon {
+            width: 24px;
+    } 
 }

@@ -17,33 +17,47 @@
     </head>
     <body>
         <nav class="navbar py-0" id="new__user">
-            <div class="container">
-                <div class="row">
+            <div class="container p-0">
+                <div class="row w-100 g-0">
                     <!-- brand column  -->
-                    <div class="col-12 brand__icon py-3">
+                    <div class="col-12 brand__icon py-3 px-3">
                         <img src="./img/brand-logo.png" alt="brand icon" />
                     </div>
                     <!-- collapse btn row  -->
-                    <div class="col-12 py-1 collapse__sec">
-                        <div class="col__btn__container">
-                            <img class="icons file__icon" src="./img/file__icon.png" alt="new file icon">
-                            <!-- collapse btn  -->
-                            <p
-                                class="text-white mb-0 d-inline-block coll__btn"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#newOrderCollapse"
-                                aria-expanded="false"
-                                aria-controls="collapse area for new order"
-                            >
-                                Button with data-bs-target
-                            </p>
-                        </div>
-                        <div class="collapse mt-3" id="newOrderCollapse">
-                            <div class="card card-body bg-dark">
-                                <ul class="list-group">
-                                    <li class="list-group-item text-white bg-dark">New Order</li>
-                                    <li class="list-group-item text-white bg-dark">My Order</li>
-                                </ul>
+                    <div class="col-12 px-3 accrdion__column">
+                        <div class="accordion" id="orderAccrodion">
+                            <div class="accordion-item bg-transparent border-0">
+                                <div class="accordion-header py-2" id="headingOne">
+                                    <!-- collapse btn  -->
+                                    <div
+                                        class="accordion-button coll__btn p-0 ms-0 bg-transparent"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne"
+                                    >
+                                        <img
+                                            class="icons file__icon me-2"
+                                            src="./img/file__icon.png"
+                                            alt="new file__icon"
+                                        />
+                                        <span class="text-white">
+                                            create new order
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample"
+                                >
+                                    <div class="accordion-body">
+                                        <p class="text-white">Order</p>
+                                        <p class="text-white">Order</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -18,12 +18,33 @@
     <body>
         <nav class="navbar py-0" id="new__user">
             <div class="container p-0">
-                <div class="row w-100 g-0">
-                    <!-- brand column  -->
-                    <div class="col-12 brand__icon py-3 px-3">
-                        <img src="./img/brand-logo.png" alt="brand icon" />
+                <div class="row w-100">
+                    <!-- left section (brand links )--- -->
+                    <div class="row g-0 col-12 col-lg-8 col-xxl-6">
+                        <!-- brand column  -->
+                        <div class="col-12 col-lg-4 brand__icon py-3 px-3">
+                            <img src="./img/brand-logo.png" alt="brand icon" />
+                        </div>
+                        <!-- item section  -->
+                        <a class="d-none d-lg-block col-lg-4" href="">
+                            <img class="file__icon" src="./img/file__icon.png" alt="new file icon">
+                            <p class="file__text m-0 text-uppercase text-decoration-none">new file</p>
+                        </a>
+                        <!-- item section  -->
+                        <a class="d-none d-lg-block col-lg-4" href="">
+                            <img class="file__icon" src="./img/file__icon.png" alt="new file icon">
+                            <p class="file__text m-0 text-uppercase text-decoration-none">new file</p>
+                        </a>
                     </div>
-                    <!-- collapse btn row  -->
+                    <!-- right section user area  -->
+                    <div class="d-none d-lg-block col-lg-4"></div>
+                </div>
+            </div>
+        </nav>
+        <!-- accrodion for only small screen  -->
+        <section id="sm__accordion" class="d-lg-none">
+            <div class="container">
+                <!-- collapse btn row  -->
                     <div class="col-12 px-3 accrdion__column">
                         <div class="accordion" id="orderAccrodion">
                             <div class="accordion-item bg-transparent border-0">
@@ -63,7 +84,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </section>
         <!-- js files  -->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"

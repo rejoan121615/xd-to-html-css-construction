@@ -1,26 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.texts__pro, #new__user #orderAccrodion .coll__btn {
+.texts__pro, #sm__accordion #orderAccrodion .coll__btn {
   font-family: "Heebo", sans-serif;
-  color: #353D4A;
+  color: #353d4a;
 }
 
 #new__user {
-  background-color: #383B3E;
+  background-color: #383b3e;
 }
 #new__user .brand__icon img {
   width: 111px;
 }
-#new__user .accrdion__column {
+
+#sm__accordion {
   background-color: #262729;
 }
-#new__user #orderAccrodion .coll__btn {
+#sm__accordion #orderAccrodion .coll__btn {
   font-size: 14px;
   text-align: left;
   font-weight: 400;
   margin-left: 8px;
   text-transform: uppercase;
 }
-#new__user .file__icon {
+
+.file__icon {
   width: 24px;
 }
 

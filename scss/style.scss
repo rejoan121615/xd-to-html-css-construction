@@ -9,6 +9,14 @@ $dark__500: #383b3e;
 $dark: #262729;
 $border: #8c8c8d;
 
+// break points
+$xm: 576px; //Small
+$sm: 768px; //Large
+$md: 992px; //Extra large
+$lg: 1200px; //xtra larger
+$xl: 1400px; //xtra large
+$xxl: 1800px; //xtra xtra large
+
 // extend
 .texts__pro {
     font-family: $prim__f;
@@ -27,39 +35,142 @@ $border: #8c8c8d;
         @content;
     }
 }
+@mixin resp ($width) {
+    @include minresp($width);
+}
+// common style
+.container {
+    @include minresp(1400px) {
+        max-width: 1320px !important;
+    }
+    @include minresp(1800px) {
+        max-width: 1720px !important;
+    }
+}
 
 //------------------ new user style section ----------------------
-#new__user {
-    background-color: #383b3e;
-    // images brand logo
-    .brand__icon {
-        img {
-            width: 111px;
+#head {
+    background-color: $dark__500;
+    // navbar
+    #navbar {
+        .row {
+            img {
+                width: 50px;
+                @include minresp($md) {
+                    width: 34px;
+                }
+            }
+            .brand__icon {
+                width: 115px;
+                @include minresp($xl) {
+                    width: 135px;
+                }
+                @include minresp($xxl) {
+                    width: 150px;
+                }
+            }
         }
     }
-}
-
-// accordion of small screen
-#sm__accordion {
-    background-color: $dark;
-    .accrdion__column {
-
-    }
-    // collapse btn
-    #orderAccrodion {
-        // icon
-
-        // collapse btn style
-        .coll__btn {
-            @extend .texts__pro;
-            font-size: 14px;
-            text-align: left;
+    // accordion
+    .sm__accordion {
+        font-family: $prim__f;
+        background-color: $dark;
+        .file__icon {
+            width: 25px;
+        }
+        .file__texts {
             font-weight: 400;
-            margin-left: 8px;
-            text-transform: uppercase;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .sm__file__icon {
+            width: 20px;
+        }
+        .sm__file__text {
+            font-size: 12px;
         }
     }
 }
-.file__icon {
-    width: 24px;
+
+// footer section
+footer {
+    background-color: $dark__500;
+    .brand__icon {
+        width: 115px;
+        @include minresp($xl) {
+            width: 135px;
+        }
+        @include minresp($xxl) {
+            width: 150px;
+        }
+    }
+    // container 
+    .container {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        @include minresp ($lg) {
+            padding-top: 85px;
+            padding-bottom: 85px;
+        }
+        @include minresp ($xl) {
+            padding-bottom: 100px;
+            padding-top: 100px;
+        }
+    }
+    // left section 
+    .brand__slogan {
+        @include minresp($xxl) {
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+        .wrap {
+            img {
+                margin-bottom: 10px;
+            }
+            h3 {
+                @extend .texts__pro;
+                font-size: 20px;
+                font-weight: 400;
+                @include minresp ($lg) {
+                    font-size: 22px;
+                }
+                @include minresp($xl) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    // right side 
+    .link__list {
+        @include minresp($xl) {
+            max-width: 60%;
+            flex: 0 0 60%;
+        }
+        @include minresp ($xxl) {
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+        .row {
+            @include minresp($xxl) {
+                justify-content: space-between;
+            }
+            h3 {
+                @extend .texts__pro;
+                font-weight: 400;
+                font-size: 16px;
+                @include minresp ($xl) {
+                    font-size: 17px;
+                }
+            }
+            ul {
+                list-style: none;
+                li a {
+                    display: block;
+                    @extend h3;
+                    color: #959DAC;
+                }
+            }
+        }
+    }
 }

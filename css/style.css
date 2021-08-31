@@ -1,29 +1,150 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.texts__pro, #sm__accordion #orderAccrodion .coll__btn {
+.texts__pro, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3 {
   font-family: "Heebo", sans-serif;
   color: #353d4a;
 }
 
-#new__user {
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .container {
+    max-width: 1720px !important;
+  }
+}
+
+#head {
   background-color: #383b3e;
 }
-#new__user .brand__icon img {
-  width: 111px;
+#head #navbar .row img {
+  width: 50px;
 }
-
-#sm__accordion {
+@media only screen and (min-width: 992px) {
+  #head #navbar .row img {
+    width: 34px;
+  }
+}
+#head #navbar .row .brand__icon {
+  width: 115px;
+}
+@media only screen and (min-width: 1400px) {
+  #head #navbar .row .brand__icon {
+    width: 135px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #head #navbar .row .brand__icon {
+    width: 150px;
+  }
+}
+#head .sm__accordion {
+  font-family: "Heebo", sans-serif;
   background-color: #262729;
 }
-#sm__accordion #orderAccrodion .coll__btn {
-  font-size: 14px;
-  text-align: left;
+#head .sm__accordion .file__icon {
+  width: 25px;
+}
+#head .sm__accordion .file__texts {
   font-weight: 400;
-  margin-left: 8px;
-  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 10px;
+}
+#head .sm__accordion .sm__file__icon {
+  width: 20px;
+}
+#head .sm__accordion .sm__file__text {
+  font-size: 12px;
 }
 
-.file__icon {
-  width: 24px;
+footer {
+  background-color: #383b3e;
+}
+footer .brand__icon {
+  width: 115px;
+}
+@media only screen and (min-width: 1400px) {
+  footer .brand__icon {
+    width: 135px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  footer .brand__icon {
+    width: 150px;
+  }
+}
+footer .container {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+@media only screen and (min-width: 1200px) {
+  footer .container {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  footer .container {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  footer .brand__slogan {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+footer .brand__slogan .wrap img {
+  margin-bottom: 10px;
+}
+footer .brand__slogan .wrap h3, footer .brand__slogan .wrap .link__list .row ul li a, footer .link__list .row ul li .brand__slogan .wrap a {
+  font-size: 20px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 1200px) {
+  footer .brand__slogan .wrap h3, footer .brand__slogan .wrap .link__list .row ul li a, footer .link__list .row ul li .brand__slogan .wrap a {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  footer .brand__slogan .wrap h3, footer .brand__slogan .wrap .link__list .row ul li a, footer .link__list .row ul li .brand__slogan .wrap a {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  footer .link__list {
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  footer .link__list {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  footer .link__list .row {
+    justify-content: space-between;
+  }
+}
+footer .link__list .row h3, footer .link__list .row ul li a {
+  font-weight: 400;
+  font-size: 16px;
+}
+@media only screen and (min-width: 1400px) {
+  footer .link__list .row h3, footer .link__list .row ul li a {
+    font-size: 17px;
+  }
+}
+footer .link__list .row ul {
+  list-style: none;
+}
+footer .link__list .row ul li a {
+  display: block;
+  color: #959DAC;
 }
 
 /*# sourceMappingURL=style.css.map */

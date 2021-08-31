@@ -5,13 +5,139 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        
-        <!-- js files  -->    
-       <script src="./bootstrap/jquery-3.6.0.min.js"></script>
-       <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+        <header id="head">
+            <nav id="navbar" class="w-100 py-2 py-lg-0">
+                <div class="container">
+                    <div class="row">
+                        <!-- brand and order links  -->
+                        <div class="row col-12 col-lg-9 col-xl-7">
+                            <div class="col-lg-4 col-12 d-flex align-items-center">
+                                <img
+                                    class="brand__icon"
+                                    src="./img/brand-logo.png"
+                                    alt="brand icon"
+                                />
+                            </div>
+                            <a href="" class="d-none d-lg-block col-4 py-lg-3">
+                                <img
+                                    class="order__icon"
+                                    src="./img/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p class="order__text text-white text-uppercase d-inline-block ms-2">new order</p>
+                            </a>
+                            <a href="" class="d-none d-lg-block col-4 py-lg-3">
+                                <img
+                                    class="order__icon"
+                                    src="./img/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p class="order__text text-white text-uppercase d-inline-block ms-2">my order</p>
+                            </a>
+                        </div>
+                        <!-- user section  -->
+                        <div class="user__section d-none d-lg-inline-block"></div>
+                    </div>
+                </div>
+            </nav>
+            <!-- small screeen accordion  -->
+            <div class="sm__accordion d-lg-none">
+                <div class="container">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card border-0 bg-transparent px-0">
+                            <div class="card-header p-0" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <div
+                                        class="
+                                            btn btn-link btn-block
+                                            text-left
+                                            collapsed
+                                            px-0
+                                        "
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <img class="file__icon" src="./img/file__icon.png" alt="file icons">
+                                        <span class="file__texts text-uppercase text-white">create new order</span>
+                                    </div>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body py-0">
+                                    <a href="" class="item border-bottom border-white d-block py-2">
+                                        <img class="sm__file__icon d-inline-block" src="./img/file__icon.png" alt="file icon">
+                                        <p class="sm__file__text text-white text-uppercase d-inline-block ms-2 mb-0">new order</p>
+                                    </a>
+                                    <a href="" class="item d-block py-2">
+                                        <img class="sm__file__icon d-inline-block" src="./img/file__icon.png" alt="file icon">
+                                        <p class="sm__file__text text-white text-uppercase d-inline-block ms-2 mb-0">new order</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <!-- footer section  -->
+        <footer class="d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-lg-between">
+                    <!-- left section  -->
+                    <div class="col-4 brand__slogan">
+                        <div class="wrap">
+                            <img class="brand__icon" src="./img/brand-logo.png" alt="brand icon">
+                            <h3 class="text-uppercase text-white">it's easy to manage</h3>
+                            <h3 class="text-uppercase text-white">your rebar list</h3>
+                        </div>
+                    </div>
+                    <!-- right side  -->
+                    <div class="col-8 link__list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">support</h3>
+                                <ul class="list-style-none m-0 p-0">
+                                    <li><a href="" class="text-capitalize">support sytem</a></li>
+                                    <li><a href="" class="text-capitalize">Questions and Questions</a></li>
+                                    <li><a href="" class="text-capitalize">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">support</h3>
+                                <ul class="m-0 p-0">
+                                    <li><a href="" class="text-capitalize">our supplyers</a></li>
+                                    <li><a href="" class="text-capitalize">add yourself as a supplyers</a></li>
+                                    <li><a href="" class="text-capitalize">easy-bar community</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">support</h3>
+                                <h3 class="title text-uppercase text-white">easybar.israel@gmail.com</h3>
+                                <h3 class="title text-uppercase text-white">08.6601780</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- js files  -->
+        <script src="./bootstrap/jquery-3.6.0.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     </body>
 </html>

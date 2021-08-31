@@ -35,7 +35,7 @@ $xxl: 1800px; //xtra xtra large
         @content;
     }
 }
-@mixin resp ($width) {
+@mixin resp($width) {
     @include minresp($width);
 }
 // common style
@@ -91,7 +91,17 @@ $xxl: 1800px; //xtra xtra large
         }
     }
 }
-
+// main order table section
+#order__details {
+    .order__header {
+        .row {
+            @include minresp($md) {
+                background-color: #374051;
+            }
+            border-radius: 25px 25px 0px 0px;
+        }
+    }
+}
 // footer section
 footer {
     background-color: $dark__500;
@@ -104,20 +114,20 @@ footer {
             width: 150px;
         }
     }
-    // container 
+    // container
     .container {
         padding-top: 75px;
         padding-bottom: 75px;
-        @include minresp ($lg) {
+        @include minresp($lg) {
             padding-top: 85px;
             padding-bottom: 85px;
         }
-        @include minresp ($xl) {
+        @include minresp($xl) {
             padding-bottom: 100px;
             padding-top: 100px;
         }
     }
-    // left section 
+    // left section
     .brand__slogan {
         @include minresp($xxl) {
             max-width: 50%;
@@ -131,7 +141,7 @@ footer {
                 @extend .texts__pro;
                 font-size: 20px;
                 font-weight: 400;
-                @include minresp ($lg) {
+                @include minresp($lg) {
                     font-size: 22px;
                 }
                 @include minresp($xl) {
@@ -141,13 +151,13 @@ footer {
         }
     }
 
-    // right side 
+    // right side
     .link__list {
         @include minresp($xl) {
             max-width: 60%;
             flex: 0 0 60%;
         }
-        @include minresp ($xxl) {
+        @include minresp($xxl) {
             max-width: 50%;
             flex: 0 0 50%;
         }
@@ -159,7 +169,7 @@ footer {
                 @extend .texts__pro;
                 font-weight: 400;
                 font-size: 16px;
-                @include minresp ($xl) {
+                @include minresp($xl) {
                     font-size: 17px;
                 }
             }
@@ -168,7 +178,7 @@ footer {
                 li a {
                     display: block;
                     @extend h3;
-                    color: #959DAC;
+                    color: #959dac;
                 }
             }
         }

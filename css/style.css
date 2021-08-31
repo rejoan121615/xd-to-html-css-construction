@@ -58,6 +58,15 @@
   font-size: 12px;
 }
 
+#order__details .order__header .row {
+  border-radius: 25px 25px 0px 0px;
+}
+@media only screen and (min-width: 992px) {
+  #order__details .order__header .row {
+    background-color: #374051;
+  }
+}
+
 footer {
   background-color: #383b3e;
 }
@@ -144,7 +153,7 @@ footer .link__list .row ul {
 }
 footer .link__list .row ul li a {
   display: block;
-  color: #959DAC;
+  color: #959dac;
 }
 
 /*# sourceMappingURL=style.css.map */

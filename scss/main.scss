@@ -1,16 +1,9 @@
-
+// system files 
+@import 'color';
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $prim__f: "Heebo", sans-serif;
-// body style
-
-// colors
-$main__text: #353d4a;
-$dark__500: #383b3e;
-$dark: #262729;
-$border: #8c8c8d;
-
 // break points
 $xm: 576px; //Small
 $sm: 768px; //Large
@@ -66,4 +59,8 @@ p {
 
 
 // files ----------------------------------- >
+@import 'color';
 @import 'new__user';
+@import 'new__user__form';
+
+

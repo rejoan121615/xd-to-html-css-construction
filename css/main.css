@@ -4,6 +4,9 @@
   color: #353d4a;
 }
 
+body {
+  overflow-x: hidden;
+}
 @media only screen and (min-width: 992px) {
   body {
     background-color: #f5f5f5;

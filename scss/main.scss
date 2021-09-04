@@ -1,5 +1,5 @@
 // system files 
-@import 'color';
+@import 'colors';
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -32,6 +32,7 @@ $xxl: 1800px; //xtra xtra large
 }
 // common style
 body {
+    overflow-x: hidden;
     @include minresp($md) {
         background-color: #f5f5f5;
     }

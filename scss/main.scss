@@ -84,6 +84,8 @@ input {
     @include minresp($sm) {
         padding: 2px 0px 5px 0px;
         font-size: 18px;
+        width: 47%;
+        max-width: initial;
     }
     @include minresp($xl) {
         font-size: 20px;

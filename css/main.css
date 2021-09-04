@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
-.texts__pro, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3, #add__new__item .container .save__cancel button p, #order__details__table .order__details .accordion .list-group .list-group-title button span, #order__details__table .order__details .accordion .list-group .list-group-title p, #order__details__table .order__details .accordion .sm__title .title, #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
+.texts__pro, section.forms .container .heading, section.forms .container .form__title h3, section.forms .container .form__title footer .link__list .row ul li a, footer .link__list .row ul li section.forms .container .form__title a, section.forms .container .form__header h1, footer .link__list .row h3, footer .link__list .row ul li a, footer .brand__slogan .wrap h3, #add__new__item .container .save__cancel button p, #order__details__table .order__details .accordion .list-group .list-group-title button span, #order__details__table .order__details .accordion .list-group .list-group-title p, #order__details__table .order__details .accordion .sm__title .title, #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
   font-family: "Heebo", sans-serif;
   color: #353d4a;
 }
@@ -30,8 +30,59 @@ p {
   }
 }
 
-.border__bottom {
+.border__bottom, section.forms .container .radio__btns {
   border-bottom: 3px solid #d2d4d6 !important;
+}
+
+.border__top, section.forms .container .radio__btns {
+  border-top: 3px solid #d2d4d6 !important;
+}
+
+label {
+  color: #707070;
+  font-weight: 600;
+}
+
+input {
+  background-color: #F0F0F0 !important;
+  border: 1px solid #8a8a8a;
+}
+
+:root {
+  font-family: "Heebo", sans-serif;
+}
+
+.form__btn, .form__btn__black {
+  width: 48%;
+  max-width: 180px;
+  color: white;
+  background-color: #959DAC;
+  border-radius: 25px;
+  padding: 0px 0px 3px 0px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .form__btn, .form__btn__black {
+    padding: 2px 0px 5px 0px;
+    font-size: 18px;
+    width: 47%;
+    max-width: initial;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .form__btn, .form__btn__black {
+    font-size: 20px;
+  }
+}
+.form__btn:hover, .form__btn__black:hover {
+  background-color: #374051;
+}
+
+.form__btn__black {
+  background-color: #374051;
+}
+.form__btn__black:hover {
+  background-color: #959DAC;
 }
 
 .active__mark {
@@ -511,6 +562,183 @@ footer .link__list .row ul {
 footer .link__list .row ul li a {
   display: block;
   color: #959dac;
+}
+
+section.forms {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #686868;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+section.forms label {
+  color: #374051;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+@media only screen and (min-width: 768px) {
+  section.forms label {
+    font-size: 15px;
+  }
+}
+section.forms .container .heading, section.forms .container .form__title h3, section.forms .container .form__title footer .link__list .row ul li a, footer .link__list .row ul li section.forms .container .form__title a, section.forms .container .form__header h1 {
+  font-size: 17px;
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container .heading, section.forms .container .form__title h3, section.forms .container .form__title footer .link__list .row ul li a, footer .link__list .row ul li section.forms .container .form__title a, section.forms .container .form__header h1 {
+    font-size: 21px;
+  }
+}
+section.forms .container .row {
+  max-width: 400px;
+  transition: max-width 0.5s;
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container .row {
+    max-width: 535px;
+  }
+}
+section.forms .container .form__header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #374051;
+}
+section.forms .container .form__header h1 {
+  line-height: 30px;
+}
+section.forms .container .form__header .close__btn {
+  width: 20px;
+}
+section.forms .container .form__title span {
+  color: #8c8c8d;
+}
+section.forms .container .form__body {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 35px !important;
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container .form__body {
+    padding-bottom: 50px !important;
+  }
+}
+section.forms .container .form__header,
+section.forms .container .form__body {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container .form__header,
+section.forms .container .form__body {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+  }
+}
+section.forms .container input {
+  border-radius: 8px !important;
+  font-size: 15px;
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container input {
+    height: 32px;
+  }
+}
+section.forms .container input::placeholder {
+  font-size: 14px;
+  transform: translateY(-2px);
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container input::placeholder {
+    font-size: 14px;
+  }
+}
+section.forms .container .form__btn, section.forms .container .form__btn__black {
+  color: white;
+}
+section.forms .container .radio__btns {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+section.forms .container .radio__btns input {
+  height: initial;
+}
+section.forms .container .form-check .form-check-input {
+  transform: scale(1.1);
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container .form-check .form-check-input {
+    transform: scale(1.2);
+  }
+}
+section.forms .container .form-check .form-check-label {
+  color: #353d4a;
+  font-size: 13px;
+  transform: translateY(-3px);
+  text-transform: none;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  section.forms .container .form-check .form-check-label {
+    margin-left: 10px;
+  }
+}
+
+#projectsSite .container .row {
+  max-width: initial;
+}
+@media only screen and (min-width: 1400px) {
+  #projectsSite .container .row {
+    max-width: 1110px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #projectsSite .container .input__left,
+#projectsSite .container .input__right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+}
+#projectsSite .container select {
+  background-color: #f0f0f0;
+  font-size: 15px;
+  border-radius: 8px !important;
+  font-weight: 500;
+  color: #959dac;
+}
+@media only screen and (min-width: 768px) {
+  #projectsSite .container select {
+    height: 32px;
+  }
+}
+#projectsSite .container select option {
+  font-size: 15px;
+}
+#projectsSite .container select[target=_blank] {
+  background-color: yellow;
+}
+#projectsSite .container label {
+  font-size: 15px;
+  color: #374051;
+  font-weight: 400;
+  text-transform: none !important;
+}
+#projectsSite .container label.cap {
+  text-transform: capitalize !important;
+}
+#projectsSite .container label.bold,
+#projectsSite .container .bold {
+  font-weight: 700;
+  color: #374051;
+}
+#projectsSite .container .border__color {
+  color: #8c8c8d;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#projectsSite .container .contact__icon {
+  width: 21px;
 }
 
 /*# sourceMappingURL=main.css.map */

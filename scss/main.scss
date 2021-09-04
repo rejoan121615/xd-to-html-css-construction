@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 // system files 
 @import 'color';
+=======
+// utilities
+@import "colors";
+>>>>>>> newProjectForm
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $prim__f: "Heebo", sans-serif;
+<<<<<<< HEAD
+=======
+// body style
+
+>>>>>>> newProjectForm
 // break points
 $xm: 576px; //Small
 $sm: 768px; //Large
@@ -55,12 +65,60 @@ p {
 .border__bottom {
     border-bottom: 3px solid #d2d4d6 !important;
 }
+.border__top {
+    border-top: 3px solid #d2d4d6 !important;
+}
+label {
+    color: $label;
+    font-weight: 600;
+}
+input {
+    background-color: $formInputbg !important;
+    border: 1px solid darken($color: $formInputbg, $amount: 40);
+}
 
+:root {
+    font-family: $prim__f;
+}
 
+.form__btn {
+    width: 48%;
+    max-width: 180px;
+    color: white;
+    background-color: #959DAC;
+    border-radius: 25px;
+    padding: 0px 0px 3px 0px;
+    font-weight: 600;
+    @include minresp($sm) {
+        padding: 2px 0px 5px 0px;
+        font-size: 18px;
+        width: 47%;
+        max-width: initial;
+    }
+    @include minresp($xl) {
+        font-size: 20px;
+    }
+    &:hover {
+        background-color: $btn__black;
+    }
+}
+
+.form__btn__black {
+    @extend .form__btn;
+    background-color: $btn__black;
+    &:hover {
+        background-color: #959DAC;
+    }
+}
 
 // files ----------------------------------- >
+<<<<<<< HEAD
 @import 'color';
 @import 'new__user';
 @import 'new__user__form';
 
 
+=======
+@import "new__user__page";
+@import "new__user__form";
+>>>>>>> newProjectForm

@@ -5,7 +5,7 @@ section.forms {
     display: grid;
     align-items: center;
     justify-items: center;
-    // label style 
+    // label style
     label {
         color: #374051;
         text-transform: uppercase;
@@ -75,14 +75,15 @@ section.forms {
         }
 
         input {
-            border-radius: 8px!important;
+            border-radius: 8px !important;
+            font-size: 15px;
             @include minresp($sm) {
                 height: 32px;
             }
             &::placeholder {
                 font-size: 14px;
                 transform: translateY(-2px);
-                
+
                 @include minresp($sm) {
                     font-size: 14px;
                 }
@@ -107,7 +108,7 @@ section.forms {
         .form-check {
             .form-check-input {
                 transform: scale(1.1);
-                @include minresp ($sm) {
+                @include minresp($sm) {
                     transform: scale(1.2);
                 }
             }
@@ -121,6 +122,70 @@ section.forms {
                     margin-left: 10px;
                 }
             }
+        }
+    }
+}
+
+#projectsSite {
+    .container {
+        .row {
+            max-width: initial;
+            @include minresp($xl) {
+                max-width: 1110px;
+            }
+        }
+
+        // left and right
+        .input__left,
+        .input__right {
+            @include minresp($md) {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+            }
+        }
+        // right input list
+
+        select {
+            @include minresp($sm) {
+                height: 32px;
+            }
+            background-color: #f0f0f0;
+            font-size: 15px;
+            border-radius: 8px !important;
+            font-weight: 500;
+            color: #959dac;
+            option {
+                font-size: 15px;
+            }
+        }
+        // select field
+        select[target="_blank"] {
+            background-color: yellow;
+        }
+        // label
+        label {
+            font-size: 15px;
+            color: #374051;
+            font-weight: 400;
+            text-transform: none !important;
+        }
+        label.cap {
+            text-transform: capitalize !important;
+        }
+        label.bold,
+        .bold {
+            font-weight: 700;
+            color: #374051;
+        }
+        .border__color {
+            color: $border;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        // contact icon 
+        .contact__icon {
+            width: 21px;
         }
     }
 }

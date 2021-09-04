@@ -637,6 +637,7 @@ section.forms .container .form__body {
 }
 section.forms .container input {
   border-radius: 8px !important;
+  font-size: 15px;
 }
 @media only screen and (min-width: 768px) {
   section.forms .container input {
@@ -681,6 +682,63 @@ section.forms .container .form-check .form-check-label {
   section.forms .container .form-check .form-check-label {
     margin-left: 10px;
   }
+}
+
+#projectsSite .container .row {
+  max-width: initial;
+}
+@media only screen and (min-width: 1400px) {
+  #projectsSite .container .row {
+    max-width: 1110px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #projectsSite .container .input__left,
+#projectsSite .container .input__right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+}
+#projectsSite .container select {
+  background-color: #f0f0f0;
+  font-size: 15px;
+  border-radius: 8px !important;
+  font-weight: 500;
+  color: #959dac;
+}
+@media only screen and (min-width: 768px) {
+  #projectsSite .container select {
+    height: 32px;
+  }
+}
+#projectsSite .container select option {
+  font-size: 15px;
+}
+#projectsSite .container select[target=_blank] {
+  background-color: yellow;
+}
+#projectsSite .container label {
+  font-size: 15px;
+  color: #374051;
+  font-weight: 400;
+  text-transform: none !important;
+}
+#projectsSite .container label.cap {
+  text-transform: capitalize !important;
+}
+#projectsSite .container label.bold,
+#projectsSite .container .bold {
+  font-weight: 700;
+  color: #374051;
+}
+#projectsSite .container .border__color {
+  color: #8c8c8d;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#projectsSite .container .contact__icon {
+  width: 21px;
 }
 
 /*# sourceMappingURL=main.css.map */

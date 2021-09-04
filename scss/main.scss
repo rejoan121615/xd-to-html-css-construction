@@ -1,19 +1,9 @@
-<<<<<<< HEAD
 // system files 
 @import 'color';
-=======
-// utilities
-@import "colors";
->>>>>>> newProjectForm
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 $prim__f: "Heebo", sans-serif;
-<<<<<<< HEAD
-=======
-// body style
-
->>>>>>> newProjectForm
 // break points
 $xm: 576px; //Small
 $sm: 768px; //Large
@@ -112,13 +102,5 @@ input {
 }
 
 // files ----------------------------------- >
-<<<<<<< HEAD
-@import 'color';
-@import 'new__user';
-@import 'new__user__form';
-
-
-=======
 @import "new__user__page";
 @import "new__user__form";
->>>>>>> newProjectForm

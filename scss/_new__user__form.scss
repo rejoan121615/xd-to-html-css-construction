@@ -1,0 +1,96 @@
+section {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $formBg;
+
+    // label style 
+    label {
+        color: #374051;
+    }
+    .container {
+        // common heading
+        .heading {
+            @extend .texts__pro;
+            font-size: 17px;
+            @include minresp($sm) {
+                font-size: 21px;
+            }
+        }
+        .row {
+            max-width: 400px;
+            transition: max-width 0.5s;
+            @include minresp($sm) {
+                max-width: 535px;
+            }
+        }
+        // form header
+        .form__header {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: $header__bg;
+            h1 {
+                @extend .heading;
+                line-height: 30px;
+            }
+            .close__btn {
+                width: 20px;
+            }
+        }
+        // form title
+        .form__title {
+            h3 {
+                @extend .heading;
+            }
+            span {
+                color: $border;
+            }
+        }
+
+        // form body
+        .form__body {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding-bottom: 35px !important;
+            @include minresp($sm) {
+                padding-bottom: 50px !important;
+            }
+        }
+
+        // common
+        .form__header,
+        .form__body {
+            padding-left: 35px;
+            padding-right: 35px;
+            @include minresp($sm) {
+                padding-left: 55px !important;
+                padding-right: 55px !important;
+            }
+        }
+
+        // form btn
+        .form__btn {
+            color: white;
+        }
+        // radio btns
+        .radio__btns {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            @extend .border__bottom;
+            @extend .border__top;
+        }
+        // checkbox span
+        .form-check {
+            .form-check-input {
+                transform: scale(1.5);
+            }
+            .form-check-label {
+                color: $main__text;
+                font-size: 14px;
+                transform: translateY(-3px);
+                @include minresp($sm) {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

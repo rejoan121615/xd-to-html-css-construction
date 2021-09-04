@@ -77,17 +77,28 @@ input {
     width: 48%;
     max-width: 180px;
     color: white;
-    background-color: $btn__black;
+    background-color: #959DAC;
     border-radius: 25px;
     padding: 0px 0px 3px 0px;
+    font-weight: 600;
     @include minresp($sm) {
         padding: 2px 0px 5px 0px;
+        font-size: 18px;
+    }
+    @include minresp($xl) {
+        font-size: 20px;
+    }
+    &:hover {
+        background-color: $btn__black;
     }
 }
 
-.form__btn__half {
+.form__btn__black {
     @extend .form__btn;
-    background-color: $btn__black-500;
+    background-color: $btn__black;
+    &:hover {
+        background-color: #959DAC;
+    }
 }
 
 // files ----------------------------------- >

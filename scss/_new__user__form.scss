@@ -2,10 +2,17 @@ section {
     width: 100vw;
     min-height: 100vh;
     background-color: $formBg;
-
+    display: grid;
+    align-items: center;
+    justify-items: center;
     // label style 
     label {
         color: #374051;
+        text-transform: uppercase;
+        font-size: 13px;
+        @include minresp($sm) {
+            font-size: 15px;
+        }
     }
     .container {
         // common heading
@@ -67,6 +74,21 @@ section {
             }
         }
 
+        input {
+            border-radius: 8px!important;
+            @include minresp($sm) {
+                height: 32px;
+            }
+            &::placeholder {
+                font-size: 14px;
+                transform: translateY(-2px);
+                
+                @include minresp($sm) {
+                    font-size: 14px;
+                }
+            }
+        }
+
         // form btn
         .form__btn {
             color: white;
@@ -77,16 +99,24 @@ section {
             padding-bottom: 25px;
             @extend .border__bottom;
             @extend .border__top;
+            input {
+                height: initial;
+            }
         }
         // checkbox span
         .form-check {
             .form-check-input {
-                transform: scale(1.5);
+                transform: scale(1.1);
+                @include minresp ($sm) {
+                    transform: scale(1.2);
+                }
             }
             .form-check-label {
                 color: $main__text;
-                font-size: 14px;
+                font-size: 13px;
                 transform: translateY(-3px);
+                text-transform: none;
+                font-weight: 600;
                 @include minresp($sm) {
                     margin-left: 10px;
                 }

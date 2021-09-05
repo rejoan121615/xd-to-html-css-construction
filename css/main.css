@@ -121,6 +121,9 @@ input {
     width: 168px;
   }
 }
+#head #navbar .user__section {
+  position: relative;
+}
 #head #navbar .user__section .user h3, #head #navbar .user__section .user footer .link__list .row ul li a, footer .link__list .row ul li #head #navbar .user__section .user a {
   margin-left: 8px;
   margin-right: 15px;
@@ -158,6 +161,17 @@ input {
 }
 #head #navbar .user__section .user .arrow {
   width: 18px;
+}
+#head #navbar #userArea {
+  position: absolute;
+  right: 0px;
+  top: 66px;
+  z-index: 2000;
+  width: 250px;
+}
+#head #navbar #userArea ul li {
+  font-weight: 400;
+  font-size: 18px;
 }
 #head .sm__accordion {
   font-family: "Heebo", sans-serif;

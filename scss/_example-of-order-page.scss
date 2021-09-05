@@ -1,0 +1,28 @@
+.order__page__new__item__D {
+    .container {
+
+    }
+    .add  {
+        padding-top: 50px!important;
+        padding-bottom: 50px!important;
+    }
+    // other control 
+    .control__wrap {
+        .cus__btn {
+            border-radius: 25px;
+            padding: 5px 15px;
+            border: 1px solid #959DAC;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .cus__r__btn {
+            @extend .cus__btn;
+            padding: 0px;
+            width: 37px;
+            height: 37px;
+            display: grid!important;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

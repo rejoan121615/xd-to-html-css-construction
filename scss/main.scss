@@ -1,5 +1,5 @@
-// system files 
-@import 'colors';
+// system files
+@import "colors";
 // fonts
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -76,7 +76,7 @@ input {
     width: 48%;
     max-width: 180px;
     color: white;
-    background-color: #959DAC;
+    background-color: #959dac;
     border-radius: 25px;
     padding: 0px 0px 3px 0px;
     font-weight: 600;
@@ -98,10 +98,16 @@ input {
     @extend .form__btn;
     background-color: $btn__black;
     &:hover {
-        background-color: #959DAC;
+        background-color: #959dac;
     }
+}
+
+.para {
+    font-size: calc( 16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)) );
+    color: #989898 !important;
 }
 
 // files ----------------------------------- >
 @import "new__user__page";
 @import "new__user__form";
+@import "example-of-order-page";

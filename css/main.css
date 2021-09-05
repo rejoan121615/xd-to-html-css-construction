@@ -59,7 +59,7 @@ input {
   width: 48%;
   max-width: 180px;
   color: white;
-  background-color: #959DAC;
+  background-color: #959dac;
   border-radius: 25px;
   padding: 0px 0px 3px 0px;
   font-weight: 600;
@@ -85,7 +85,12 @@ input {
   background-color: #374051;
 }
 .form__btn__black:hover {
-  background-color: #959DAC;
+  background-color: #959dac;
+}
+
+.para {
+  font-size: calc( 16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)) );
+  color: #989898 !important;
 }
 
 .active__mark {
@@ -756,6 +761,26 @@ section.forms .container .form-check .form-check-label {
 }
 #projectsSite .container .contact__icon {
   width: 21px;
+}
+
+.order__page__new__item__D .add {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.order__page__new__item__D .control__wrap .cus__btn, .order__page__new__item__D .control__wrap .cus__r__btn {
+  border-radius: 25px;
+  padding: 5px 15px;
+  border: 1px solid #959DAC;
+  cursor: pointer;
+  font-size: 18px;
+}
+.order__page__new__item__D .control__wrap .cus__r__btn {
+  padding: 0px;
+  width: 37px;
+  height: 37px;
+  display: grid !important;
+  align-items: center;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */

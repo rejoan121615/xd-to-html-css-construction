@@ -870,12 +870,22 @@
             </div>
         </section>
         <!-- ------------------------ cages table section --------------------------  -->
-        <section id="cages__table" class="order__tables">
+        <section id="cages__table" class="order__tables mt-xl-4">
             <div class="container p-0">
                 <div class="table__wrapper">
-                    <div class="table__header"></div>
+                    <!-- table header  -->
+                    <div class="table__header d-flex flex-row">
+                        <!-- table title  -->
+                        <div class="table__title d-flex align-items-center justify-content-center">
+                            <h2 class="text-center text-white text-uppercase m-0">cages</h2>
+                        </div>
+                        <div class="table__tit__btn d-flex align-items-center justify-content-center">
+                            <a href="" class="text-danger text-center text-uppercase text-underline">add new cage</a>
+                        </div>
+                    </div>
                     <!-- real table  -->
-                    <table class="table table">
+                    <table class="table table mb-0">
+                        <!-- table head title section  -->
                         <thead>
                             <tr>
                                 <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">sketch</th>
@@ -888,12 +898,14 @@
                                 <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">rings</th>
                                 <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">gamma</th>
                                 <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">ear</th>
-                                <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">unit weight(kg)</th>
+                                <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">unit weight</th>
                                 <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">amount</th>
-                                <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">total weight(kg)</th>
+                                <th scope="col" class="text-uppercase d-flex align-items-center justify-content-center text-center">total weight</th>
                             </tr>
                         </thead>
+                        <!-- table body data section  -->
                         <tbody>
+                            <!-- table data row   -->
                             <tr>
                                 <td class="justify-content-lg-between">
                                     <input
@@ -916,12 +928,12 @@
                                 <td>1,420</td>
                                 <td>10</td>
                                 <td class="justify-content-around">
-                                    <span>6@15</span>
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
                                     <span><span class="small">cm</span>1,220</span>
                                 </td>
                                 <td class="justify-content-around">
-                                    <span>6@15</span>
-                                    <span><span class="small">cm</span>1,220</span>
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
                                 </td>
                                 <td>
                                     <span><i class="fas fa-minus-circle"></i></span>
@@ -932,8 +944,735 @@
                                 <td><span>10</span></td>
                                 <td><span>102</span></td>
                             </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">2</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>12, 5, 6</td>
+                                <td>30</td>
+                                <td>1,220</td>
+                                <td>12</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,020</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span class=""><i class="fas fa-check-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-minus-circle"></i></span></td>
+                                <td><span><i class="fas fa-minus-circle"></i></td>
+                                <td><span>108.60</span></td>
+                                <td><span>40</span></td>
+                                <td><span>4,344</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>14, 15, 16</td>
+                                <td>50</td>
+                                <td>1,420</td>
+                                <td>10</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,220</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span><i class="fas fa-minus-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-check-circle"></i></span></td>
+                                <td><span><i class="fas fa-check-circle"></i></span></td>
+                                <td><span>10.20</span></td>
+                                <td><span>10</span></td>
+                                <td><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">2</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>12, 5, 6</td>
+                                <td>30</td>
+                                <td>1,220</td>
+                                <td>12</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,020</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span class=""><i class="fas fa-check-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-minus-circle"></i></span></td>
+                                <td><span><i class="fas fa-minus-circle"></i></td>
+                                <td><span>108.60</span></td>
+                                <td><span>40</span></td>
+                                <td><span>4,344</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>14, 15, 16</td>
+                                <td>50</td>
+                                <td>1,420</td>
+                                <td>10</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,220</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span><i class="fas fa-minus-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-check-circle"></i></span></td>
+                                <td><span><i class="fas fa-check-circle"></i></span></td>
+                                <td><span>10.20</span></td>
+                                <td><span>10</span></td>
+                                <td><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">2</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>12, 5, 6</td>
+                                <td>30</td>
+                                <td>1,220</td>
+                                <td>12</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,020</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span class=""><i class="fas fa-check-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-minus-circle"></i></span></td>
+                                <td><span><i class="fas fa-minus-circle"></i></td>
+                                <td><span>108.60</span></td>
+                                <td><span>40</span></td>
+                                <td><span>4,344</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>14, 15, 16</td>
+                                <td>50</td>
+                                <td>1,420</td>
+                                <td>10</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,220</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span><i class="fas fa-minus-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-check-circle"></i></span></td>
+                                <td><span><i class="fas fa-check-circle"></i></span></td>
+                                <td><span>10.20</span></td>
+                                <td><span>10</span></td>
+                                <td><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">2</span>
+                                    <img class="img__icon" src="./img/order__page/map.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td>12, 5, 6</td>
+                                <td>30</td>
+                                <td>1,220</td>
+                                <td>12</td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                    <span><span class="small">cm</span>1,020</span>
+                                </td>
+                                <td class="justify-content-around">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@10</span>
+                                    <span><span class="small">cm</span>200</span>
+                                </td>
+                                <td>
+                                    <span class=""><i class="fas fa-check-circle"></i></span>
+                                </td>
+                                <td><span><i class="fas fa-minus-circle"></i></span></td>
+                                <td><span><i class="fas fa-minus-circle"></i></td>
+                                <td><span>108.60</span></td>
+                                <td><span>40</span></td>
+                                <td><span>4,344</span></td>
+                            </tr>
                         </tbody>
                     </table>
+                    <div class="table__bottom d-flex justify-content-end">
+                        <div class="table__bottom__counter d-flex justify-content-between">
+                            <div class="right"><span>57 units</span></div>
+                            <div class="left"><span>2.53 ton</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------ cages table section --------------------------  -->
+        <section id="nets__table" class="order__tables mt-xl-4">
+            <div class="container p-0">
+                <div class="table__wrapper">
+                    <!-- table header  -->
+                    <div class="table__header d-flex flex-row">
+                        <!-- table title  -->
+                        <div class="table__title d-flex align-items-center justify-content-center">
+                            <h2 class="text-center text-white text-uppercase m-0">nets</h2>
+                        </div>
+                        <div class="table__tit__btn d-flex align-items-center justify-content-center">
+                            <a href="" class="text-danger text-center text-uppercase text-underline">add new cage</a>
+                        </div>
+                    </div>
+                    <!-- real table  -->
+                    <table class="table table mb-0">
+                        <!-- table head title section  -->
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-capitalize d-flex align-items-center justify-content-center text-center">sketch</th>
+                                <th scope="col" class="text-capitalize d-flex flex-column align-items-start justify-content-center text-center">
+                                    <span>cage</span>
+                                    <span>number</span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex flex-column align-items-start justify-content-center text-center">
+                                    <span>steel</span>
+                                    <span>type</span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex align-items-center justify-content-start text-center sm__wrap">
+                                    <span>X</span><span class="text-lowercase unit__sm">(cm)</span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex align-items-start justify-content-center text-center flex-column">
+                                    <span class="top">
+                                        <img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon"><span>diameter</span><span class="unit__sm text-lowercase">(mm)</span>
+                                    </span>
+                                    <span class="bottom">
+                                        <span class="text-capitalize">@ step</span><span class="text-lowercase unit__sm">(mm)</span>
+                                    </span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex align-items-center justify-content-start text-center">
+                                    <span>Y</span>
+                                    <span class="unit__sm text-lowercase">(cm)</span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex align-items-start justify-content-center flex-column">
+                                    <span class="top">
+                                        <img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon"><span>Diameter</span><span class="unit__sm text-lowercase">(mm)</span>
+                                    </span>
+                                    <span class="top">
+                                        <span>@ Step</span><span class="unit__sm text-lowercase">(mm)</span>
+                                    </span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex align-items-start justify-content-start text-center flex-column">
+                                    <span>unit</span>
+                                    <span>
+                                        <span>weight</span><span class="unit__sm">(kg)</span>
+                                    </span>
+                                </th>
+                                <th scope="col" class="text-capitalize d-flex align-items-center justify-content-start text-center">amount</th>
+                                <th scope="col" class="text-capitalize d-flex align-items-start justify-content-start text-center flex-column">
+                                    <span>total</span>
+                                    <span>
+                                        <span>weight</span><span class="unit__sm">(kg)</span>
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <!-- table body data section  -->
+                        <tbody>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>145</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>146</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>145</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>146</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>145</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>146</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>145</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>146</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">10@10</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                            <!-- table data row   -->
+                            <tr>
+                                <td class="justify-content-lg-between">
+                                    <input
+                                        class="
+                                            form-check-input
+                                            m-0
+                                            p-0
+                                            position-relative
+                                        "
+                                        type="checkbox"
+                                    />
+                                    <span class="table__para">1</span>
+                                    <img class="img__icon" src="./img/order__page/fench.png" alt="map icon">
+                                    <span class="search__icon">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>145</span>                                    
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>
+                                        S400<img class="hei__icon hei__icon__last" src="./img/order__page/hei__top.png" alt="hei icon"></td>
+                                    </span>
+                                <td class="d-flex justify-content-start">
+                                    <span>600</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span>250</span>
+                                </td>
+                                <td class="d-flex justify-content-start">
+                                    <span><img class="hei__icon" src="./img/order__page/hei.png" alt="hei icon">6@15</span>
+                                </td>
+                                <td class="d-flex justify-content-start"><span>10.20</span></td>
+                                <td class="d-flex justify-content-start"><span>10</span></td>
+                                <td class="d-flex justify-content-start"><span>102</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="table__bottom d-flex justify-content-end">
+                        <div class="table__bottom__counter d-flex justify-content-between">
+                            <div class="right"><span>57 units</span></div>
+                            <div class="left"><span>2.53 ton</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

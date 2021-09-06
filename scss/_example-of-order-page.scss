@@ -1,17 +1,14 @@
 .order__page__new__item__D {
-    .container {
-
+    .add {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
-    .add  {
-        padding-top: 50px!important;
-        padding-bottom: 50px!important;
-    }
-    // other control 
+    // other control
     .control__wrap {
         .cus__btn {
             border-radius: 25px;
             padding: 5px 15px;
-            border: 1px solid #959DAC;
+            border: 1px solid #959dac;
             cursor: pointer;
             font-size: 18px;
         }
@@ -20,61 +17,81 @@
             padding: 0px;
             width: 37px;
             height: 37px;
-            display: grid!important;
+            display: grid !important;
             align-items: center;
             justify-items: center;
         }
     }
 }
 
-// common table style 
 .order__tables {
     table.table {
+        border-left: 0.3px solid #d4d4d4;
+        border-right: 0.3px solid #d4d4d4;
+        border-bottom: 0.3px solid #d4d4d4;
+        // table head
+        thead {
+            background-color: #e5e6ea;
+        }
+        // table row
         tr {
             display: grid;
             grid-template-columns: 2.2fr 1.8fr 1.8fr 1.3fr 1.8fr 2.2fr 2.2fr 1.2fr 1.5fr 0.8fr 2.2fr 1.6fr 2fr;
+
+            // strip color
+            &:nth-child(even) {
+                background-color: #e9eaea;
+            }
             // grid-template-columns: repeat(13, auto);
-            // table head 
-            td , th{
+            // table head
+            td,
+            th {
                 flex: 1;
                 padding: 0px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border-right: 0.3px solid #d4d4d4;
                 padding-top: 6px;
                 padding-bottom: 6px;
                 img {
                     width: 30px;
                 }
+                &:first-child {
+                    border-right: 0.3px solid #e6e4e4;
+                }
             }
-            // table head 
+            // table head
             th {
+                border-right: 0.3px solid #dddada !important;
                 font-size: 12px;
-                @include resp ($lg) {
+                @include resp($lg) {
                     font-size: 13.5px;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     padding-left: 8px;
                     padding-right: 8px;
-                    text-align: left!important;
+                    text-align: left !important;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
                 }
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     font-size: 15px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
                 }
             }
-            // table data 
+            // table data
             td {
                 font-size: 13px;
                 font-weight: 500;
-                @include resp ($lg) {
+                @include resp($lg) {
                     font-size: 14px;
                 }
-                @include resp ($xl) {
+                @include resp($xl) {
                     // padding-left: 5px;
                     // padding-right: 5px;
                 }
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     font-size: 17px;
                 }
                 &:first-child {
@@ -84,16 +101,16 @@
                         padding-left: 8px;
                         padding-right: 8px;
                     }
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         padding-left: 11px;
                         padding-right: 11px;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         padding: 10px 20px;
                     }
                 }
             }
-            // custom search icon 
+            // custom search icon
             .search__icon {
                 background: #8c8c8d;
                 border-radius: 50%;
@@ -104,31 +121,171 @@
                 justify-items: center;
                 font-size: 8px;
                 color: white;
-                @include resp ($xl) {
+                @include resp($xl) {
                     width: 21px;
                     height: 21px;
                     font-size: 11px;
                 }
             }
-            // heading image 
+            // heading image
             .img__icon {
                 width: 20px;
-                @include resp ($lg) {
+                @include resp($lg) {
                     width: 22px;
                 }
-                @include resp ($xxl) {
+                @include resp($xl) {
                     width: 26px;
                 }
-            } 
+                @include resp($xxl) {
+                    width: 31px;
+                }
+            }
+
+            // hei icon
+            .hei__icon {
+                width: 8px;
+                @include resp($xl) {
+                    width: 9.5px;
+                }
+                @include resp($xxl) {
+                    width: 11px;
+                }
+                margin: 0;
+                margin-top: -3px;
+            }
+
+            // icon color
+            .fa-minus-circle {
+                color: $btn__black-500;
+            }
+            .fa-check-circle {
+                color: $checkColor;
+            }
+        }
+    }
+    // table bottom
+    .table__bottom {
+        .table__bottom__counter {
+            background-color: lighten($color: #f84343, $amount: 30);
+            width: 160px;
+            border: 1px solid #eca7a7;
+            div {
+                border-right: 1px solid #eca7a7;
+                width: 50%;
+                text-align: center;
+                font-weight: 500;
+                color: #f84343;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                font-size: 13px;
+                @include resp($lg) {
+                    font-size: 14px;
+                }
+                &:last-child {
+                    border-right: 0px;
+                }
+            }
         }
     }
 }
 
-// cages table 
+// table header
+.table__header {
+    width: 300px;
+    height: 40px;
+    @include resp($lg) {
+        height: 50px;
+    }
+    // table title
+    .table__title {
+        background-color: $header__bg;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    // table btn
+    .table__tit__btn {
+        a {
+            font-size: 15px;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+    // table title / table bnt
+    .table__title,
+    .table__tit__btn {
+        width: 50%;
+        height: 100%;
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+// cages table
 #cages__table {
-    .container {
-        @media only screen and (min-width: $md) and (max-width: $lg) {
-            max-width: 100%;
+    @include resp($xl) {
+        margin-top: 40px !important;
+    }
+}
+
+// #cages__table .container {
+
+// }
+$tableContainerList: selector-nest("#cages__table, #nets__table", ".container");
+
+#{$tableContainerList} {
+    @media only screen and (min-width: $md) and (max-width: $lg) {
+        max-width: 100%;
+    }
+    .unit__sm {
+        font-size: 12px;
+        color: $border;
+    }
+}
+
+// ----------------------------- nets -----------------------------------------
+#nets__table {
+    table.table {
+        // table row 
+        tr {
+            grid-template-columns: 3fr 2.4fr 1.8fr 1.5fr 3.5fr 1.5fr 3fr 3fr 2fr 3fr;
+        }
+        // table head title 
+        th, td {
+            padding-left: 8px;
+            @include resp ($xl) {
+                padding-left: 11px;
+            }
+            @include resp ($xxl) {
+                padding-left: 15px;
+            }
+        }
+        // hei icon
+        .hei__icon {
+            width: 8px;
+            @include resp($xl) {
+                width: 9.5px;
+            }
+            @include resp($xxl) {
+                width: 11px;
+            }
+            margin: 0;
+            margin-top: -2px;
+            margin-right: 3px;
+        }
+        .hei__icon__last {
+            margin-top: -2px;
+            margin-left: 3px;
+        }
+        // image icon 
+        .img__icon  {
+            width: 30px;
+            @include resp ($lg) {
+                width: 35px;
+            }
+            @include resp ($xl) {
+                font-size: 36px;
+            }
         }
     }
 }

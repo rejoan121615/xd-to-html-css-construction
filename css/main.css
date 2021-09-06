@@ -770,7 +770,7 @@ section.forms .container .form-check .form-check-label {
 .order__page__new__item__D .control__wrap .cus__btn, .order__page__new__item__D .control__wrap .cus__r__btn {
   border-radius: 25px;
   padding: 5px 15px;
-  border: 1px solid #959DAC;
+  border: 1px solid #959dac;
   cursor: pointer;
   font-size: 18px;
 }
@@ -783,24 +783,41 @@ section.forms .container .form-check .form-check-label {
   justify-items: center;
 }
 
+.order__tables table.table {
+  border-left: 0.3px solid #d4d4d4;
+  border-right: 0.3px solid #d4d4d4;
+  border-bottom: 0.3px solid #d4d4d4;
+}
+.order__tables table.table thead {
+  background-color: #e5e6ea;
+}
 .order__tables table.table tr {
   display: grid;
   grid-template-columns: 2.2fr 1.8fr 1.8fr 1.3fr 1.8fr 2.2fr 2.2fr 1.2fr 1.5fr 0.8fr 2.2fr 1.6fr 2fr;
 }
-.order__tables table.table tr td, .order__tables table.table tr th {
+.order__tables table.table tr:nth-child(even) {
+  background-color: #e9eaea;
+}
+.order__tables table.table tr td,
+.order__tables table.table tr th {
   flex: 1;
   padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-right: 0.3px solid #d4d4d4;
   padding-top: 6px;
   padding-bottom: 6px;
 }
-.order__tables table.table tr td img, .order__tables table.table tr th img {
+.order__tables table.table tr td img,
+.order__tables table.table tr th img {
   width: 30px;
 }
+.order__tables table.table tr td:first-child,
+.order__tables table.table tr th:first-child {
+  border-right: 0.3px solid #e6e4e4;
+}
 .order__tables table.table tr th {
+  border-right: 0.3px solid #dddada !important;
   font-size: 12px;
 }
 @media only screen and (min-width: 1200px) {
@@ -813,11 +830,15 @@ section.forms .container .form-check .form-check-label {
     padding-left: 8px;
     padding-right: 8px;
     text-align: left !important;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 @media only screen and (min-width: 1800px) {
   .order__tables table.table tr th {
     font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 .order__tables table.table tr td {
@@ -881,15 +902,153 @@ section.forms .container .form-check .form-check-label {
     width: 22px;
   }
 }
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1400px) {
   .order__tables table.table tr .img__icon {
     width: 26px;
   }
 }
+@media only screen and (min-width: 1800px) {
+  .order__tables table.table tr .img__icon {
+    width: 31px;
+  }
+}
+.order__tables table.table tr .hei__icon {
+  width: 8px;
+  margin: 0;
+  margin-top: -3px;
+}
+@media only screen and (min-width: 1400px) {
+  .order__tables table.table tr .hei__icon {
+    width: 9.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .order__tables table.table tr .hei__icon {
+    width: 11px;
+  }
+}
+.order__tables table.table tr .fa-minus-circle {
+  color: #959DAC;
+}
+.order__tables table.table tr .fa-check-circle {
+  color: #6EDB93;
+}
+.order__tables .table__bottom .table__bottom__counter {
+  background-color: #fdd7d7;
+  width: 160px;
+  border: 1px solid #eca7a7;
+}
+.order__tables .table__bottom .table__bottom__counter div {
+  border-right: 1px solid #eca7a7;
+  width: 50%;
+  text-align: center;
+  font-weight: 500;
+  color: #f84343;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 13px;
+}
+@media only screen and (min-width: 1200px) {
+  .order__tables .table__bottom .table__bottom__counter div {
+    font-size: 14px;
+  }
+}
+.order__tables .table__bottom .table__bottom__counter div:last-child {
+  border-right: 0px;
+}
+
+.table__header {
+  width: 300px;
+  height: 40px;
+}
+@media only screen and (min-width: 1200px) {
+  .table__header {
+    height: 50px;
+  }
+}
+.table__header .table__title {
+  background-color: #374051;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.table__header .table__tit__btn a {
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.table__header .table__title,
+.table__header .table__tit__btn {
+  width: 50%;
+  height: 100%;
+}
+.table__header .table__title h2,
+.table__header .table__tit__btn h2 {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1400px) {
+  #cages__table {
+    margin-top: 40px !important;
+  }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  #cages__table .container {
+  #cages__table .container, #nets__table .container {
     max-width: 100%;
+  }
+}
+#cages__table .container .unit__sm, #nets__table .container .unit__sm {
+  font-size: 12px;
+  color: #8c8c8d;
+}
+
+#nets__table table.table tr {
+  grid-template-columns: 3fr 2.4fr 1.8fr 1.5fr 3.5fr 1.5fr 3fr 3fr 2fr 3fr;
+}
+#nets__table table.table th, #nets__table table.table td {
+  padding-left: 8px;
+}
+@media only screen and (min-width: 1400px) {
+  #nets__table table.table th, #nets__table table.table td {
+    padding-left: 11px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #nets__table table.table th, #nets__table table.table td {
+    padding-left: 15px;
+  }
+}
+#nets__table table.table .hei__icon {
+  width: 8px;
+  margin: 0;
+  margin-top: -2px;
+  margin-right: 3px;
+}
+@media only screen and (min-width: 1400px) {
+  #nets__table table.table .hei__icon {
+    width: 9.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #nets__table table.table .hei__icon {
+    width: 11px;
+  }
+}
+#nets__table table.table .hei__icon__last {
+  margin-top: -2px;
+  margin-left: 3px;
+}
+#nets__table table.table .img__icon {
+  width: 30px;
+}
+@media only screen and (min-width: 1200px) {
+  #nets__table table.table .img__icon {
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #nets__table table.table .img__icon {
+    font-size: 36px;
   }
 }
 

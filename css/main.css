@@ -783,4 +783,22 @@ section.forms .container .form-check .form-check-label {
   justify-items: center;
 }
 
+.order__tables table.table tr {
+  display: grid;
+  grid-template-columns: 2.2fr 2fr 1.5fr 2fr 1fr 2.5fr 2.5fr 1fr 1fr 1fr 2fr 2fr 2fr;
+}
+.order__tables table.table tr td, .order__tables table.table tr th {
+  flex: 1;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order__tables table.table tr td img, .order__tables table.table tr th img {
+  width: 30px;
+}
+.order__tables table.table tr th {
+  font-size: 13px;
+}
+
 /*# sourceMappingURL=main.css.map */

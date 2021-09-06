@@ -785,7 +785,7 @@ section.forms .container .form-check .form-check-label {
 
 .order__tables table.table tr {
   display: grid;
-  grid-template-columns: 2.2fr 2fr 1.5fr 2fr 1fr 2.5fr 2.5fr 1fr 1fr 1fr 2fr 2fr 2fr;
+  grid-template-columns: 2.2fr 1.8fr 1.8fr 1.3fr 1.8fr 2.2fr 2.2fr 1.2fr 1.5fr 0.8fr 2.2fr 1.6fr 2fr;
 }
 .order__tables table.table tr td, .order__tables table.table tr th {
   flex: 1;
@@ -793,12 +793,104 @@ section.forms .container .form-check .form-check-label {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-right: 0.3px solid #d4d4d4;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .order__tables table.table tr td img, .order__tables table.table tr th img {
   width: 30px;
 }
 .order__tables table.table tr th {
+  font-size: 12px;
+}
+@media only screen and (min-width: 1200px) {
+  .order__tables table.table tr th {
+    font-size: 13.5px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .order__tables table.table tr th {
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .order__tables table.table tr th {
+    font-size: 15px;
+  }
+}
+.order__tables table.table tr td {
   font-size: 13px;
+  font-weight: 500;
+}
+@media only screen and (min-width: 1200px) {
+  .order__tables table.table tr td {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .order__tables table.table tr td {
+    font-size: 17px;
+  }
+}
+.order__tables table.table tr td:first-child {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+@media only screen and (min-width: 1200px) {
+  .order__tables table.table tr td:first-child {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .order__tables table.table tr td:first-child {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .order__tables table.table tr td:first-child {
+    padding: 10px 20px;
+  }
+}
+.order__tables table.table tr .search__icon {
+  background: #8c8c8d;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 8px;
+  color: white;
+}
+@media only screen and (min-width: 1400px) {
+  .order__tables table.table tr .search__icon {
+    width: 21px;
+    height: 21px;
+    font-size: 11px;
+  }
+}
+.order__tables table.table tr .img__icon {
+  width: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  .order__tables table.table tr .img__icon {
+    width: 22px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .order__tables table.table tr .img__icon {
+    width: 26px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #cages__table .container {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

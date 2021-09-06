@@ -32,21 +32,94 @@
     table.table {
         tr {
             display: grid;
-            grid-template-columns: 2.2fr 2fr 1.5fr 2fr 1fr 2.5fr 2.5fr 1fr 1fr 1fr 2fr 2fr 2fr;
+            grid-template-columns: 2.2fr 1.8fr 1.8fr 1.3fr 1.8fr 2.2fr 2.2fr 1.2fr 1.5fr 0.8fr 2.2fr 1.6fr 2fr;
             // grid-template-columns: repeat(13, auto);
+            // table head 
             td , th{
                 flex: 1;
                 padding: 0px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                border-right: 0.3px solid #d4d4d4;
+                padding-top: 6px;
+                padding-bottom: 6px;
                 img {
                     width: 30px;
                 }
             }
+            // table head 
             th {
-                font-size: 13px;
+                font-size: 12px;
+                @include resp ($lg) {
+                    font-size: 13.5px;
+                }
+                @include resp ($xl) {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    text-align: left!important;
+                }
+                @include resp ($xxl) {
+                    font-size: 15px;
+                }
             }
+            // table data 
+            td {
+                font-size: 13px;
+                font-weight: 500;
+                @include resp ($lg) {
+                    font-size: 14px;
+                }
+                @include resp ($xl) {
+                    // padding-left: 5px;
+                    // padding-right: 5px;
+                }
+                @include resp ($xxl) {
+                    font-size: 17px;
+                }
+                &:first-child {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    @include resp($lg) {
+                        padding-left: 8px;
+                        padding-right: 8px;
+                    }
+                    @include resp ($xl) {
+                        padding-left: 11px;
+                        padding-right: 11px;
+                    }
+                    @include resp ($xxl) {
+                        padding: 10px 20px;
+                    }
+                }
+            }
+            // custom search icon 
+            .search__icon {
+                background: #8c8c8d;
+                border-radius: 50%;
+                width: 17px;
+                height: 17px;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                font-size: 8px;
+                color: white;
+                @include resp ($xl) {
+                    width: 21px;
+                    height: 21px;
+                    font-size: 11px;
+                }
+            }
+            // heading image 
+            .img__icon {
+                width: 20px;
+                @include resp ($lg) {
+                    width: 22px;
+                }
+                @include resp ($xxl) {
+                    width: 26px;
+                }
+            } 
         }
     }
 }
@@ -54,8 +127,8 @@
 // cages table 
 #cages__table {
     .container {
-        // @media only screen and (min-width: $md) and (max-width: $lg) {
-        //     max-width: 95%;
-        // }
+        @media only screen and (min-width: $md) and (max-width: $lg) {
+            max-width: 100%;
+        }
     }
 }

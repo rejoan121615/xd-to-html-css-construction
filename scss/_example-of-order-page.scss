@@ -377,22 +377,22 @@ $tableContainerList: selector-nest(
         }
     }
 
-    // order summery container 
+    // order summery container
     .order__summery__container {
-        // order summery 
+        // order summery
         .order__summery {
-            background-color: #F0F0F0;
+            background-color: #f0f0f0;
             margin-top: 25px;
             border-radius: 5px;
             h1 {
                 font-size: 23px;
-                margin-bottom: 20px!important;
+                margin-bottom: 20px !important;
                 font-weight: 700;
-                @include resp ($xxl) {
+                @include resp($xxl) {
                     font-size: 25px;
                 }
             }
-            // table style 
+            // table style
             table {
                 width: 100%;
                 thead {
@@ -405,8 +405,11 @@ $tableContainerList: selector-nest(
                         }
                     }
                 }
-                // tbody 
+                // tbody
                 tbody {
+                    .bold {
+                        font-weight: 900;
+                    }
                     tr {
                         td {
                             border: none;
@@ -415,23 +418,82 @@ $tableContainerList: selector-nest(
                         }
                     }
 
-                    // border top 
+                    // border top
                     .border-top {
-                        border-top: 1px solid black!important;
+                        border-top: 1px solid black !important;
                     }
                     .border-bottom {
-                        border-bottom: 1px solid black!important;
+                        border-bottom: 1px solid black !important;
                     }
                 }
             }
         }
-        // order button 
+        // order button
         .btn__list {
+            .btn {
+                padding: 0;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                width: 125px;
+                border-radius: 25px;
+                background-color: #374051;
+                color: white;
+                font-size: 18px;
+                font-weight: 600;
+                // border: 1.5px solid lighten($color: #000000, $amount: 20);
+                @include resp($xl) {
+                    font-size: 19px;
+                }
+                @include resp($xxl) {
+                    font-size: 20px;
+                }
+                &:nth-child(1) {
+                    width: 35px;
+                    height: 35px;
+                    padding: 0px;
+                    border-radius: 50%;
+                    padding-bottom: 10px;
+                    background-color: #374051;
+                    // border: 1.5px solid lighten($color: #374051, $amount: 30);
+                }
+                &:nth-child(2) {
+                    background-color: #2bc454;
+                }
+                &:nth-child(4) {
+                    background-color: #959dac;
+                }
+            }
+        }
+    }
+    // custom collapse button
+    .ask__for__bid {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        .custom_collapse_btn {
+            padding: 10px 22px;
+            background-color: #484848;
+            color: white;
+            text-align: center;
             border-radius: 25px;
-    border: 2px solid green !important;
-    padding: 2.5px 17px;
-    transition: all 0.8s linear;
-    background-color: transparent;
+            font-weight: 600;
+        }
+    }
+}
+
+// ask collapse container 
+#askCollapse {
+    padding: 25px;
+    // untitle list 
+    ul {
+        list-style: none;
+        padding: 0px;
+        padding-top: 10px;
+        li {
+            display: flex;
+            flex-flow: row wrap;
+            input {
+                margin-right: 10px;
+            }
         }
     }
 }

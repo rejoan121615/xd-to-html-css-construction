@@ -1130,7 +1130,7 @@ section.forms .container .form-check .form-check-label {
   margin: 0px;
 }
 #order__summary .order__summery__container .order__summery {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   margin-top: 25px;
   border-radius: 5px;
 }
@@ -1153,6 +1153,9 @@ section.forms .container .form-check .form-check-label {
   padding-top: 7px;
   padding-bottom: 7px;
 }
+#order__summary .order__summery__container .order__summery table tbody .bold {
+  font-weight: 900;
+}
 #order__summary .order__summery__container .order__summery table tbody tr td {
   border: none;
   padding-top: 5px;
@@ -1164,12 +1167,68 @@ section.forms .container .form-check .form-check-label {
 #order__summary .order__summery__container .order__summery table tbody .border-bottom {
   border-bottom: 1px solid black !important;
 }
-#order__summary .order__summery__container .btn__list {
+#order__summary .order__summery__container .btn__list .btn {
+  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  width: 125px;
   border-radius: 25px;
-  border: 2px solid green !important;
-  padding: 2.5px 17px;
-  transition: all 0.8s linear;
-  background-color: transparent;
+  background-color: #374051;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 1400px) {
+  #order__summary .order__summery__container .btn__list .btn {
+    font-size: 19px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #order__summary .order__summery__container .btn__list .btn {
+    font-size: 20px;
+  }
+}
+#order__summary .order__summery__container .btn__list .btn:nth-child(1) {
+  width: 35px;
+  height: 35px;
+  padding: 0px;
+  border-radius: 50%;
+  padding-bottom: 10px;
+  background-color: #374051;
+}
+#order__summary .order__summery__container .btn__list .btn:nth-child(2) {
+  background-color: #2bc454;
+}
+#order__summary .order__summery__container .btn__list .btn:nth-child(4) {
+  background-color: #959dac;
+}
+#order__summary .ask__for__bid {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+#order__summary .ask__for__bid .custom_collapse_btn {
+  padding: 10px 22px;
+  background-color: #484848;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+#askCollapse {
+  padding: 25px;
+}
+#askCollapse ul {
+  list-style: none;
+  padding: 0px;
+  padding-top: 10px;
+}
+#askCollapse ul li {
+  display: flex;
+  flex-flow: row wrap;
+}
+#askCollapse ul li input {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

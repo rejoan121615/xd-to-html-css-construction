@@ -1093,6 +1093,19 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  #order__summary .container {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #order__summary .w-ml-75 {
+    width: 75% !important;
+  }
+}
 #order__summary .descrip__title {
   font-size: 18px;
   font-weight: 700;
@@ -1133,6 +1146,11 @@ section.forms .container .form-check .form-check-label {
   background-color: #f0f0f0;
   margin-top: 25px;
   border-radius: 5px;
+}
+@media only screen and (min-width: 1400px) {
+  #order__summary .order__summery__container .order__summery {
+    margin-top: 0px;
+  }
 }
 #order__summary .order__summery__container .order__summery h1 {
   font-size: 23px;
@@ -1223,12 +1241,26 @@ section.forms .container .form-check .form-check-label {
   padding: 0px;
   padding-top: 10px;
 }
+@media only screen and (min-width: 1200px) {
+  #askCollapse ul {
+    margin-bottom: 0px !important;
+  }
+}
 #askCollapse ul li {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 1200px) {
+  #askCollapse ul li {
+    margin-bottom: 6px;
+  }
 }
 #askCollapse ul li input {
   margin-right: 10px;
+}
+#askCollapse ul li h6 {
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

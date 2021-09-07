@@ -13,6 +13,7 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrapCustom.width.css">
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
@@ -1676,7 +1677,7 @@
                 </div>
             </div>
         </section>
-                <!-- ------------------------ rebars table section --------------------------  -->
+        <!-- ------------------------ rebars table section --------------------------  -->
         <section id="rebars__table" class="order__tables mt-xl-4">
             <div class="container p-0">
                 <div class="table__wrapper">
@@ -2132,6 +2133,117 @@
                         <div class="table__bottom__counter d-flex justify-content-between">
                             <div class="right"><span>57 units</span></div>
                             <div class="left"><span>2.53 ton</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------------- order summary -----------------------------------  -->
+        <section id="order__summary">
+            <div class="container">
+                <div class="row m-0">
+                    <!-- order note and order lists  -->
+                    <div class="col-12 col-xl-5 w-xl-35">
+                        <div class="row">
+                            <!-- order notes  -->
+                            <div class="col-6">
+                                <h3 class="text-uppercase descrip__title mb-0">order nots</h3>
+                                <textarea class="bottom__sec" placeholder="Type your note here" class="bg-white rounded text-dark-500 p-4" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <!-- show on orders  -->
+                            <div class="col-6">
+                                <h3 class="text-uppercase descrip__title mb-0">order nots</h3>
+                                <div class="bg-white p-4 rounded text-dark-500 bottom__sec">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input m-0 p-0 mr-3 position-relative">
+                                        <h4 class="text-capitalize">Weight Concentration</h4>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input m-0 p-0 mr-3 position-relative">
+                                        <h4 class="text-capitalize">Units concentration</h4>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input m-0 p-0 mr-3 position-relative">
+                                        <h4 class="text-capitalize">Sketch Concentration</h4>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input m-0 p-0 mr-3 position-relative">
+                                        <h4 class="text-capitalize">processing Concentration</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- order summery  -->
+                    <div class="col-12 d-flex flex-column align-items-end order__summery__container">
+                        <!-- order summery container  -->
+                        <div class="order__summery w-lg-48 p-4">
+                            <h1 class="title text-uppercase text-left">order summery</h1>
+                            <!-- order table  -->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-uppercase">process</th>
+                                        <th class="text-uppercase">weight</th>
+                                        <th class="text-uppercase">units</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-uppercase">hoops</td>
+                                        <td>0</td>
+                                        <td>580</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-uppercase">cut</td>
+                                        <td>7,196</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="pb-2">
+                                        <td class="text-uppercase">bend</td>
+                                        <td>290</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr class="border-top">
+                                        <td>total weight</td>
+                                        <td class="bold">2.04 ton</td>
+                                    </tr>
+                                    <tr>
+                                        <td>depreciation</td>
+                                        <td class="bold">0.02</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td>final weight</td>
+                                        <td class="bold">2.00 ton</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- button lists  -->
+                        <div class="btn__list w-lg-48">
+                            <button class="btn text-uppercase text-center text-white">...</button>
+                            <button class="btn text-uppercase text-center text-white">save</button>
+                            <button class="btn text-uppercase text-center text-white">preview</button>
+                            <button class="btn text-uppercase text-center text-white">delete</button>
+                        </div>
+                        <!-- ask for a bid  -->
+                        <div class="ask__for__bid w-lg-48">
+                            <button class="btn cus__btn text-uppercase" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                ask for a bid
+                            </button>
+                            <div class="collapse" id="collapseExample">
+                                <a href="" class="mark__al">Mark all</a>
+                                <ul>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">hod assaf</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">yehuda group</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">peker</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">s. cohen</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">hod assaf</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">yehuda group</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">peker</h6></li>
+                                    <li><input type="checkbox" class="form-checkbox"> <h6 class="text-capitalize">s. cohen</h6></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

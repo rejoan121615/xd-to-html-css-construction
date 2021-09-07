@@ -783,6 +783,14 @@ section.forms .container .form-check .form-check-label {
   justify-items: center;
 }
 
+.order__tables {
+  padding-bottom: 30px !important;
+}
+@media only screen and (min-width: 1800px) {
+  .order__tables {
+    padding-bottom: 40px !important;
+  }
+}
 .order__tables table.table {
   border-left: 0.3px solid #d4d4d4;
   border-right: 0.3px solid #d4d4d4;
@@ -1008,16 +1016,19 @@ section.forms .container .form-check .form-check-label {
 #nets__table table.table tr {
   grid-template-columns: 3fr 2.4fr 1.8fr 1.5fr 3.5fr 1.5fr 3fr 3fr 2fr 3fr;
 }
-#nets__table table.table th, #nets__table table.table td {
+#nets__table table.table th,
+#nets__table table.table td {
   padding-left: 8px;
 }
 @media only screen and (min-width: 1400px) {
-  #nets__table table.table th, #nets__table table.table td {
+  #nets__table table.table th,
+#nets__table table.table td {
     padding-left: 11px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #nets__table table.table th, #nets__table table.table td {
+  #nets__table table.table th,
+#nets__table table.table td {
     padding-left: 15px;
   }
 }
@@ -1065,18 +1076,100 @@ section.forms .container .form-check .form-check-label {
   width: 18px;
   margin-right: 5px;
 }
-#rebars__table table.table th, #rebars__table table.table td {
+#rebars__table table.table th,
+#rebars__table table.table td {
   padding-left: 8px;
 }
 @media only screen and (min-width: 1400px) {
-  #rebars__table table.table th, #rebars__table table.table td {
+  #rebars__table table.table th,
+#rebars__table table.table td {
     padding-left: 11px;
   }
 }
 @media only screen and (min-width: 1800px) {
-  #rebars__table table.table th, #rebars__table table.table td {
+  #rebars__table table.table th,
+#rebars__table table.table td {
     padding-left: 15px;
   }
+}
+
+#order__summary .descrip__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #353d4a;
+}
+@media only screen and (min-width: 1400px) {
+  #order__summary .descrip__title {
+    font-size: 19.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #order__summary .descrip__title {
+    font-size: 22px;
+  }
+}
+#order__summary .bottom__sec {
+  height: 180px;
+  width: 100%;
+  margin-top: 25px;
+}
+#order__summary textarea.bottom__sec {
+  border: 0px solid #484848;
+  border-radius: 5px;
+  padding: 22px;
+  font-size: 17px;
+  font-weight: 600;
+}
+#order__summary div.bottom__sec {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+#order__summary div.bottom__sec div h4 {
+  font-size: 19px;
+  margin: 0px;
+}
+#order__summary .order__summery__container .order__summery {
+  background-color: #F0F0F0;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+#order__summary .order__summery__container .order__summery h1 {
+  font-size: 23px;
+  margin-bottom: 20px !important;
+  font-weight: 700;
+}
+@media only screen and (min-width: 1800px) {
+  #order__summary .order__summery__container .order__summery h1 {
+    font-size: 25px;
+  }
+}
+#order__summary .order__summery__container .order__summery table {
+  width: 100%;
+}
+#order__summary .order__summery__container .order__summery table thead tr th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+#order__summary .order__summery__container .order__summery table tbody tr td {
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#order__summary .order__summery__container .order__summery table tbody .border-top {
+  border-top: 1px solid black !important;
+}
+#order__summary .order__summery__container .order__summery table tbody .border-bottom {
+  border-bottom: 1px solid black !important;
+}
+#order__summary .order__summery__container .btn__list {
+  border-radius: 25px;
+  border: 2px solid green !important;
+  padding: 2.5px 17px;
+  transition: all 0.8s linear;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,7 +31,9 @@
         border-bottom: 0.3px solid #d4d4d4;
         // table head
         thead {
-            background-color: #e5e6ea;
+            tr {
+                background-color: #e5e6ea!important;
+            }
         }
         // table row
         tr {
@@ -42,6 +44,9 @@
             &:nth-child(even) {
                 background-color: #e9eaea;
             }
+            &:nth-child(odd) {
+                background-color: white;
+            } 
             // grid-template-columns: repeat(13, auto);
             // table head
             td,
@@ -125,19 +130,6 @@
                     width: 21px;
                     height: 21px;
                     font-size: 11px;
-                }
-            }
-            // heading image
-            .img__icon {
-                width: 20px;
-                @include resp($lg) {
-                    width: 22px;
-                }
-                @include resp($xl) {
-                    width: 26px;
-                }
-                @include resp($xxl) {
-                    width: 31px;
                 }
             }
 
@@ -231,7 +223,7 @@
 // #cages__table .container {
 
 // }
-$tableContainerList: selector-nest("#cages__table, #nets__table", ".container");
+$tableContainerList: selector-nest("#cages__table, #nets__table, #rebars__table", ".container");
 
 #{$tableContainerList} {
     @media only screen and (min-width: $md) and (max-width: $lg) {
@@ -241,6 +233,20 @@ $tableContainerList: selector-nest("#cages__table, #nets__table", ".container");
         font-size: 12px;
         color: $border;
     }
+    // image icon 
+    // heading image
+            .img__icon {
+                width: 20px;
+                @include resp($lg) {
+                    width: 22px;
+                }
+                @include resp($xl) {
+                    width: 26px;
+                }
+                @include resp($xxl) {
+                    width: 31px;
+                }
+            }
 }
 
 // ----------------------------- nets -----------------------------------------
@@ -285,6 +291,39 @@ $tableContainerList: selector-nest("#cages__table, #nets__table", ".container");
             }
             @include resp ($xl) {
                 font-size: 36px;
+            }
+        }
+    }
+}
+
+
+// rebars table 
+#rebars__table {
+    table.table {
+        tr {
+            grid-template-columns: 4fr 2.5fr 2.5fr 4.5fr 4fr 2fr 2fr 2fr 2.5fr 2fr 2.5fr;
+            // grid-template-columns: repeat(11, 1fr);
+        }
+        // image icons 
+        .img__icon {
+            width: 40px;
+        }
+        tr th {
+            &:nth-child(4) {
+                .img__icon {
+                    width: 18px;
+                    margin-right: 5px;
+                }
+            }
+        }
+        // table head title 
+        th, td {
+            padding-left: 8px;
+            @include resp ($xl) {
+                padding-left: 11px;
+            }
+            @include resp ($xxl) {
+                padding-left: 15px;
             }
         }
     }

@@ -788,8 +788,8 @@ section.forms .container .form-check .form-check-label {
   border-right: 0.3px solid #d4d4d4;
   border-bottom: 0.3px solid #d4d4d4;
 }
-.order__tables table.table thead {
-  background-color: #e5e6ea;
+.order__tables table.table thead tr {
+  background-color: #e5e6ea !important;
 }
 .order__tables table.table tr {
   display: grid;
@@ -797,6 +797,9 @@ section.forms .container .form-check .form-check-label {
 }
 .order__tables table.table tr:nth-child(even) {
   background-color: #e9eaea;
+}
+.order__tables table.table tr:nth-child(odd) {
+  background-color: white;
 }
 .order__tables table.table tr td,
 .order__tables table.table tr th {
@@ -894,24 +897,6 @@ section.forms .container .form-check .form-check-label {
     font-size: 11px;
   }
 }
-.order__tables table.table tr .img__icon {
-  width: 20px;
-}
-@media only screen and (min-width: 1200px) {
-  .order__tables table.table tr .img__icon {
-    width: 22px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .order__tables table.table tr .img__icon {
-    width: 26px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .order__tables table.table tr .img__icon {
-    width: 31px;
-  }
-}
 .order__tables table.table tr .hei__icon {
   width: 8px;
   margin: 0;
@@ -993,13 +978,31 @@ section.forms .container .form-check .form-check-label {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  #cages__table .container, #nets__table .container {
+  #cages__table .container, #nets__table .container, #rebars__table .container {
     max-width: 100%;
   }
 }
-#cages__table .container .unit__sm, #nets__table .container .unit__sm {
+#cages__table .container .unit__sm, #nets__table .container .unit__sm, #rebars__table .container .unit__sm {
   font-size: 12px;
   color: #8c8c8d;
+}
+#cages__table .container .img__icon, #nets__table .container .img__icon, #rebars__table .container .img__icon {
+  width: 20px;
+}
+@media only screen and (min-width: 1200px) {
+  #cages__table .container .img__icon, #nets__table .container .img__icon, #rebars__table .container .img__icon {
+    width: 22px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #cages__table .container .img__icon, #nets__table .container .img__icon, #rebars__table .container .img__icon {
+    width: 26px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #cages__table .container .img__icon, #nets__table .container .img__icon, #rebars__table .container .img__icon {
+    width: 31px;
+  }
 }
 
 #nets__table table.table tr {
@@ -1049,6 +1052,30 @@ section.forms .container .form-check .form-check-label {
 @media only screen and (min-width: 1400px) {
   #nets__table table.table .img__icon {
     font-size: 36px;
+  }
+}
+
+#rebars__table table.table tr {
+  grid-template-columns: 4fr 2.5fr 2.5fr 4.5fr 4fr 2fr 2fr 2fr 2.5fr 2fr 2.5fr;
+}
+#rebars__table table.table .img__icon {
+  width: 40px;
+}
+#rebars__table table.table tr th:nth-child(4) .img__icon {
+  width: 18px;
+  margin-right: 5px;
+}
+#rebars__table table.table th, #rebars__table table.table td {
+  padding-left: 8px;
+}
+@media only screen and (min-width: 1400px) {
+  #rebars__table table.table th, #rebars__table table.table td {
+    padding-left: 11px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  #rebars__table table.table th, #rebars__table table.table td {
+    padding-left: 15px;
   }
 }
 

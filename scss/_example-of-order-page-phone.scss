@@ -1,0 +1,245 @@
+.order__table__sm {
+    margin-bottom: 55px;
+    .first-container {
+        border-top: 2px solid #959dac;
+        padding-top: 20px;
+        @include resp($sm) {
+            padding-top: 25px;
+        }
+        @include resp($md) {
+            padding-top: 30px;
+        }
+    }
+    .table__accordion__sm {
+        // accordion header
+        .accordion__header {
+            background-color: $header__bg;
+            h1 {
+            }
+            span {
+                img {
+                    width: 20px;
+                }
+            }
+        }
+        // accordion body
+        .accordion__body__sm {
+            $bdc: lighten(black, 60);
+            border-left: 1px solid $bdc;
+            border-right: 1px solid $bdc;
+            // table rows
+            .table__row {
+                // top row unit list
+                .top__row {
+                    display: grid;
+                    grid-template-columns: 1.5fr 2.5fr 3fr 3fr 3fr;
+                    // border-bottom: 1.5px solid black;
+                    .cell {
+                        $br: 2px solid #d2d4d6 !important;
+                        border-right: $br;
+                        border-bottom: $br;
+                        border-top: $br;
+                        @include py(7px);
+                        &:last-child {
+                            border-right: 0px !important;
+                        }
+                        // para
+                        p.para {
+                            font-size: 17px;
+                            line-height: 19px;
+                            font-weight: 500;
+                            color: black !important;
+                            @include resp($sm) {
+                                font-size: 19px;
+                            }
+                            @include resp($md) {
+                                font-size: 22px;
+                                line-height: 20px;
+                            }
+                        }
+                        // unit
+                        .sm__unit {
+                            color: black;
+                            font-size: 0.7rem;
+                            line-height: 0.85rem;
+                            @include resp(600) {
+                                font-size: 0.85rem;
+                                line-height: 0.95rem;
+                            }
+                            @include resp($md) {
+                                font-size: 1rem;
+                                line-height: 1.05rem;
+                            }
+                        }
+
+                        // icon wrap
+                        .img__wrap {
+                            display: flex;
+                            img {
+                                width: 11px;
+                            }
+                            .bag {
+                                width: 14px;
+                            }
+                        }
+                        // icon wrapper
+                        .icon__wrap {
+                            display: flex;
+                            font-size: 14px;
+                            @include resp($md) {
+                                font-size: 15px;
+                            }
+                        }
+                        // unit and icon wrap
+                        .unit__icon__wrap {
+                            width: 35px;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+                // bottom row
+                .bottom__row {
+                    height: 140px;
+                    @include resp(425px) {
+                        height: 190px;
+                    }
+                    @include resp(550px) {
+                        height: 225px;
+                    }
+                    @include resp($sm) {
+                        height: 250px;
+                    }
+                    // image wrap
+                    .img__wrap {
+                        height: 100%;
+                        svg {
+                            max-width: 250px;
+                            @include resp($md) {
+                                max-width: 220px;
+                            }
+                        }
+                    }
+                    // edit icon
+                    .edit__wrap {
+                        .edit__btn {
+                            border-radius: 20px;
+                            border: 1px solid #959dac;
+                            padding: 5px 10px;
+                            font-size: 15px;
+                            color: #959dac;
+                            @include resp($sm) {
+                                font-size: 20px;
+                                padding: 7px 16px;
+                                border-radius: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // acordion footer
+        .accordion__footer {
+            .col-4 {
+                border: 1px solid #f84343;
+                border-right: 0px;
+                background-color: #f5ecec;
+                text-align: center;
+                color: #f84343;
+                font-size: 12px;
+                font-weight: 400;
+                padding: 8px;
+                &:last-child {
+                    border-right: 1px solid #f84343;
+                }
+                .red {
+                    font-weight: bold;
+                    font-size: 16.5px;
+                    margin-right: 5px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+// nets table modification
+#nets__table__sm {
+    // top rows
+    .top__row {
+        grid-template-columns: 0.75fr 2.25fr 1fr 1fr;
+    }
+    .cell {
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
+        .d__cell__row {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+    }
+    // double row column
+    .double__row__cell {
+        .d__cell__row {
+            width: 100%;
+            border-bottom: 2px solid #d2d4d6;
+            &:last-child {
+                border-bottom: 0px solid transparent;
+            }
+        }
+        // images
+        img {
+            width: 11px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    }
+    // icon wrap
+    .margin-right {
+        margin-right: 4px;
+    }
+    // margin bottom
+    .margin-bottom {
+        margin-bottom: 5px;
+    }
+}
+
+// piles table section 
+#piles__table__sm {
+    // top rows
+    .top__row {
+        grid-template-columns: 1fr 1fr 2fr 2.5fr 1.7fr 1.7fr;
+    }
+    .d__cell__row {
+            width: 100%;
+            border-bottom: 2px solid #d2d4d6;
+            &:last-child {
+                border-bottom: 0px solid transparent;
+            }
+        }
+    // double row column
+    .double__row__cell {
+        padding: 0px!important;
+        .d__cell__row {
+            width: 100%;
+            border-bottom: 2px solid #d2d4d6;
+            height: 40px;
+            &:last-child {
+                border-bottom: 0px solid transparent;
+            }
+        }
+        // images
+        img {
+            width: 11px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+    }
+    // icon wrap
+    .margin-right {
+        margin-right: 4px;
+    }
+    // margin bottom
+    .margin-bottom {
+        margin-bottom: 5px;
+    }
+}

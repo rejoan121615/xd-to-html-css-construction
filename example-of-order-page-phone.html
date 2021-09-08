@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="./bootstrap/css/bootstrapCustom.width.css"
+        />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <header id="head">
+            <nav id="navbar" class="w-100 py-3 py-lg-0">
+                <div class="container">
+                    <div class="row">
+                        <!-- brand and order links  -->
+                        <div class="row col-12 col-lg-9 col-xl-7">
+                            <div
+                                class="
+                                    col-lg-4 col-12
+                                    d-flex
+                                    align-items-center
+                                "
+                            >
+                                <img
+                                    class="brand__icon"
+                                    src="./img/new__user/brand-logo.png"
+                                    alt="brand icon"
+                                />
+                            </div>
+                            <a
+                                href=""
+                                class="
+                                    d-none d-lg-block
+                                    col-4
+                                    py-lg-3
+                                    active__mark
+                                "
+                            >
+                                <img
+                                    class="order__icon"
+                                    src="./img/new__user/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p
+                                    class="
+                                        order__text
+                                        text-white text-uppercase
+                                        d-inline-block
+                                        ms-2
+                                    "
+                                >
+                                    new order
+                                </p>
+                            </a>
+                            <a href="" class="d-none d-lg-block col-4 py-lg-3">
+                                <img
+                                    class="order__icon"
+                                    src="./img/new__user/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p
+                                    class="
+                                        order__text
+                                        text-white text-uppercase
+                                        d-inline-block
+                                        ms-2
+                                    "
+                                >
+                                    my order
+                                </p>
+                            </a>
+                        </div>
+                        <!-- user section  -->
+                        <div
+                            class="
+                                user__section
+                                d-none d-lg-flex
+                                col-lg-3 col-xl-5
+                                justify-content-lg-end
+                            "
+                        >
+                            <div
+                                class="user d-flex flex-row align-items-center"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#userArea"
+                                aria-expanded="false"
+                                aria-controls="userArea"
+                            >
+                                <img
+                                    class="user__img"
+                                    src="./img/new__user/profile-user.png"
+                                    alt="profile user icon"
+                                />
+                                <h3 class="text-uppercase text-white mb-0">
+                                    daniel cohen
+                                </h3>
+                                <img
+                                    class="arrow"
+                                    src="./img/new__user/bottom-arrow.png"
+                                    alt=""
+                                />
+                            </div>
+                            <!----------------- user area ---------------------  -->
+                            <div class="collapse" id="userArea">
+                                <ul class="list-group bg-dark">
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------ user area -----------------------  -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- small screeen accordion  -->
+            <div class="sm__accordion d-lg-none">
+                <div class="container">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card border-0 bg-transparent px-0">
+                            <div class="card-header p-0" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <div
+                                        class="
+                                            btn btn-link btn-block
+                                            text-left
+                                            collapsed
+                                            px-0
+                                        "
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <img
+                                            class="file__icon"
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icons"
+                                        />
+                                        <span
+                                            class="
+                                                file__texts
+                                                text-uppercase text-white
+                                            "
+                                            >create new order</span
+                                        >
+                                    </div>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body py-0">
+                                    <a
+                                        href=""
+                                        class="
+                                            item
+                                            border-bottom border-white
+                                            d-block
+                                            py-2
+                                        "
+                                    >
+                                        <img
+                                            class="
+                                                sm__file__icon
+                                                d-inline-block
+                                            "
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icon"
+                                        />
+                                        <p
+                                            class="
+                                                sm__file__text
+                                                text-white text-uppercase
+                                                d-inline-block
+                                                ms-2
+                                                mb-0
+                                            "
+                                        >
+                                            new order
+                                        </p>
+                                    </a>
+                                    <a href="" class="item d-block py-2">
+                                        <img
+                                            class="
+                                                sm__file__icon
+                                                d-inline-block
+                                            "
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icon"
+                                        />
+                                        <p
+                                            class="
+                                                sm__file__text
+                                                text-white text-uppercase
+                                                d-inline-block
+                                                ms-2
+                                                mb-0
+                                            "
+                                        >
+                                            new order
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ------------------- order table section-------------------  -->
+        <section id="order__details__table">
+            <div class="container">
+                <!-------------- order details header  ------------>
+                <div class="order__header mt-3 mt-lg-0">
+                    <div
+                        class="
+                            row
+                            py-2 py-lg-3
+                            px-4
+                            justify-content-lg-between
+                            pt-lg-4
+                        "
+                    >
+                        <!-- order tag line details -->
+                        <aside class="col-12 col-lg-6 cus__border pb-3">
+                            <h2
+                                class="m-0 order__tag text-uppercase text-white"
+                            >
+                                order details
+                            </h2>
+                            <h2
+                                class="
+                                    m-0
+                                    order__tag
+                                    text-uppercase text-white
+                                    number
+                                "
+                            >
+                                number <span>200.34.002</span>
+                            </h2>
+                        </aside>
+                        <!-- order code  -->
+                        <aside class="d-none d-lg-block col-lg-3 pr-lg-0">
+                            <div class="qrcode__container text-right">
+                                <img
+                                    src="./img/new__user/Group 607.png"
+                                    class="d-inline-block"
+                                    alt="qr-code"
+                                />
+                            </div>
+                            <h4 class="text-white text-white text-right">
+                                200.34.002
+                            </h4>
+                        </aside>
+                    </div>
+                </div>
+                <!---------------- order details description---------- -->
+                <div class="order__details pt-4">
+                    <div class="row">
+                        <!-- date and user  -->
+                        <div class="col-12 col-lg-4 user__column">
+                            <!-- date  -->
+                            <div class="date">
+                                <div class="date__wrap flex-xl-row">
+                                    <p
+                                        class="
+                                            date__text
+                                            d-inline-block
+                                            text-capitalize
+                                            order__sm__texts
+                                        "
+                                    >
+                                        delivery date
+                                    </p>
+                                    <input
+                                        class="d-inline-block ml-0 ml-xl-2"
+                                        type="date"
+                                    />
+                                </div>
+                                <div class="date__wrap mt-2 mt-lg-0">
+                                    <p
+                                        class="
+                                            date__text
+                                            d-inline-block
+                                            text-capitalize
+                                            order__sm__texts
+                                        "
+                                    >
+                                        create date
+                                    </p>
+                                    <input
+                                        class="d-inline-block ml-0 ml-lg-2"
+                                        type="date"
+                                    />
+                                </div>
+                            </div>
+                            <!-- creator accordion  -->
+                            <div class="accordion" id="creator__accordion">
+                                <div
+                                    class="
+                                        btn btn-link btn-block
+                                        text-left
+                                        border__bottom
+                                        rounded-0
+                                        px-0
+                                    "
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    <div class="sm__title">
+                                        <img
+                                            class="icon"
+                                            src="./img/new__user/profile-user.png"
+                                            alt="profile user icon"
+                                        />
+                                        <span class="title">creator</span>
+                                        <span
+                                            class="
+                                                ord__title__btn
+                                                selected
+                                                text-uppercase
+                                            "
+                                            >create a user</span
+                                        >
+                                        <span class="accordion__icon">
+                                            <img
+                                                src="./img/new__user/bottom-arrow.png"
+                                                alt="bottom arrow"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- accordion body  -->
+                                <div
+                                    id="collapseOne"
+                                    class="collapse"
+                                    aria-labelledby="user"
+                                    data-parent="#creator__accordion"
+                                >
+                                    <ul class="list-group">
+                                        <li
+                                            class="
+                                                list-group-item list-group-title
+                                                border-0 border__bottom
+                                                d-none d-lg-flex
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    ord__title__btn
+                                                    text-uppercase
+                                                "
+                                            >
+                                                user
+                                            </p>
+                                            <button class="border-0">
+                                                <img
+                                                    src="./img/new__user/profile-user.png"
+                                                    alt="user icon"
+                                                />
+                                                <span class="text-uppercase"
+                                                    >create your user</span
+                                                >
+                                            </button>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                creator job
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                someone
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                phone
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                1245789630
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- buisness name  -->
+                        <div class="col-12 col-lg-4">
+                            <!-- creator accordion  -->
+                            <div class="accordion" id="company__accordion">
+                                <div
+                                    class="
+                                        btn btn-link btn-block
+                                        text-left
+                                        border__bottom
+                                        rounded-0
+                                        px-0
+                                    "
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#companyTarget"
+                                    aria-expanded="true"
+                                    aria-controls="companyTarget"
+                                >
+                                    <div class="sm__title">
+                                        <img
+                                            class="icon"
+                                            src="./img/new__user/building.png"
+                                            alt="building user icon"
+                                        />
+                                        <span class="title">Company</span>
+                                        <span
+                                            class="
+                                                ord__title__btn
+                                                text-uppercase
+                                            "
+                                            ass
+                                            >create new</span
+                                        >
+                                        <span class="accordion__icon">
+                                            <img
+                                                src="./img/new__user/bottom-arrow.png"
+                                                alt="bottom arrow"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- accordion body  -->
+                                <div
+                                    id="companyTarget"
+                                    class="collapse"
+                                    aria-labelledby="user"
+                                    data-parent="#company__accordion"
+                                >
+                                    <ul class="list-group">
+                                        <li
+                                            class="
+                                                list-group-item list-group-title
+                                                border-0
+                                                d-none d-lg-flex
+                                                flex-lg-column
+                                                align-items-lg-start
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    ord__title__btn
+                                                    text-uppercase
+                                                "
+                                            >
+                                                buisness name
+                                            </p>
+                                            <button class="border-0">
+                                                <span class="text-uppercase"
+                                                    >add buisness name</span
+                                                >
+                                            </button>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                Address:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                someone, something
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                phone:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                +81245789630
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                mail:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                hello@email.com
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                bn number:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                1245789630
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- projects list  -->
+                        <div class="col-12 col-lg-4">
+                            <!-- creator accordion  -->
+                            <div class="accordion" id="projects__accordion">
+                                <div
+                                    class="
+                                        btn btn-link btn-block
+                                        text-left
+                                        border__bottom
+                                        rounded-0
+                                        px-0
+                                    "
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#projectTarget"
+                                    aria-expanded="true"
+                                    aria-controls="projectTarget"
+                                >
+                                    <div class="sm__title">
+                                        <img
+                                            class="icon"
+                                            src="./img/new__user/location.png"
+                                            alt="building user icon"
+                                        />
+                                        <span class="title">project</span>
+                                        <span
+                                            class="
+                                                ord__title__btn
+                                                text-uppercase
+                                            "
+                                            >create new</span
+                                        >
+                                        <span class="accordion__icon">
+                                            <img
+                                                src="./img/new__user/bottom-arrow.png"
+                                                alt="bottom arrow"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- accordion body  -->
+                                <div
+                                    id="projectTarget"
+                                    class="collapse"
+                                    aria-labelledby="user"
+                                    data-parent="#company__accordion"
+                                >
+                                    <ul class="list-group">
+                                        <li
+                                            class="
+                                                list-group-item list-group-title
+                                                border-0
+                                                d-none d-lg-flex
+                                                flex-lg-column
+                                                align-items-lg-start
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    ord__title__btn
+                                                    text-uppercase
+                                                "
+                                            >
+                                                project name
+                                            </p>
+                                            <button class="border-0">
+                                                <span class="text-uppercase"
+                                                    >add new project</span
+                                                >
+                                            </button>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                Address:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                someone, something
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                site manage:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                anna anna
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                contact name:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                hello@email.com
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                contact name:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                1245789630
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ add new item section ------------------------ -->
+        <section id="add__new__item" class="order__page__new__item__D">
+            <div
+                class="container px-xl-0 d-flex flex-column align-items-center"
+            >
+                <div class="add d-lg-flex mr-0 mr-lg-5">
+                    <img
+                        class="plus__icon"
+                        src="./img/new__user/plus.png"
+                        alt="plus icon"
+                    />
+                    <h1 class="text-uppercase ml-lg-4">add new item</h1>
+                </div>
+                <!-- other control  -->
+                <div
+                    class="
+                        control__wrap
+                        d-flex
+                        align-items-center
+                        flex-column flex-sm-row
+                    "
+                    style="display: none !important"
+                >
+                    <span class="cus__btn para d-inline-block mr-2"
+                        ><i class="fas fa-paperclip"></i>
+                        <span>Mark lines and group</span></span
+                    >
+                    <!-- small btn wrapper  -->
+                    <div
+                        class="
+                            sm__btn__wrap
+                            d-flex
+                            justify-content-between
+                            mt-3 mt-sm-0
+                        "
+                    >
+                        <span class="cus__r__btn para d-inline-block mr-2"
+                            ><i class="far fa-copy"></i
+                        ></span>
+                        <span class="cus__r__btn para d-inline-block mr-2"
+                            ><i class="fas fa-pencil-alt"></i
+                        ></span>
+                        <span class="cus__r__btn para d-inline-block mr-2"
+                            ><i class="fas fa-trash"></i
+                        ></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------ rebars table section --------------------------  -->
+        <section id="rebars__table__sm" class="order__table__sm">
+            <div class="container first-container">
+                <div class="table__accordion__sm">
+                    <div
+                        class="com_acco_head_sm accordion__header"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#rebarsSmTable"
+                        aria-expanded="true"
+                        aria-controls="rebarsSmTable"
+                    >
+                        <div class="sm__title d-flex justify-content-between align-items-center">
+                            <h1 class="text-center text-uppercase text-white mb-0">rebars</h1>
+                            <span class="accordion__icon">
+                                <img
+                                    src="./img/new__user/bottom-arrow.png"
+                                    alt="bottom arrow"
+                                />
+                            </span>
+                        </div>
+                    </div>
+                    <!-- accordion body  -->
+                    <div
+                        id="rebarsSmTable"
+                        class="collapse accordion__body__sm show"
+                        aria-labelledby="user"
+                        data-parent="#company__accordion"
+                    >
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <!-- main row 1 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">1</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell cell-2">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="img__wrap">
+                                                    <img src="./img/order__page/hei__top.png" alt="hei icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">mm</p>
+                                            </span>
+                                            <p class="para">12</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  3  -->
+                                    <div class="cell cell-3">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="icon__wrap">
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">cm</p>
+                                            </span>
+                                            <p class="para">120</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="icon__wrap">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para">30</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="img__wrap">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para">15.7</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-9 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-65 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164.341 96.803">
+                                            <defs>
+                                                <clipPath id="a">
+                                                <path data-name="Rectangle 1069" fill="#fff" stroke="#707070" d="M0 0h164.341v96.803H0z"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g data-name="Mask Group 1" clip-path="url(#a)">
+                                                <g data-name="Group 1984">
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(74.956 59.787)" fill="#4e5055" font-size="20" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">60</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(18.663 32.587)" fill="#4e5055" font-size="20" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">10</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="rotate(45 -59.978 60.63)" fill="#4e5055" font-size="20" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">20</tspan></text>
+                                                <path data-name="Path 735" d="M22.168 41.587h17.876l23.6 26.4h48.036l15.814-26.4h15.874" fill="none" stroke="#4e5055" stroke-width="2"/>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap col-3 mt-3 mt-sm-4 mt-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main row 2 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">2</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell cell-2">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="img__wrap">
+                                                    <img src="./img/order__page/hei__top.png" alt="hei icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">mm</p>
+                                            </span>
+                                            <p class="para">6</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  3  -->
+                                    <div class="cell cell-3">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="icon__wrap">
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">cm</p>
+                                            </span>
+                                            <p class="para">360</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="icon__wrap">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para">100</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="img__wrap">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para">145.1</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-9 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-58 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.478 34.094">
+                                            <g data-name="Group 4108">
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(105.664 21)" fill="#4e5055" font-size="20" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.477" y="0">300</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="rotate(-90 20.548 -.452)" fill="#4e5055" font-size="20" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-11.585" y="0">60</tspan></text>
+                                                <path data-name="Path 737" d="M33.276 3.873v29.221h141.2V3.873" fill="none" stroke="#4e5055" stroke-width="2"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap col-3 mt-3 mt-sm-4 mt-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main row 3 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">3</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell cell-2">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="img__wrap">
+                                                    <img src="./img/order__page/hei__top.png" alt="hei icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">mm</p>
+                                            </span>
+                                            <p class="para">10</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  3  -->
+                                    <div class="cell cell-3">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="icon__wrap">
+                                                    <i class="fas fa-expand-alt"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">cm</p>
+                                            </span>
+                                            <p class="para">940</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="icon__wrap">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para">40</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5">
+                                        <span class="d-flex align-items-start justify-content-center">
+                                            <span class="d-flex flex-column unit__icon__wrap">
+                                                <span class="img__wrap">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para">306.4</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-9 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-60 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.712 87.579">
+                                            <g data-name="Group 4107">
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(65.962 81.579)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">300</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(64.626 16)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">300</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="rotate(-90 35.572 19.572)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">50</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="rotate(90 37.123 78.589)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">180</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(33.578 41.323)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">80</tspan></text>
+                                                <path data-name="Path 6296" d="M21.489 22.2h87.231v41.943H21.489l.011-17.394h26.6" fill="none" stroke="#4e5055" stroke-width="2"/>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap col-3 mt-3 mt-sm-4 mt-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion footer  -->
+                    <div class="accordion__footer row m-0">
+                        <div class="col-4"><span class="red text-center">3</span><span class="thin text-uppercase">types</span></div>
+                        <div class="col-4"><span class="red text-center">170</span><span class="thin text-uppercase">units</span></div>
+                        <div class="col-4"><span class="red text-center">1.45</span><span class="thin text-uppercase">ton</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------ nets table section --------------------------  -->
+        <section id="nets__table__sm" class="order__table__sm">
+            <div class="container">
+                <div class="table__accordion__sm">
+                    <div
+                        class="com_acco_head_sm accordion__header"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#rebarsSmTable"
+                        aria-expanded="true"
+                        aria-controls="rebarsSmTable"
+                    >
+                        <div class="sm__title d-flex justify-content-between align-items-center">
+                            <h1 class="text-center text-uppercase text-white mb-0">nets</h1>
+                            <span class="accordion__icon">
+                                <img
+                                    src="./img/new__user/bottom-arrow.png"
+                                    alt="bottom arrow"
+                                />
+                            </span>
+                        </div>
+                    </div>
+                    <!-- accordion body  -->
+                    <div
+                        id="rebarsSmTable"
+                        class="collapse accordion__body__sm show"
+                        aria-labelledby="user"
+                        data-parent="#company__accordion"
+                    >
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <!-- main row 1 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">1</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>x 600</span> <img src="./img/order__page/hei.png" alt="hei icon"> <span> 6 @ 15</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>x 250 </span><img src="./img/order__page/hei.png" alt="hei icon"><span> 6 @ 15</span>
+                                        </div>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex justify-content-center unit__icon__wrap margin-bottom">
+                                                <span class="icon__wrap margin-right">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para text-center">30</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex unit__icon__wrap margin-bottom">
+                                                <span class="img__wrap margin-right">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para text-center">15.7</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-9 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-28 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.181 38.821">
+                                            <g data-name="Group 4111">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M6.152 0v38.369"/>
+                                                <path data-name="Line 863" d="M15.396 0v38.205"/>
+                                                <path data-name="Line 864" d="M24.658 0v38.369"/>
+                                                <path data-name="Line 865" d="M33.911 0v38.821"/>
+                                                <path data-name="Line 866" d="M43.164 0v38.369"/>
+                                                <path data-name="Line 867" d="M50.181 5.527H0"/>
+                                                <path data-name="Line 868" d="M50.181 14.779H0"/>
+                                                <path data-name="Line 869" d="M50.181 24.032H0"/>
+                                                <path data-name="Line 870" d="M50.181 33.285H0"/>
+                                                </g>
+                                            </g>
+                                    </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap d-flex align-items-end col-3 mb-3 mb-sm-4 mb-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main row 2 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">2</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>x 600</span> <img src="./img/order__page/hei.png" alt="hei icon"> <span> 6 @ 15</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>x 250 </span><img src="./img/order__page/hei.png" alt="hei icon"><span> 6 @ 15</span>
+                                        </div>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex justify-content-center unit__icon__wrap margin-bottom">
+                                                <span class="icon__wrap margin-right">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para text-center">15</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex unit__icon__wrap margin-bottom">
+                                                <span class="img__wrap margin-right">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para text-center">35</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-9 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-44 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.361 86.376">
+                                            <g data-name="Group 4129">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M9.874 24.072v61.58"/>
+                                                <path data-name="Line 863" d="M24.709 24.072v61.316"/>
+                                                <path data-name="Line 864" d="M39.574 24.072v61.58"/>
+                                                <path data-name="Line 865" d="M54.424 24.072v62.305"/>
+                                                <path data-name="Line 866" d="M69.274 24.072v61.58"/>
+                                                <path data-name="Line 867" d="M96.577 32.942H0"/>
+                                                <path data-name="Line 868" d="M96.577 47.792H0"/>
+                                                <path data-name="Line 869" d="M96.577 62.641H0"/>
+                                                <path data-name="Line 870" d="M96.577 77.491H0"/>
+                                                </g>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(33.039 17)" fill="#4e5055" font-size="16" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">X</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(103.361 56.224)" fill="#4e5055" font-size="16" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">Y</tspan></text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap d-flex align-items-end col-3 mb-3 mb-sm-4 mb-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main row 3 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">3</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>x 600</span> <img src="./img/order__page/hei.png" alt="hei icon"> <span> 6 @ 15</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>x 250 </span><img src="./img/order__page/hei.png" alt="hei icon"><span> 6 @ 15</span>
+                                        </div>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex justify-content-center unit__icon__wrap margin-bottom">
+                                                <span class="icon__wrap margin-right">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para text-center">40</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex unit__icon__wrap margin-bottom">
+                                                <span class="img__wrap margin-right">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para text-center">21.3</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-9 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-46 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.702 86.376">
+                                            <g data-name="Group 4133">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M5.215 24.072v61.58"/>
+                                                <path data-name="Line 863" d="M20.05 24.072v61.316"/>
+                                                <path data-name="Line 864" d="M34.915 24.072v61.58"/>
+                                                <path data-name="Line 865" d="M49.765 24.072v62.305"/>
+                                                <path data-name="Line 866" d="M64.615 24.072v61.58"/>
+                                                <path data-name="Line 867" d="M71.248 32.942H.001"/>
+                                                <path data-name="Line 868" d="M71.248 47.792H.001"/>
+                                                <path data-name="Line 869" d="M71.248 62.641H.001"/>
+                                                <path data-name="Line 870" d="M71.248 77.491H.001"/>
+                                                </g>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(28.38 17)" fill="#4e5055" font-size="16" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">X</tspan></text>
+                                                <text data-name="הזמנה מס׳ 2009" transform="translate(98.702 56.224)" fill="#4e5055" font-size="16" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">Y</tspan></text>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap d-flex align-items-end col-3 mb-3 mb-sm-4 mb-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion footer  -->
+                    <div class="accordion__footer row m-0">
+                        <div class="col-4"><span class="red text-center">3</span><span class="thin text-uppercase">types</span></div>
+                        <div class="col-4"><span class="red text-center">170</span><span class="thin text-uppercase">units</span></div>
+                        <div class="col-4"><span class="red text-center">1.45</span><span class="thin text-uppercase">ton</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------ piles table section --------------------------  -->
+        <section id="piles__table__sm" class="order__table__sm">
+            <div class="container">
+                <div class="table__accordion__sm">
+                    <div
+                        class="com_acco_head_sm accordion__header"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#rebarsSmTable"
+                        aria-expanded="true"
+                        aria-controls="rebarsSmTable"
+                    >
+                        <div class="sm__title d-flex justify-content-between align-items-center">
+                            <h1 class="text-center text-uppercase text-white mb-0">piles</h1>
+                            <span class="accordion__icon">
+                                <img
+                                    src="./img/new__user/bottom-arrow.png"
+                                    alt="bottom arrow"
+                                />
+                            </span>
+                        </div>
+                    </div>
+                    <!-- accordion body  -->
+                    <div
+                        id="rebarsSmTable"
+                        class="collapse accordion__body__sm show"
+                        aria-labelledby="user"
+                        data-parent="#company__accordion"
+                    >
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <!-- main row 1 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">1</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>@1</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                        </div>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>1200</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                        </div>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <img src="./img/order__page/hei.png" alt="hei icon"> <span> 6 @ 15</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                        </div>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex justify-content-center unit__icon__wrap margin-bottom">
+                                                <span class="icon__wrap margin-right">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para text-center">30</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex unit__icon__wrap margin-bottom">
+                                                <span class="img__wrap margin-right">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para text-center">15.7</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-4 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-60 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.181 38.821">
+                                            <g data-name="Group 4111">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M6.152 0v38.369"/>
+                                                <path data-name="Line 863" d="M15.396 0v38.205"/>
+                                                <path data-name="Line 864" d="M24.658 0v38.369"/>
+                                                <path data-name="Line 865" d="M33.911 0v38.821"/>
+                                                <path data-name="Line 866" d="M43.164 0v38.369"/>
+                                                <path data-name="Line 867" d="M50.181 5.527H0"/>
+                                                <path data-name="Line 868" d="M50.181 14.779H0"/>
+                                                <path data-name="Line 869" d="M50.181 24.032H0"/>
+                                                <path data-name="Line 870" d="M50.181 33.285H0"/>
+                                                </g>
+                                            </g>
+                                    </svg>
+                                    </div>
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-4 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-60 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.181 38.821">
+                                            <g data-name="Group 4111">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M6.152 0v38.369"/>
+                                                <path data-name="Line 863" d="M15.396 0v38.205"/>
+                                                <path data-name="Line 864" d="M24.658 0v38.369"/>
+                                                <path data-name="Line 865" d="M33.911 0v38.821"/>
+                                                <path data-name="Line 866" d="M43.164 0v38.369"/>
+                                                <path data-name="Line 867" d="M50.181 5.527H0"/>
+                                                <path data-name="Line 868" d="M50.181 14.779H0"/>
+                                                <path data-name="Line 869" d="M50.181 24.032H0"/>
+                                                <path data-name="Line 870" d="M50.181 33.285H0"/>
+                                                </g>
+                                            </g>
+                                    </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap d-flex align-items-end justify-content-center col-4 mb-3 mb-sm-4 mb-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- main row 1 -->
+                            <div class="table__row w-xs-100">
+                                <!-- table top row  -->
+                                <div class="top__row w-xs-100">
+                                    <!-- cell no 1  -->
+                                    <div class="cell cell-1 d-flex align-items-center justify-content-center">
+                                        <p class="para text-center">2</p>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span class="">@1</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>@2</span>
+                                        </div>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <span>1200</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            200
+                                        </div>
+                                    </div>
+                                    <!-- cell no  2  -->
+                                    <div class="cell double__row__cell cell-2 d-flex flex-column align-items-center justify-content-center">
+                                        <!-- top row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <img src="./img/order__page/hei.png" alt="hei icon"> <span> 6 @ 15</span>
+                                        </div>
+                                        <!-- bottom row  -->
+                                        <div class="d__cell__row cell__row d-flex justify-content-center align-items-center">
+                                            <img src="./img/order__page/hei.png" alt="hei icon"> <span> 6 @ 15</span>
+                                        </div>
+                                    </div>
+                                    <!-- cell no  4  -->
+                                    <div class="cell cell-4 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex justify-content-center unit__icon__wrap margin-bottom">
+                                                <span class="icon__wrap margin-right">
+                                                    <i class="fab fa-buffer"></i>
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">unt</p>
+                                            </span>
+                                            <p class="para text-center">60</p>
+                                        </span>
+                                    </div>
+                                    <!-- cell no  5  -->
+                                    <div class="cell cell-5 d-flex align-items-center justify-content-center">
+                                        <span class="d-flex flex-column">
+                                            <span class="d-flex unit__icon__wrap margin-bottom">
+                                                <span class="img__wrap margin-right">
+                                                    <img class="bag" src="./img/order__page/bar.png" alt="bar icon">
+                                                </span>
+                                                <p class="sm__unit text-uppercase text-center">kg</p>
+                                            </span>
+                                            <p class="para text-center">15.7</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- table bottom row  -->
+                                <div class="bottom__row m-0 row">
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-4 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-60 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.181 38.821">
+                                            <g data-name="Group 4111">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M6.152 0v38.369"/>
+                                                <path data-name="Line 863" d="M15.396 0v38.205"/>
+                                                <path data-name="Line 864" d="M24.658 0v38.369"/>
+                                                <path data-name="Line 865" d="M33.911 0v38.821"/>
+                                                <path data-name="Line 866" d="M43.164 0v38.369"/>
+                                                <path data-name="Line 867" d="M50.181 5.527H0"/>
+                                                <path data-name="Line 868" d="M50.181 14.779H0"/>
+                                                <path data-name="Line 869" d="M50.181 24.032H0"/>
+                                                <path data-name="Line 870" d="M50.181 33.285H0"/>
+                                                </g>
+                                            </g>
+                                    </svg>
+                                    </div>
+                                    <!-- image wrap  -->
+                                    <div class="img__wrap col-4 text-center d-flex align-items-center justify-content-center">
+                                        <svg class="w-xs-60 d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.181 38.821">
+                                            <g data-name="Group 4111">
+                                                <g data-name="Group 1130" fill="none" stroke="#4e5055" stroke-width="2">
+                                                <path data-name="Line 862" d="M6.152 0v38.369"/>
+                                                <path data-name="Line 863" d="M15.396 0v38.205"/>
+                                                <path data-name="Line 864" d="M24.658 0v38.369"/>
+                                                <path data-name="Line 865" d="M33.911 0v38.821"/>
+                                                <path data-name="Line 866" d="M43.164 0v38.369"/>
+                                                <path data-name="Line 867" d="M50.181 5.527H0"/>
+                                                <path data-name="Line 868" d="M50.181 14.779H0"/>
+                                                <path data-name="Line 869" d="M50.181 24.032H0"/>
+                                                <path data-name="Line 870" d="M50.181 33.285H0"/>
+                                                </g>
+                                            </g>
+                                    </svg>
+                                    </div>
+                                    <!-- edit icon   -->
+                                    <div class="edit__wrap d-flex align-items-end justify-content-center col-4 mb-3 mb-sm-4 mb-md-5">
+                                        <button class="edit__btn">
+                                            <i class="fas fa-pen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion footer  -->
+                    <div class="accordion__footer row m-0">
+                        <div class="col-4"><span class="red text-center">2</span><span class="thin text-uppercase">types</span></div>
+                        <div class="col-4"><span class="red text-center">90</span><span class="thin text-uppercase">units</span></div>
+                        <div class="col-4"><span class="red text-center">1.54</span><span class="thin text-uppercase">ton</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer section  -->
+        <footer class="d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-lg-between">
+                    <!-- left section  -->
+                    <div class="col-4 brand__slogan">
+                        <div class="wrap">
+                            <img
+                                class="brand__icon"
+                                src="./img/new__user/brand-logo.png"
+                                alt="brand icon"
+                            />
+                            <h3 class="text-uppercase text-white">
+                                it's easy to manage
+                            </h3>
+                            <h3 class="text-uppercase text-white">
+                                your rebar list
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- right side  -->
+                    <div class="col-8 link__list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <ul class="list-style-none m-0 p-0">
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >support sytem</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >Questions and Questions</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >our supplyers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >add yourself as a supplyers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >easy-bar community</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <h3 class="title text-uppercase text-white">
+                                    easybar.israel@gmail.com
+                                </h3>
+                                <h3 class="title text-uppercase text-white">
+                                    08.6601780
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- js files  -->
+        <script src="./bootstrap/jquery-3.6.0.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+            integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

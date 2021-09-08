@@ -5,7 +5,7 @@
 
 $prim__f: "Heebo", sans-serif;
 // break points
-$xm: 576px; //Small
+$xs: 576px; //Small
 $sm: 768px; //Large
 $md: 992px; //Extra large
 $lg: 1200px; //xtra larger
@@ -37,6 +37,10 @@ $xxl: 1800px; //xtra xtra large
     }
 }
 
+@mixin py($w) {
+    padding-top: $w!important;
+    padding-bottom: $w!important;
+}
 
 // common style
 body {
@@ -111,11 +115,35 @@ input {
 }
 
 .para {
-    font-size: calc( 16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)) );
+    font-size: calc(16px + (22 - 16) * ((100vw - 900px) / (1950 - 900)));
     color: #989898 !important;
+}
+
+// accordion header sm
+.com_acco_head_sm {
+    background-color: $header__bg;
+    padding: 8px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    @include resp ($sm) {
+        @include py(11px);
+    }
+    @include resp ($md) {
+        @include py(15px);
+    }
+    h1 {
+        font-size: 20px;
+        // font-size: 17px;
+        // @include resp($sm) {
+        //     font-size: 18.5px;
+        // }
+        // @include resp($md) {
+        // }
+    }
 }
 
 // files ----------------------------------- >
 @import "new__user__page";
 @import "new__user__form";
 @import "example-of-order-page";
+@import "_example-of-order-page-phone";

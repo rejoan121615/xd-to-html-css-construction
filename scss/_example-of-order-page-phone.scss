@@ -324,13 +324,13 @@
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        padding-top: 50px;
+        padding-top: 70px;
         padding-bottom: 35px;
         @include resp ($xs) {
-            padding-top: 65px;
+            padding-top: 100px;
         }
         @include resp ($sm) {
-            padding-top: 80px;
+            padding-top: 135px;
             padding-bottom: 50px;
         }
 
@@ -379,3 +379,41 @@
 
 
 
+// order check out page 
+#order__summery__tittle.order__checkout {
+    background-color: transparent;
+    .container {
+        background-color: lighten($color: black, $amount: 95);
+        h1 {
+            font-weight: 900;
+            color: $header__bg!important;
+        }
+    }
+}
+
+// button list 
+#btn__list {
+    button {
+        background-color: #2bc454;
+        border: 0px solid transparent;
+        border-right: 3px solid white;
+        font-family: "Heebo", sans-serif;
+        &:last-child {
+            border-right: 3px solid #2bc454;
+        }
+        .bold {
+            // font-family: ;
+            font-weight: 600;
+            @include resp ($xs) {
+                font-size: 18px;
+            }
+        }
+        .thin {
+            font-weight: 400;
+            font-size: 13px;
+            @include resp ($xs) {
+                font-size: 14px;
+            }
+        }
+    }
+}

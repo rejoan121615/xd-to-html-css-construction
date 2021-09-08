@@ -1591,17 +1591,17 @@ section.forms .container .form-check .form-check-label {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 35px;
 }
 @media only screen and (min-width: 576px) {
   #order__details .save__cancel {
-    padding-top: 65px;
+    padding-top: 100px;
   }
 }
 @media only screen and (min-width: 768px) {
   #order__details .save__cancel {
-    padding-top: 80px;
+    padding-top: 135px;
     padding-bottom: 50px;
   }
 }
@@ -1641,6 +1641,44 @@ section.forms .container .form-check .form-check-label {
   color: #a3aab8;
   font-weight: 300;
   margin-left: 8px;
+}
+
+#order__summery__tittle.order__checkout {
+  background-color: transparent;
+}
+#order__summery__tittle.order__checkout .container {
+  background-color: #f2f2f2;
+}
+#order__summery__tittle.order__checkout .container h1 {
+  font-weight: 900;
+  color: #374051 !important;
+}
+
+#btn__list button {
+  background-color: #2bc454;
+  border: 0px solid transparent;
+  border-right: 3px solid white;
+  font-family: "Heebo", sans-serif;
+}
+#btn__list button:last-child {
+  border-right: 3px solid #2bc454;
+}
+#btn__list button .bold {
+  font-weight: 600;
+}
+@media only screen and (min-width: 576px) {
+  #btn__list button .bold {
+    font-size: 18px;
+  }
+}
+#btn__list button .thin {
+  font-weight: 400;
+  font-size: 13px;
+}
+@media only screen and (min-width: 576px) {
+  #btn__list button .thin {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

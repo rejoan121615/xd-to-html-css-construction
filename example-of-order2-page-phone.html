@@ -1056,46 +1056,23 @@
             </div>
         </section>
         <!-- order summery title section  -->
-        <section id="order__summery__tittle">
+        <section id="order__summery__tittle" class="order__checkout">
             <!-- symmery container  -->
             <div class="container p-3 p-sm-4">
-                <h1 class="text-uppercase text-white">
-                    order summery
+                <h1 class="text-uppercase text-dark m-0">
+                    total
                 </h1>
             </div>
         </section>
         <!-- order details section  -->
-        <section id="order__details" class="mb-5">
-            <div class="container summ__detai__container">
+        <section id="order__details" class="mb-5 pt-0">
+            <div class="container summ__detai__container p-0">
                 <!-- untittle list  -->
-                <ul>
-                    <li class="d-flex jusfity-content-between">
-                        <p class="para text-capitalize">types</p>
-                    </li>
-                    <li class="d-flex jusfity-content-between">
-                        <div class="left w-xs-50 d-flex align-items-center">
-                            <span class="icon__wrap">
-                                <i class="fas fa-weight-hanging"></i>
-                            </span>
-                            <p class="para text-capitalize">weight <span class="unit">(kg)</span></p>
-                        </div>     
-                        <div class="right w-xs-50 text-right">
-                            <p class="para text-capitalize">
-                                <span class="left">total</span>
-                                <span class="left">645.0</span>
-                            </p>
-                        </div>            
-                    </li>
-                    <li class="d-flex flex-column border__bottom">
-                        <div class="left w-xs-50 d-flex align-items-center">
-                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
-                            <p class="para text-capitalize">item notes</p>
-                        </div> 
-                    </li>
-                    <li class="d-flex flex-column border__bottom">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </li>
-                </ul>
+                <div id="btn__list" class="btn-group w-xs-100" role="group" aria-label="Basic example">
+                    <button type="button" class="btn rounded-0 btn-success"><span class="bold">2 </span><span class="text-center text-uppercase thin">types</span></button>
+                    <button type="button" class="btn rounded-0 btn-secondary"><span class="bold">90 </span><span class="text-center text-uppercase thin">units</span></button>
+                    <button type="button" class="btn rounded-0 btn-secondary"><span class="bold">1.54 </span><span class="text-center text-uppercase thin">ton</span></button>
+                </div>
                 <!-- order button  -->
                 <div class="save__cancel">
                     <button id="save__btn"><img src="./img/new__user/check-mark-black-outline.png" alt="check mark icon"><p class="capitalize text-center text-white">save</p></button>

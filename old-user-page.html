@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <header id="head">
+            <nav id="navbar" class="w-100 py-3 py-lg-0">
+                <div class="container">
+                    <div class="row">
+                        <!-- brand and order links  -->
+                        <div class="row col-12 col-lg-9 col-xl-7">
+                            <div
+                                class="
+                                    col-lg-4 col-12
+                                    d-flex
+                                    align-items-center
+                                "
+                            >
+                                <img
+                                    class="brand__icon"
+                                    src="./img/new__user/brand-logo.png"
+                                    alt="brand icon"
+                                />
+                            </div>
+                            <a
+                                href=""
+                                class="
+                                    d-none d-lg-block
+                                    col-4
+                                    py-lg-3
+                                    active__mark
+                                "
+                            >
+                                <img
+                                    class="order__icon"
+                                    src="./img/new__user/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p
+                                    class="
+                                        order__text
+                                        text-white text-uppercase
+                                        d-inline-block
+                                        ms-2
+                                    "
+                                >
+                                    new order
+                                </p>
+                            </a>
+                            <a href="" class="d-none d-lg-block col-4 py-lg-3">
+                                <img
+                                    class="order__icon"
+                                    src="./img/new__user/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p
+                                    class="
+                                        order__text
+                                        text-white text-uppercase
+                                        d-inline-block
+                                        ms-2
+                                    "
+                                >
+                                    my order
+                                </p>
+                            </a>
+                        </div>
+                        <!-- user section  -->
+                        <div
+                            class="
+                                user__section
+                                d-none d-lg-flex
+                                col-lg-3 col-xl-5
+                                justify-content-lg-end
+                            "
+                        >
+                            <div
+                                class="user d-flex flex-row align-items-center"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#userArea"
+                                aria-expanded="false"
+                                aria-controls="userArea"
+                            >
+                                <img
+                                    class="user__img"
+                                    src="./img/new__user/profile-user.png"
+                                    alt="profile user icon"
+                                />
+                                <h3 class="text-uppercase text-white mb-0">
+                                    daniel cohen
+                                </h3>
+                                <img
+                                    class="arrow"
+                                    src="./img/new__user/bottom-arrow.png"
+                                    alt=""
+                                />
+                            </div>
+                            <!----------------- user area ---------------------  -->
+                            <div class="collapse" id="userArea">
+                                <ul class="list-group bg-dark">
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------ user area -----------------------  -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- small screeen accordion  -->
+            <div class="sm__accordion d-lg-none">
+                <div class="container">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card border-0 bg-transparent px-0">
+                            <div class="card-header p-0" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <div
+                                        class="
+                                            btn btn-link btn-block
+                                            text-left
+                                            collapsed
+                                            px-0
+                                        "
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <img
+                                            class="file__icon"
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icons"
+                                        />
+                                        <span
+                                            class="
+                                                file__texts
+                                                text-uppercase text-white
+                                            "
+                                            >create new order</span
+                                        >
+                                    </div>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body py-0">
+                                    <a
+                                        href=""
+                                        class="
+                                            item
+                                            border-bottom border-white
+                                            d-block
+                                            py-2
+                                        "
+                                    >
+                                        <img
+                                            class="
+                                                sm__file__icon
+                                                d-inline-block
+                                            "
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icon"
+                                        />
+                                        <p
+                                            class="
+                                                sm__file__text
+                                                text-white text-uppercase
+                                                d-inline-block
+                                                ms-2
+                                                mb-0
+                                            "
+                                        >
+                                            new order
+                                        </p>
+                                    </a>
+                                    <a href="" class="item d-block py-2">
+                                        <img
+                                            class="
+                                                sm__file__icon
+                                                d-inline-block
+                                            "
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icon"
+                                        />
+                                        <p
+                                            class="
+                                                sm__file__text
+                                                text-white text-uppercase
+                                                d-inline-block
+                                                ms-2
+                                                mb-0
+                                            "
+                                        >
+                                            new order
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ------------------- order table section-------------------  -->
+        <section id="order__details__table">
+            <div class="container">
+                <!-------------- order details header  ------------>
+                <div class="order__header mt-3 mt-lg-0">
+                    <div
+                        class="
+                            row
+                            py-2 py-lg-3
+                            px-4
+                            justify-content-lg-between
+                            pt-lg-4
+                        "
+                    >
+                        <!-- order tag line details -->
+                        <aside class="col-12 col-lg-6 cus__border pb-3">
+                            <h2
+                                class="m-0 order__tag text-uppercase text-white"
+                            >
+                                order details
+                            </h2>
+                            <h2
+                                class="
+                                    m-0
+                                    order__tag
+                                    text-uppercase text-white
+                                    number
+                                "
+                            >
+                                number <span>200.34.002</span>
+                            </h2>
+                        </aside>
+                        <!-- order code  -->
+                        <aside class="d-none d-lg-block col-lg-3 pr-lg-0">
+                            <div class="qrcode__container text-right">
+                                <img
+                                    src="./img/new__user/Group 607.png"
+                                    class="d-inline-block"
+                                    alt="qr-code"
+                                />
+                            </div>
+                            <h4 class="text-white text-white text-right">
+                                200.34.002
+                            </h4>
+                        </aside>
+                    </div>
+                </div>
+                <!---------------- order details description---------- -->
+                <div class="order__details pt-4">
+                    <div class="row">
+                        <!-- date and user  -->
+                        <div class="col-12 col-lg-4 user__column">
+                            <!-- date  -->
+                            <div class="date">
+                                <div class="date__wrap flex-xl-row">
+                                    <p
+                                        class="
+                                            date__text
+                                            d-inline-block
+                                            text-capitalize
+                                            order__sm__texts
+                                        "
+                                    >
+                                        delivery date
+                                    </p>
+                                    <input
+                                        class="d-inline-block ml-0 ml-xl-2"
+                                        type="date"
+                                    />
+                                </div>
+                                <div class="date__wrap mt-2 mt-xl-3">
+                                    <p
+                                        class="
+                                            date__text
+                                            d-inline-block
+                                            text-capitalize
+                                            order__sm__texts
+                                        "
+                                    >
+                                        create date
+                                    </p>
+                                    <input
+                                        class="d-inline-block ml-0 ml-lg-2"
+                                        type="date"
+                                    />
+                                </div>
+                            </div>
+                            <!-- creator accordion  -->
+                            <div class="accordion" id="creator__accordion">
+                                <div
+                                    class="
+                                        btn btn-link btn-block
+                                        text-left
+                                        border__bottom
+                                        rounded-0
+                                        px-0
+                                    "
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#collapseOne"
+                                    aria-expanded="true"
+                                    aria-controls="collapseOne"
+                                >
+                                    <div class="sm__title">
+                                        <img
+                                            class="icon"
+                                            src="./img/new__user/profile-user.png"
+                                            alt="profile user icon"
+                                        />
+                                        <span class="title">creator</span>
+                                        <span
+                                            class="
+                                                ord__title__btn
+                                                selected
+                                                text-uppercase
+                                            "
+                                            >create a user</span
+                                        >
+                                        <span class="accordion__icon">
+                                            <img
+                                                src="./img/new__user/bottom-arrow.png"
+                                                alt="bottom arrow"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- accordion body  -->
+                                <div
+                                    id="collapseOne"
+                                    class="collapse"
+                                    aria-labelledby="user"
+                                    data-parent="#creator__accordion"
+                                >
+                                    <ul class="list-group">
+                                        <li
+                                            class="
+                                                list-group-item list-group-title
+                                                border-0 border__bottom
+                                                d-none d-lg-flex
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    ord__title__btn
+                                                    text-uppercase
+                                                "
+                                            >
+                                                user
+                                            </p>
+                                            <button
+                                                class="border-0 no__border__bg"
+                                            >
+                                                <span class="text-uppercase"
+                                                    >daniel cohen</span
+                                                >
+                                                <span class="icon__wrap">
+                                                    <i class="fas fa-cog"></i>
+                                                </span>
+                                            </button>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                creator job
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-uppercase
+                                                    inputed__data
+                                                "
+                                            >
+                                                project mamager
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                phone
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                1245789630
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- buisness name  -->
+                        <div class="col-12 col-lg-4">
+                            <!-- creator accordion  -->
+                            <div class="accordion" id="company__accordion">
+                                <div
+                                    class="
+                                        btn btn-link btn-block
+                                        text-left
+                                        border__bottom
+                                        rounded-0
+                                        px-0
+                                    "
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#companyTarget"
+                                    aria-expanded="true"
+                                    aria-controls="companyTarget"
+                                >
+                                    <div class="sm__title">
+                                        <img
+                                            class="icon"
+                                            src="./img/new__user/building.png"
+                                            alt="building user icon"
+                                        />
+                                        <span class="title">Company</span>
+                                        <span
+                                            class="
+                                                ord__title__btn
+                                                text-uppercase
+                                            "
+                                            ass
+                                            >create new</span
+                                        >
+                                        <span class="accordion__icon">
+                                            <img
+                                                src="./img/new__user/bottom-arrow.png"
+                                                alt="bottom arrow"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- accordion body  -->
+                                <div
+                                    id="companyTarget"
+                                    class="collapse"
+                                    aria-labelledby="user"
+                                    data-parent="#company__accordion"
+                                >
+                                    <ul class="list-group">
+                                        <li
+                                            class="
+                                                list-group-item list-group-title
+                                                border-0
+                                                d-none d-lg-flex
+                                                flex-lg-column
+                                                align-items-lg-start
+                                            "
+                                            id="force__column"
+                                        >
+                                            <p
+                                                class="
+                                                    ord__title__btn
+                                                    text-uppercase
+                                                "
+                                            >
+                                                buisness name
+                                            </p>
+                                            <div class="d-flex bottom">
+                                                <button
+                                                    class="
+                                                        border-0
+                                                        b__border__color
+                                                    "
+                                                >
+                                                    <span class="text-uppercase"
+                                                        >add buisness name</span
+                                                    >
+                                                </button>
+                                                <button class="edit__icon">
+                                                    <i class="fas fa-pen"></i>
+                                                </button>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                Address:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                Herzeliya, Hatee`na 23
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                phone:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                +81245789630
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                mail:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                hello@email.com
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                bn number:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                1245789630
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- projects list  -->
+                        <div class="col-12 col-lg-4">
+                            <!-- creator accordion  -->
+                            <div class="accordion" id="projects__accordion">
+                                <div
+                                    class="
+                                        btn btn-link btn-block
+                                        text-left
+                                        border__bottom
+                                        rounded-0
+                                        px-0
+                                    "
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#projectTarget"
+                                    aria-expanded="true"
+                                    aria-controls="projectTarget"
+                                >
+                                    <div class="sm__title">
+                                        <img
+                                            class="icon"
+                                            src="./img/new__user/location.png"
+                                            alt="building user icon"
+                                        />
+                                        <span class="title">project</span>
+                                        <span
+                                            class="
+                                                ord__title__btn
+                                                text-uppercase
+                                            "
+                                            >create new</span
+                                        >
+                                        <span class="accordion__icon">
+                                            <img
+                                                src="./img/new__user/bottom-arrow.png"
+                                                alt="bottom arrow"
+                                            />
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- accordion body  -->
+                                <div
+                                    id="projectTarget"
+                                    class="collapse"
+                                    aria-labelledby="user"
+                                    data-parent="#company__accordion"
+                                >
+                                    <ul class="list-group">
+                                        <li
+                                            class="
+                                                list-group-item list-group-title
+                                                border-0
+                                                d-none d-lg-flex
+                                                flex-lg-column
+                                                align-items-lg-start
+                                            "
+                                            id="force__column"
+                                        >
+                                            <p
+                                                class="
+                                                    ord__title__btn
+                                                    text-uppercase
+                                                "
+                                            >
+                                                project name
+                                            </p>
+                                            <div class="wrap d-flex bottom">
+                                                <button class="border-0 b__border__color">
+                                                    <span class="text-uppercase"
+                                                    >add new project</span
+                                                    >
+                                                </button>
+                                                <button class="edit__icon"><i class="fas fa-pen"></i></button>
+                                                <button class="edit__icon"><i class="fas fa-plus"></i></button>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                Address:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                someone, something
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                site manage:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                anna anna
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0 border__bottom
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                contact name:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                hello@email.com
+                                            </p>
+                                        </li>
+                                        <li
+                                            class="
+                                                list-group-item
+                                                d-flex
+                                                border-0
+                                            "
+                                        >
+                                            <p
+                                                class="
+                                                    m-0
+                                                    order__sm__texts
+                                                    text-capitalize
+                                                "
+                                            >
+                                                contact name:
+                                            </p>
+                                            <p
+                                                class="
+                                                    m-0
+                                                    text-capitalize
+                                                    inputed__data
+                                                "
+                                            >
+                                                1245789630
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------ add new item section ------------------------ -->
+        <section id="add__new__item">
+            <div class="container px-xl-0">
+                <div class="add border__bottom d-lg-flex">
+                    <img
+                        class="plus__icon"
+                        src="./img/new__user/plus.png"
+                        alt="plus icon"
+                    />
+                    <h1 class="text-uppercase ml-lg-4">add new item</h1>
+                </div>
+                <div class="save__cancel d-lg-none">
+                    <button id="save__btn">
+                        <img
+                            src="./img/new__user/check-mark-black-outline.png"
+                            alt="check mark icon"
+                        />
+                        <p>save</p>
+                    </button>
+                    <button id="cancel__btn">
+                        <img
+                            src="./img/new__user/letter-x.png"
+                            alt="cross icon"
+                        />
+                        <p class="text-capitalize">cancel</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- footer section  -->
+        <footer class="d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-lg-between">
+                    <!-- left section  -->
+                    <div class="col-4 brand__slogan">
+                        <div class="wrap">
+                            <img
+                                class="brand__icon"
+                                src="./img/new__user/brand-logo.png"
+                                alt="brand icon"
+                            />
+                            <h3 class="text-uppercase text-white">
+                                it's easy to manage
+                            </h3>
+                            <h3 class="text-uppercase text-white">
+                                your rebar list
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- right side  -->
+                    <div class="col-8 link__list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <ul class="list-style-none m-0 p-0">
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >support sytem</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >Questions and Questions</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >our supplyers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >add yourself as a supplyers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >easy-bar community</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <h3 class="title text-uppercase text-white">
+                                    easybar.israel@gmail.com
+                                </h3>
+                                <h3 class="title text-uppercase text-white">
+                                    08.6601780
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- js files  -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+            integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./bootstrap/jquery-3.6.0.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+.tools {
+    width: 100%;
+    background-color: $tools;
+    height: 100vh;
+    .container {
+        .tools__wrapper {
+            background-color: $header__bg;
+            // top section 
+            .top__section {
+                .link__wrap {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+            // close section 
+            .close__wrapper {
+                .icon__wrap {
+                    font-size: 25px;
+                    i {
+
+                    }
+                }
+            }
+        }
+    }
+}

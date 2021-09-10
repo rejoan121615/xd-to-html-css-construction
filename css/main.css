@@ -1736,4 +1736,19 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
+.tools {
+  width: 100%;
+  background-color: #5F6673;
+  height: 100vh;
+}
+.tools .container .tools__wrapper {
+  background-color: #374051;
+}
+.tools .container .tools__wrapper .top__section .link__wrap a {
+  font-size: 20px;
+}
+.tools .container .tools__wrapper .close__wrapper .icon__wrap {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=main.css.map */

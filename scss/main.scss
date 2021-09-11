@@ -12,11 +12,15 @@ $lg: 1200px; //xtra larger
 $xl: 1400px; //xtra large
 $xxl: 1800px; //xtra xtra large
 
+// variable 
+
+
 // extend
 .texts__pro {
     font-family: $prim__f;
     color: $main__text;
 }
+
 
 // mixing
 @mixin maxresp($width) {
@@ -140,6 +144,15 @@ input {
         // @include resp($md) {
         // }
     }
+}
+
+.cus__btn {
+    padding: 4px 15px;
+    border-radius: 25px;
+    border: 2px solid #959DAC;
+    font-size: 14px;
+    color: #959DAC;
+    font-weight: 500;
 }
 
 // files ----------------------------------- >

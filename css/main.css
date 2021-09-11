@@ -115,6 +115,15 @@ input {
   font-size: 20px;
 }
 
+.cus__btn, .order__page__new__item__D .control__wrap .cus__r__btn {
+  padding: 4px 15px;
+  border-radius: 25px;
+  border: 2px solid #959DAC;
+  font-size: 14px;
+  color: #959DAC;
+  font-weight: 500;
+}
+
 .active__mark {
   background-color: #262729;
 }
@@ -1739,16 +1748,76 @@ section.forms .container .form-check .form-check-label {
 .tools {
   width: 100%;
   background-color: #5F6673;
-  height: 100vh;
+  min-height: 100vh;
+}
+.tools p.para {
+  font-size: 15px;
+}
+.tools h4 {
+  color: #374051;
+  font-size: 20px;
+  font-weight: bold;
+}
+.tools h6 {
+  font-size: 15px;
+  color: #4E5055;
 }
 .tools .container .tools__wrapper {
   background-color: #374051;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 .tools .container .tools__wrapper .top__section .link__wrap a {
   font-size: 20px;
 }
+.tools .container .tools__wrapper .top__section .link__wrap .active {
+  border-bottom: 4px solid #F84343;
+}
 .tools .container .tools__wrapper .close__wrapper .icon__wrap {
   font-size: 25px;
+}
+.tools .container .tools__wrapper .close__wrapper .icon__wrap img {
+  width: 20px;
+}
+.tools .container .tools__wrapper .tools__body {
+  background-color: white;
+}
+.tools .container .tools__wrapper .tools__body .filter .filter__list {
+  list-style: none;
+}
+.tools .container .tools__wrapper .tools__body .filter .filter__list li .icon__wrap {
+  width: 28px;
+  height: 28px;
+  color: #8c8c8d;
+  border-radius: 50%;
+  border: 1px solid #8c8c8d;
+}
+.tools .container .tools__wrapper .tools__body .shape__list .left__shaped .shape__wrapper .tool__wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #374051;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.tools .container .tools__wrapper .tools__body .shape__list .left__shaped .shape__wrapper .tool__wrap:hover {
+  background-color: #F84343;
+}
+.tools .container .tools__wrapper .tools__body .shape__list .left__shaped .shape__wrapper .tool__wrap img {
+  width: 50%;
+}
+.tools .container .tools__wrapper .tools__body .right {
+  background-color: #F0F0F0;
+}
+.tools .container .tools__wrapper .tools__body .right .highlight__section {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.tools .container .tools__wrapper .tools__body .right .highlight__section .high__img .svg__wrap {
+  width: 65%;
+}
+.tools .container .tools__wrapper .tools__body .right .highlight__section .high__img .svg__wrap svg.svg {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

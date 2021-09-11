@@ -1,24 +1,115 @@
 .tools {
+    // common style 
+    p.para {
+        font-size: 15px;
+    }
+    h4 {
+        color: #374051;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    h6 {
+        font-size: 15px;
+        color: #4E5055;
+    }
+
+    // style 
     width: 100%;
     background-color: $tools;
-    height: 100vh;
+    min-height: 100vh;
     .container {
         .tools__wrapper {
             background-color: $header__bg;
-            // top section 
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            // top section
             .top__section {
                 .link__wrap {
                     a {
                         font-size: 20px;
                     }
+                    .active {
+                        border-bottom: 4px solid $red;
+                    }
                 }
             }
-            // close section 
+            // close section
             .close__wrapper {
                 .icon__wrap {
                     font-size: 25px;
-                    i {
+                    img {
+                        width: 20px;
+                    }
+                }
+            }
+            // body section 
+            .tools__body {
+                background-color: white;
+                // text section 
+                .texts {
+                    // h4 {
+                    //     font-size: 20px;
+                    // }
+                }
+                // filter section 
+                .filter {
+                    .filter__list {
+                        list-style: none;
+                        li {
+                           .icon__wrap {
+                               width: 28px;
+                               height: 28px;
+                               color: $border;
+                               border-radius: 50%;
+                               border: 1px solid $border;
+                           } 
+                        }
+                    }
+                }
+                // shape list 
+                .shape__list {
+                    .left__shaped {
+                        // shape list 
+                        .shape__wrapper {
+                            .tool__wrap {
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background-color: $header__bg;
+                                transition: background-color 0.5s;
+                                cursor: pointer;
+                                &:hover {
+                                    background-color: $red;
+                                }
+                                img {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
 
+
+                // right section 
+                .right {
+                    background-color: #F0F0F0;
+                    // top section 
+
+                    // ------------
+                    // main img and table 
+                    .highlight__section {
+                        border-top-left-radius: 25px;
+                        border-top-right-radius: 25px;
+                        // image table 
+                        .high__img {
+                            .svg__wrap {
+                                width: 65%;
+                                svg.svg {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        // bottom table 
                     }
                 }
             }

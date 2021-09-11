@@ -87,12 +87,7 @@ $mini__border: 0.3px solid black;
                         width: 20% !important;
                     }
                 }
-                // text section
-                .texts {
-                    // h4 {
-                    //     font-size: 20px;
-                    // }
-                }
+ 
                 // filter section
                 .filter {
                     .filter__list {
@@ -215,11 +210,6 @@ $mini__border: 0.3px solid black;
             #inside__table {
                 width: 100%;
                 background-color: #f0f0f0;
-                // tbody
-                tbody {
-                    // border-left: 1px solid black;
-                    // border-top: 1px solid black;
-                }
                 // rows
                 tr {
                     border-bottom: $mini__border;

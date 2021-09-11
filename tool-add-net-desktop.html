@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrapCustom.width.css">
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <section id="add__rebak" class="tools">
+            <div class="container py-5">
+                <div class="tools__wrapper">
+                    <!-- top section / header  -->
+                    <div class="top__section px-4 d-flex justify-content-between">
+                        <div class="link__wrap w-xs-40 d-flex justify-content-between">
+                            <a href="" class="text-center text-white text-uppercase py-3 col-4">rebar</a>
+                            <a href="" class="active text-center text-white text-uppercase py-3 col-4">net</a>
+                            <a href="" class="text-center text-white text-uppercase py-3 col-4">pile</a>
+                        </div>
+                        <!-- close  -->
+                        <div class="close__wrapper d-flex align-items-center justify-content-center">
+                            <span class="icon__wrap text-white">
+                                <img src="./img/icon/close.png" alt="close icon">
+                            </span>
+                        </div>
+                    </div>
+                    <!-- body  section  -->
+                    <div class="tools__body">
+                        <div class="row m-0 w-xs-100">
+                            <!-- left section  -->
+                            <div class="w-xs-22 left">
+                                <!-- text section  -->
+                                <div class="texts border__bottom p-4">
+                                    <h4 class="text-left text-uppercase text-dark-500">add new item</h4>
+                                    <p class="para">In order to create a new Rebar, enter data selected from the list of standard shapes</p>
+                                </div>
+                                <!-- filter section  -->
+                                <div class="filter py-3 border__bottom pl-4">
+                                    <h6 class="text-left text-uppercase text-dark-500">net type</h6>
+                                    <!-- twiker btn  -->
+                                    <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn text-dark para text-uppercase">2D</button>
+                                        <button type="button" class="btn para text-white text-uppercase active">3D</button>
+                                    </div>
+                                    <!-- filter list s  -->
+                                    <ul class="filter__list m-0 p-0 mt-3">
+                                        <li class="d-flex mb-3"><span class="icon__wrap mr-3 d-flex align-items-center justify-content-center"><i class="fas fa-minus"></i></span><p class="para">Only right angels</p></li>
+                                        <li class="d-flex"><span class="icon__wrap mr-3 d-flex align-items-center justify-content-center"><i class="fas fa-minus"></i></span><p class="para">Add radius</p></li>
+                                    </ul>
+                                </div>
+                                <!-- shape list  -->
+                                <div class="shape__list d-flex p-lg-3 p-xl-4">
+                                    <!-- left shape list  -->
+                                    <div class="left__shaped w-xs-35">
+                                        <h6 class="text-uppercase">shape</h6>
+                                        <div class="shape__wrapper d-flex flex-column mt-4 align-items-center">
+                                            <div class="tool__wrap d-flex align-items-center justify-content-center mb-3"><img class="d-inline-block" src="./img/tools/lg/1st.svg" alt="tools images"></div>
+                                            <div class="tool__wrap d-flex align-items-center justify-content-center mb-3"><img class="d-inline-block" src="./img/tools/lg/2nd.svg" alt="tools images"></div>
+                                            <div class="tool__wrap d-flex align-items-center justify-content-center mb-3"><img class="d-inline-block" src="./img/tools/lg/3rd.svg" alt="tools images"></div>
+                                            <div class="tool__wrap d-flex align-items-center justify-content-center mb-3"><img class="d-inline-block" src="./img/tools/lg/4th.svg" alt="tools images"></div>
+                                            <div class="tool__wrap active d-flex align-items-center justify-content-center"><img class="d-inline-block" src="./img/tools/lg/5th.svg" alt="tools images"></div>
+                                        </div>
+                                    </div>
+                                    <!-- right big image  -->
+                                    <div class="right__shape w-xs-100">
+                                        <!-- top shape  -->
+                                        <div class="top__shape text-right">
+                                            <img class="d-inline-block w-xs-80 w-xl-75 w-xxl-70" src="./img/tools/lg/צורה1.svg" alt="shape images">
+                                        </div>
+                                        <div class="top__shape text-right pt-3">
+                                            <img class="d-inline-block w-xs-80 w-xl-75 w-xxl-70" src="./img/tools/lg/צורה2.svg" alt="shape images">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right section  -->
+                            <div class="w-xs-78 right pt-4">
+                                <!-- top section  -->
+                                <div class="top d-flex align-items-center justify-content-between">
+                                    <div class="texts d-flex align-items-center">
+                                        <h4 class="text-uppercase mr-3 mb-0">preview</h4>
+                                        <p class="para mb-0">Data can be entered in a table or sketch</p>
+                                    </div>
+                                    <div class="btn__wrap">
+                                        <button class="btn text-uppercase cus__btn"><span class="btn__wrap mr-2"><i class="fas fa-plus"></i></span> <span>add a sketch</span></button>
+                                    </div>
+                                </div>
+                                <!-- main img and table table  -->
+                                <div class="highlight__section bg-white w-xs-100 mt-4">
+                                    <!-- image table  -->
+                                    <div class="high__img d-flex align-items-center justify-content-center">
+                                        <div class="svg__wrap text-center">
+                                            <svg class="svg d-inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 493.502 245.697">
+                                                <g data-name="Group 4174">
+                                                    <text data-name="90O" transform="translate(414.119 76.154)" fill="#9a9a9a" stroke="#9a9a9a" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="3.392" y="22">90</tspan><tspan y="22" font-size="11.666" baseline-shift="6.666">O</tspan></text>
+                                                    <text data-name="90O" transform="translate(35.282 82.863)" fill="#9a9a9a" stroke="#9a9a9a" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="3.392" y="22">90</tspan><tspan y="22" font-size="11.666" baseline-shift="6.666">O</tspan></text>
+                                                    <text data-name="90O" transform="translate(358.522 211.992)" fill="#9a9a9a" stroke="#9a9a9a" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="3.392" y="22">90</tspan><tspan y="22" font-size="11.666" baseline-shift="6.666">O</tspan></text>
+                                                    <text data-name="90O" transform="translate(105.274 210.138)" fill="#9a9a9a" stroke="#9a9a9a" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="3.392" y="22">90</tspan><tspan y="22" font-size="11.666" baseline-shift="6.666">O</tspan></text>
+                                                    <path data-name="Path 975" d="M482.48 59.05h-76.715v184.144H89.171V67.112H9.551" fill="none" stroke="#4e5055" stroke-width="5"/>
+                                                    <path data-name="Path 976" d="M70.467 68.119c0 18.278 16.966 20.063 16.966 20.063" fill="none" stroke="#9a9a9a"/>
+                                                    <path data-name="Path 977" d="M404.891 77.496c16.815 0 18.456-18.443 18.456-18.443" fill="none" stroke="#9a9a9a"/>
+                                                    <path data-name="Path 978" d="M106.252 242.154c0-18.278-16.966-20.063-16.966-20.063" fill="none" stroke="#9a9a9a"/>
+                                                    <path data-name="Path 979" d="M404.891 224.754c-16.815 0-18.456 18.443-18.456 18.443" fill="none" stroke="#9a9a9a"/>
+                                                    <g data-name="Rectangle 1835" transform="translate(414.119 21.053)" fill="#fff" stroke="#2bc454" stroke-width="2">
+                                                    <rect width="53.438" height="31" rx="7" stroke="none"/>
+                                                    <rect x="1" y="1" width="51.438" height="29" rx="6" fill="none"/>
+                                                    </g>
+                                                    <text data-name="E 60" transform="translate(389.201 .301)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="46.579" y="22">E</tspan></text>
+                                                    <g data-name="Rectangle 1835" transform="rotate(90 157.256 288.582)" fill="#fff" stroke="#9a9a9a">
+                                                    <rect width="53.438" height="31" rx="7" stroke="none"/>
+                                                    <rect x=".5" y=".5" width="52.438" height="30" rx="6.5" fill="none"/>
+                                                    </g>
+                                                    <text data-name="D 120" transform="rotate(90 182.44 284.118)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="49.119" y="22">D</tspan><tspan x="39.959" y="50">120</tspan></text>
+                                                    <g data-name="Rectangle 1835" transform="translate(24.192 28.053)" fill="#fff" stroke="#9a9a9a">
+                                                    <rect width="53.438" height="31" rx="7" stroke="none"/>
+                                                    <rect x=".5" y=".5" width="52.438" height="30" rx="6.5" fill="none"/>
+                                                    </g>
+                                                    <g data-name="Rectangle 1835" transform="translate(221.168 202.974)" fill="#fff" stroke="#9a9a9a">
+                                                    <rect width="53.438" height="31" rx="7" stroke="none"/>
+                                                    <rect x=".5" y=".5" width="52.438" height="30" rx="6.5" fill="none"/>
+                                                    </g>
+                                                    <text data-name="A 60" transform="translate(.301 7.678)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="45.187" y="22">A</tspan></text>
+                                                    <text data-name="C 300" transform="translate(197.25 181.763)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="45.446" y="22">C</tspan></text>
+                                                    <g data-name="Rectangle 1836" transform="rotate(-90 121.646 73.696)" fill="#fff" stroke="#9a9a9a">
+                                                    <rect width="53.438" height="31" rx="7" stroke="none"/>
+                                                    <rect x=".5" y=".5" width="52.438" height="30" rx="6.5" fill="none"/>
+                                                    </g>
+                                                    <text data-name="B 120" transform="rotate(-90 125.874 98.88)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width=".3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="50.398" y="22">B</tspan><tspan x="39.959" y="50">120</tspan></text>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <!-- right bottom  table  -->
+                                    <div class="bottom__table">
+                                        <!-- table section  -->
+                                        <table class="table mb-0" id="inside__table">
+                                            <tbody>
+                                                <!-- top row  -->
+                                                <tr class="top__row">
+                                                    <td>
+                                                        <p class="para text-dark-500">rebar</p>
+                                                        <p class="para">number</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para">steel</p>
+                                                        <p class="para">type</p>
+                                                    </td>
+                                                    <td class="row__two">
+                                                        <div class="one cell d-flex align-items-center justify-content-center"><img src="./img/order__page/pie.png" alt="pie icon"> <p class="para">diameter</p></div>
+                                                        <div class="two cell unit__cell d-flex align-items-center justify-content-center"><p class="para unit">mm</p></div>
+                                                    </td>
+                                                    <!-- three colum table  -->
+                                                    <td class="row__three">
+                                                        <div class="one cell"><p class="para text-uppercase text-center">sides</p></div>
+                                                        <!-- five column  -->
+                                                        <div class="two rows d-flex flex-wrap justify-content-between w-xs-100 cell">
+                                                            <div class="mini__cell w-xs-20"><p class="para text-uppercase text-center">a</p></div>
+                                                            <div class="mini__cell w-xs-20"><p class="para text-uppercase text-center">b</p></div>
+                                                            <div class="mini__cell w-xs-20"><p class="para text-uppercase text-center">c</p></div>
+                                                            <div class="mini__cell w-xs-20"><p class="para text-uppercase text-center">d</p></div>
+                                                            <div class="mini__cell w-xs-20"><p class="para text-uppercase text-center">e</p></div>
+                                                        </div>
+                                                        <div class="three unit__cell">
+                                                            <p class="para text-center unit">cm</p>
+                                                        </div>
+                                                    </td>
+                                                    <!-- three column table  -->
+                                                    <td class="d-flex flex-column row__three">
+                                                        <div class="one cell"><p class="para text-uppercase text-center">bend</p></div>
+                                                        <!-- four column  -->
+                                                        <div class="two d-flex d-flex flex-wrap w-xs-100 cell">
+                                                            <div class="mini__cell w-xs-25"><p class="para text-center">a</p></div>
+                                                            <div class="mini__cell w-xs-25"><p class="para text-center">b</p></div>
+                                                            <div class="mini__cell w-xs-25"><p class="para text-center">c</p></div>
+                                                            <div class="mini__cell w-xs-25"><p class="para text-center">d</p></div>
+                                                        </div>
+                                                        <div class="three unit__cell">
+                                                            <p class="para text-center unit">degrees</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="d-flex flex-column row__two">
+                                                        <div class="one cell d-flex flex-column">
+                                                            <p class="para">total</p>
+                                                            <p class="para">length</p>
+                                                        </div>
+                                                        <div class="two cell unit__cell"><p class="para unit">cm</p></div>
+                                                    </td>
+                                                    <td class="d-flex flex-column row__two">
+                                                        <div class="one cell">
+                                                            <p class="para">amount</p>
+                                                        </div>
+                                                        <div class="two cell unit__cell"><p class="para unit">units</p></div>
+                                                    </td>
+                                                    <td class="row__three">
+                                                        <div class="one cell"><p class="para text-uppercase text-center">bend</p></div>
+                                                        <!-- four column  -->
+                                                        <div class="d-flex w-xs-100 parent__cell">
+                                                            <div class="cell w-xs-50 border-0"><p class="para text-center text-uppercase">total</p></div>
+                                                            <div class="cell w-xs-50"><p class="para text-center text-uppercase">unit</p></div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between w-xs-100 parent__cell">
+                                                            <div class="cell w-xs-50 border-0 unit__cell"><p class="para text-center unit">kg</p></div>
+                                                            <div class="cell w-xs-50 unit__cell"><p class="para text-center unit">kg</p></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- bottom row  -->
+                                                <tr class="bottom__row">
+                                                    <td>
+                                                        <p class="para text-center text-ash">067</p>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control form-control-sm">
+                                                            <option class="para"><span class="para">$500</span> <img src="./img/order__page/hei__top.png" alt="hei top icon"></option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control form-control-sm">
+                                                            <option class="para"><span class="para">$500</span> <img src="./img/order__page/hei__top.png" alt="hei top icon"></option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">60</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">120</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">300</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">120</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">60</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">660</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">30</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">26.07</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">782.10</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- right bottom btn row  -->
+                                    <div class="row align-items-start justify-content-around mx-0 bottom__btn__list p-lg-3">
+                                        <!-- input wrapper  -->
+                                        <div class="w-xs-30 item">
+                                            <div class="col__wrap d-flex flex-column align-xl-items-center">
+                                                <p class="para big__para text-uppercase d-inline-block mr-3">nots</p>
+                                                <input type="text" class="form-control d-inline-block mt-2 w-xl-70">
+                                            </div>
+                                        </div>
+                                        <!-- input wrapper  -->
+                                        <div class="item w-xs-35 w-xl-40">
+                                            <div class="col__wrap d-flex flex-column align-xl-items-center">
+                                                <p class="para big__para text-uppercase d-inline-block mr-3 fix__para__width">position nots</p>
+                                                <input type="text" class="form-control d-inline-block mt-2 w-xl-60">
+                                            </div>
+                                        </div>
+                                        <!-- button wrapper  -->
+                                        <div class="btn__container item d-flex flex-column justify-xl-content-between align-items-start w-xs-35 w-xl-30">
+                                            <button class="btn btn-dark text-center text-white d-flex align-items-center cus__btn">
+                                                <span class="icon__wrap mr-2"><i class="fas fa-plus"></i></span>
+                                                <h6 class="text-white text-center text-uppercase mb-0">save and add</h6>
+                                            </button>
+                                            <button class="btn btn-dark text-center text-white d-flex align-items-center cus__btn cus__btn__blue mt-2">
+                                                <span class="icon__wrap mr-2"><i class="fas fa-check"></i></span>
+                                                <h6 class="text-white text-center text-uppercase mb-0">save</h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- bottom section  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- js files  -->
+        <script src="./bootstrap/jquery-3.6.0.min.js"></script>
+        <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+            integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>

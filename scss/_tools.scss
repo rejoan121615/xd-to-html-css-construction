@@ -90,6 +90,7 @@ $mini__border: 0.3px solid black;
  
                 // filter section
                 .filter {
+                    // filter list 
                     .filter__list {
                         list-style: none;
                         li {
@@ -100,6 +101,20 @@ $mini__border: 0.3px solid black;
                                 border-radius: 50%;
                                 border: 1px solid $border;
                             }
+                        }
+                    }
+                    // twiker btn 
+                    .btn-group {
+                        button {
+                            padding: 4px 16px!important;
+                            color: black!important;
+                            border: 1px solid black;
+                            font-size: 14px;
+                            background-color: white!important;
+                        }
+                        .active {
+                            background-color: $header__bg!important;
+                            color: white!important;
                         }
                     }
                 }

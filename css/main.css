@@ -1834,6 +1834,17 @@ section.forms .container .form-check .form-check-label {
   border-radius: 50%;
   border: 1px solid #8c8c8d;
 }
+.tools .container .tools__wrapper .tools__body .filter .btn-group button {
+  padding: 4px 16px !important;
+  color: black !important;
+  border: 1px solid black;
+  font-size: 14px;
+  background-color: white !important;
+}
+.tools .container .tools__wrapper .tools__body .filter .btn-group .active {
+  background-color: #374051 !important;
+  color: white !important;
+}
 .tools .container .tools__wrapper .tools__body .shape__list .left__shaped .shape__wrapper .tool__wrap {
   width: 40px;
   height: 40px;

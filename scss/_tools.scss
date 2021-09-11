@@ -1,5 +1,11 @@
 .tools {
-    // common style 
+    // common style
+    .container {
+        @media only screen and (min-width: $md) and (max-width: $lg) {
+            width: 100%!important;
+            max-width: 100%!important;
+        }
+    }
     p.para {
         font-size: 15px;
     }
@@ -10,10 +16,10 @@
     }
     h6 {
         font-size: 15px;
-        color: #4E5055;
+        color: #4e5055;
     }
 
-    // style 
+    // style
     width: 100%;
     background-color: $tools;
     min-height: 100vh;
@@ -42,34 +48,34 @@
                     }
                 }
             }
-            // body section 
+            // body section
             .tools__body {
                 background-color: white;
-                // text section 
+                // text section
                 .texts {
                     // h4 {
                     //     font-size: 20px;
                     // }
                 }
-                // filter section 
+                // filter section
                 .filter {
                     .filter__list {
                         list-style: none;
                         li {
-                           .icon__wrap {
-                               width: 28px;
-                               height: 28px;
-                               color: $border;
-                               border-radius: 50%;
-                               border: 1px solid $border;
-                           } 
+                            .icon__wrap {
+                                width: 28px;
+                                height: 28px;
+                                color: $border;
+                                border-radius: 50%;
+                                border: 1px solid $border;
+                            }
                         }
                     }
                 }
-                // shape list 
+                // shape list
                 .shape__list {
                     .left__shaped {
-                        // shape list 
+                        // shape list
                         .shape__wrapper {
                             .tool__wrap {
                                 width: 40px;
@@ -88,30 +94,57 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
 
+// right section table
+.tools {
+    .right {
+        background-color: #f0f0f0;
+        // top section
 
-                // right section 
-                .right {
-                    background-color: #F0F0F0;
-                    // top section 
-
-                    // ------------
-                    // main img and table 
-                    .highlight__section {
-                        border-top-left-radius: 25px;
-                        border-top-right-radius: 25px;
-                        // image table 
-                        .high__img {
-                            .svg__wrap {
-                                width: 65%;
-                                svg.svg {
-                                    width: 100%;
-                                }
-                            }
-                        }
-                        // bottom table 
+        // ------------
+        // main img and table
+        .highlight__section {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            // image table
+            .high__img {
+                .svg__wrap {
+                    width: 65%;
+                    svg.svg {
+                        width: 100%;
                     }
                 }
+            }
+        }
+
+
+        // right bottom big table -----------------
+        .bottom__table {
+            width: 100%;
+            #inside__table {
+                width: 100%;
+                // rows 
+                tr {
+                    
+                    td {
+                        padding: 0px!important;
+                    }
+                }
+                // first row / top row 
+                .top__row {
+                    display: grid;
+                    grid-template-columns: 1fr 1.50fr 1.25fr 5fr 4fr 1fr 1.50fr 2fr;
+                }
+                // bottom row 
+                .bottom__row {
+                    display: grid;
+                    grid-template-columns: 1fr 1.50fr 1.25fr repeat(5, 1fr) repeat(4, 1fr) 1fr 1.50fr repeat(2, 1fr);
+                }
+
             }
         }
     }

@@ -36,9 +36,9 @@
                     </div>
                     <!-- body  section  -->
                     <div class="tools__body">
-                        <div class="row m-0">
+                        <div class="row m-0 flex-column flex-xl-row">
                             <!-- left section  -->
-                            <div class="col-4 left pt-4 pl-4">
+                            <div class="w-xs-100 left pt-3 pl-3 d-flex">
                                 <!-- text section  -->
                                 <div class="texts pb-3 border__bottom">
                                         <h4 class="text-left text-uppercase text-dark-500">add new item</h4>
@@ -67,10 +67,20 @@
                                             <div class="tool__wrap d-flex align-items-center justify-content-center"><img class="d-inline-block" src="./img/tools/lg/5th.svg" alt="tools images"></div>
                                         </div>
                                     </div>
+                                    <!-- right big image  -->
+                                    <div class="right__shape">
+                                        <!-- top shape  -->
+                                        <div class="top__shape">
+                                            <img src="./img/tools/lg/צורה1.svg" alt="shape images">
+                                        </div>
+                                        <div class="top__shape">
+                                            <img src="./img/tools/lg/צורה2.svg" alt="shape images">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <!-- right section  -->
-                            <div class="col-8 right pt-4 px-4">
+                            <div class="w-xs-77 right pt-4">
                                 <!-- top section  -->
                                 <div class="top d-flex align-items-center justify-content-between">
                                     <div class="texts d-flex align-items-center">
@@ -82,7 +92,7 @@
                                     </div>
                                 </div>
                                 <!-- main img and table table  -->
-                                <div class="highlight__section bg-white w-xs-100 p-4 mt-4">
+                                <div class="highlight__section bg-white w-xs-100 mt-4">
                                     <!-- image table  -->
                                     <div class="high__img d-flex align-items-center justify-content-center">
                                         <div class="svg__wrap">
@@ -126,12 +136,12 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <!-- bottom table  -->
-                                    <div class="bottom__table d-none">
-                                        <table>
+                                    <!-- right bottom  table  -->
+                                    <div class="bottom__table">
+                                        <!-- <table>
                                             <tbody>
-                                                <!-- first row  -->
-                                                <tr>
+                                                
+                                                <tr class="d-flex">
                                                     <td class="d-flex flex-column">
                                                         <p class="para text-dark text-uppercase">rebar</p>
                                                         <p class="para text-dark text-uppercase">number</p>
@@ -149,43 +159,43 @@
                                                             <p class="para">mm</p>
                                                         </div>
                                                     </td>
-                                                    <!-- sides table  -->
+                                                   
                                                     <td class="d-flex flex-column">
-                                                        <!-- top section  -->
-                                                        <div class="top">
-                                                            <p class="para text-center text-uppercase text-dark">sides</p></tr>
-                                    </div>
-                                        <!-- center section  -->
-                                        <div class="d-none">
-                                                            <div class="item"><p class="para text-center text-uppercase text-dark">a</p></div>
-                                                            <div class="item"><p class="para text-center text-uppercase text-dark">b</p></div>
-                                                            <div class="item"><p class="para text-center text-uppercase text-dark">c</p></div>
-                                                            <div class="item"><p class="para text-center text-uppercase text-dark">d</p></div>
-                                                            <div class="item"><p class="para text-center text-uppercase text-dark">e</p></div>
-                                        </div>
-                                        <!-- unit  -->
-                                        <div class="units">
-                                            <p class="para unit">cm</p>
-                                        </div>
-                                    </td>
-                                                    <!-- bend section  -->
-                                                    <td class="d-flex flex-column">
-                                                        <!-- top section  -->
+                                                       
                                                         <div class="top">
                                                             <p class="para text-center text-uppercase text-dark">sides</p></tr>
                                                         </div>
-                                                        <!-- center section  -->
+                                        
+                                                    <div class="d-none">
+                                                                        <div class="item"><p class="para text-center text-uppercase text-dark">a</p></div>
+                                                                        <div class="item"><p class="para text-center text-uppercase text-dark">b</p></div>
+                                                                        <div class="item"><p class="para text-center text-uppercase text-dark">c</p></div>
+                                                                        <div class="item"><p class="para text-center text-uppercase text-dark">d</p></div>
+                                                                        <div class="item"><p class="para text-center text-uppercase text-dark">e</p></div>
+                                                    </div>
+                                        
+                                                        <div class="units">
+                                                            <p class="para unit">cm</p>
+                                                        </div>
+                                                    </td>
+                                                    
+                                                    <td class="d-flex flex-column">
+                                                        
+                                                        <div class="top">
+                                                            <p class="para text-center text-uppercase text-dark">sides</p></tr>
+                                                        </div>
+                                                        
                                                         <div class="options d-flex w-xs-100">
                                                             <div class="item"><p class="para text-center text-capitalize text-dark">a</p></div>
                                                             <div class="item"><p class="para text-center text-capitalize text-dark">b</p></div>
                                                             <div class="item"><p class="para text-center text-capitalize text-dark">c</p></div>
                                                             <div class="item"><p class="para text-center text-capitalize text-dark">d</p></div>                                                        </div>
-                                                        <!-- unit  -->
+                                                        
                                                         <div class="units">
                                                             <p class="para unit">degrees</p>
                                                         </div>
                                                     </td>
-                                                    <!-- total length  -->
+                                                    
                                                     <td class="d-flex flex-column align-items-center">
                                                         <div class="top">
                                                             <p class="para text-dark text-uppercase">total</p>
@@ -195,7 +205,7 @@
                                                             <p class="para text-dark text-uppercase unit">length</p>                                                          
                                                         </div>
                                                     </td>
-                                                    <!-- amount  -->
+                                                    
                                                     <td class="d-flex flex-column align-items-center">
                                                        <div class="top">
                                                             <p class="para text-dark text-uppercase">amount</p>
@@ -204,7 +214,7 @@
                                                             <p class="para text-dark text-uppercase unit">units</p>                                                          
                                                         </div>
                                                     </td>
-                                                    <!-- amount  -->
+                                                    
                                                     <td class="d-flex flex-column align-items-center">
                                                        <div class="top">
                                                             <p class="para text-dark text-uppercase">weight</p>
@@ -220,6 +230,135 @@
                                                         <div class="bottom">
                                                             <p class="para text-dark text-uppercase unit">units</p>                                                          
                                                         </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table> -->
+                                        <!-- table section  -->
+                                        <table class="table" id="inside__table">
+                                            <tbody>
+                                                <!-- top row  -->
+                                                <tr class="top__row">
+                                                    <td>
+                                                        <p class="para text-dark-500">rebar</p>
+                                                        <p class="para">number</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para">steel</p>
+                                                        <p class="para">type</p>
+                                                    </td>
+                                                    <td class="d-flex flex-column row__two">
+                                                        <div class="one cell"><img src="./img/order__page/pie.png" alt="pie icon" style="width: 20px;"> <p class="para">diameter</p></div>
+                                                        <div class="two cell"><p class="para unit">mm</p></div>
+                                                    </td>
+                                                    <!-- three colum table  -->
+                                                    <td class="d-flex flex-column row__three">
+                                                        <div class="one cell"><p class="para text-uppercase text-center">sides</p></div>
+                                                        <!-- five column  -->
+                                                        <div class="two rows d-flex flex-wrap">
+                                                            <div class="cell w-xs-20"><p class="para text-uppercase text-center">a</p></div>
+                                                            <div class="cell w-xs-20"><p class="para text-uppercase text-center">b</p></div>
+                                                            <div class="cell w-xs-20"><p class="para text-uppercase text-center">c</p></div>
+                                                            <div class="cell w-xs-20"><p class="para text-uppercase text-center">d</p></div>
+                                                            <div class="cell w-xs-20"><p class="para text-uppercase text-center">e</p></div>
+                                                        </div>
+                                                        <div class="three cell">
+                                                            <p class="para text-center">cm</p>
+                                                        </div>
+                                                    </td>
+                                                    <!-- three column table  -->
+                                                    <td class="d-flex flex-column row__three">
+                                                        <div class="one cell"><p class="para text-uppercase text-center">bend</p></div>
+                                                        <!-- four column  -->
+                                                        <div class="two rows d-flex flex-wrap">
+                                                            <div class="cell w-xs-25"><p class="para text-center">a</p></div>
+                                                            <div class="cell w-xs-25"><p class="para text-center">b</p></div>
+                                                            <div class="cell w-xs-25"><p class="para text-center">c</p></div>
+                                                            <div class="cell w-xs-25"><p class="para text-center">d</p></div>
+                                                        </div>
+                                                        <div class="three cell">
+                                                            <p class="para text-center">degrees</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="d-flex flex-column row__two">
+                                                        <div class="one cell">
+                                                            <p class="para">total</p>
+                                                            <p class="para">length</p>
+                                                        </div>
+                                                        <div class="two cell"><p class="para unit">cm</p></div>
+                                                    </td>
+                                                    <td class="d-flex flex-column row__two">
+                                                        <div class="one cell">
+                                                            <p class="para">amount</p>
+                                                        </div>
+                                                        <div class="two cell"><p class="para unit">units</p></div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="one cell"><p class="para text-uppercase text-center">bend</p></div>
+                                                        <!-- four column  -->
+                                                        <div class="two rows d-flex flex-wrap">
+                                                            <div class="cell w-xs-50"><p class="para text-center text-uppercase">total</p></div>
+                                                            <div class="cell w-xs-50"><p class="para text-center text-uppercase">unit</p></div>
+                                                        </div>
+                                                        <div class="three cell d-flex flex-column">
+                                                            <div class="cell w-xs-50"><p class="para text-center unit">kg</p></div>
+                                                            <div class="cell w-xs-50"><p class="para text-center unit">kg</p></div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <!-- bottom row  -->
+                                                <tr class="bottom__row">
+                                                    <td>
+                                                        <p class="para text-center text-ash">067</p>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control form-control-sm">
+                                                            <option class="para"><span class="para">$500</span> <img src="./img/order__page/hei__top.png" alt="hei top icon"></option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-control form-control-sm">
+                                                            <option class="para"><span class="para">$500</span> <img src="./img/order__page/hei__top.png" alt="hei top icon"></option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">60</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">120</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">300</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">120</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">60</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">660</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">30</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">26.07</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="para text-center text-ash">782.10</p>
                                                     </td>
                                                 </tr>
                                             </tbody>

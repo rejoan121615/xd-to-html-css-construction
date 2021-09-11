@@ -1,9 +1,28 @@
+$mini__border: 0.3px solid black;
+
+.cell__border__right {
+    border-right: $mini__border;
+}
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .mini__cell {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .tools {
     // common style
     .container {
         @media only screen and (min-width: $md) and (max-width: $lg) {
-            width: 100%!important;
-            max-width: 100%!important;
+            // width: 100%!important;
+            // max-width: 100%!important;
         }
     }
     p.para {
@@ -103,6 +122,8 @@
 .tools {
     .right {
         background-color: #f0f0f0;
+        padding-left: 12px;
+        padding-right: 12px;
         // top section
 
         // ------------
@@ -121,30 +142,94 @@
             }
         }
 
-
         // right bottom big table -----------------
         .bottom__table {
             width: 100%;
             #inside__table {
                 width: 100%;
-                // rows 
+                background-color: #F0F0F0;
+                // rows
                 tr {
-                    
                     td {
-                        padding: 0px!important;
+                        padding: 0px !important;
+                        display: flex;
+                        flex-flow: column wrap;
+                        align-items: center;
+                        justify-content: center;
+                        text-transform: uppercase !important;
+                        border-right: 0.5px solid black;
+                        .para {
+                            font-size: 13px;
+                            font-weight: 600;
+                            color: black !important;
+                        }
+                        img {
+                            width: 10px !important;
+                        }
+                        // unit cell 
+                        .unit__cell {
+                            width: 100%;
+                            height: 100%;
+                            background-color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-top: $mini__border;
+                            .unit {
+                                color: #959DAC!important;
+                                text-transform: lowercase!important;
+                            } 
+                            // border-top: 0.3px solid lighten($color: #000000, $amount: 70);
+                        }
+                    }
+
+                    // row two
+                    .row__two {
+                        display: grid!important;
+                        grid-template-rows: 2fr 1fr;
+                        grid-template-columns: 1fr;
+                        justify-items: center;
+                        align-items: center;
+                    }
+                    // row three 
+                    .row__three {
+                        display: grid!important;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(3, 1fr);
+                        justify-items: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        .cell {
+                            width: 100%;
+                            height: 100%;
+                            border: none;
+                            &:first-child {
+                                border-bottom: $mini__border;
+                            } 
+                            .mini__cell {
+                                border-right: $mini__border;
+                                &:last-child {
+                                    border-right: none;
+                                }
+                            }
+                            // border-top: 0.3px solid lighten($color: #000000, $amount: 70);
+                        }
                     }
                 }
-                // first row / top row 
+                // first row / top row
                 .top__row {
                     display: grid;
-                    grid-template-columns: 1fr 1.50fr 1.25fr 5fr 4fr 1fr 1.50fr 2fr;
+                    grid-template-columns: 1.25fr 1.5fr 1.75fr 3.5fr 2.5fr 1.3fr 1.5fr 1.75fr;
                 }
-                // bottom row 
+                // bottom row
                 .bottom__row {
                     display: grid;
-                    grid-template-columns: 1fr 1.50fr 1.25fr repeat(5, 1fr) repeat(4, 1fr) 1fr 1.50fr repeat(2, 1fr);
+                    grid-template-columns: 1.25fr 1.5fr 1.25fr repeat(5, 1fr) repeat(
+                            4,
+                            1fr
+                        ) 1.3fr 1.5fr repeat(2, 1fr);
                 }
-
             }
         }
     }

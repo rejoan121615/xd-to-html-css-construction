@@ -1745,16 +1745,29 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
+.cell__border__right {
+  border-right: 0.3px solid black;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.cell .mini__cell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tools {
   width: 100%;
-  background-color: #5F6673;
+  background-color: #F0F0F0;
   min-height: 100vh;
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .tools .container {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
 }
 .tools p.para {
   font-size: 15px;
@@ -1815,6 +1828,8 @@ section.forms .container .form-check .form-check-label {
 
 .tools .right {
   background-color: #f0f0f0;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .tools .right .highlight__section {
   border-top-left-radius: 25px;
@@ -1831,17 +1846,75 @@ section.forms .container .form-check .form-check-label {
 }
 .tools .right .bottom__table #inside__table {
   width: 100%;
+  background-color: #F0F0F0;
 }
 .tools .right .bottom__table #inside__table tr td {
   padding: 0px !important;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase !important;
+  border-right: 0.5px solid black;
+}
+.tools .right .bottom__table #inside__table tr td .para {
+  font-size: 13px;
+  font-weight: 600;
+  color: black !important;
+}
+.tools .right .bottom__table #inside__table tr td img {
+  width: 10px !important;
+}
+.tools .right .bottom__table #inside__table tr td .unit__cell {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.3px solid black;
+}
+.tools .right .bottom__table #inside__table tr td .unit__cell .unit {
+  color: #959DAC !important;
+  text-transform: lowercase !important;
+}
+.tools .right .bottom__table #inside__table tr .row__two {
+  display: grid !important;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.tools .right .bottom__table #inside__table tr .row__three {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.tools .right .bottom__table #inside__table tr .row__three .cell {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.tools .right .bottom__table #inside__table tr .row__three .cell:first-child {
+  border-bottom: 0.3px solid black;
+}
+.tools .right .bottom__table #inside__table tr .row__three .cell .mini__cell {
+  border-right: 0.3px solid black;
+}
+.tools .right .bottom__table #inside__table tr .row__three .cell .mini__cell:last-child {
+  border-right: none;
 }
 .tools .right .bottom__table #inside__table .top__row {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1.25fr 5fr 4fr 1fr 1.5fr 2fr;
+  grid-template-columns: 1.25fr 1.5fr 1.75fr 3.5fr 2.5fr 1.3fr 1.5fr 1.75fr;
 }
 .tools .right .bottom__table #inside__table .bottom__row {
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1.25fr repeat(5, 1fr) repeat(4, 1fr) 1fr 1.5fr repeat(2, 1fr);
+  grid-template-columns: 1.25fr 1.5fr 1.25fr repeat(5, 1fr) repeat(4, 1fr) 1.3fr 1.5fr repeat(2, 1fr);
 }
 
 /*# sourceMappingURL=main.css.map */

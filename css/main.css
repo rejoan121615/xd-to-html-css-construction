@@ -2156,30 +2156,65 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
-.shape__list h6 {
+.net__tools .shape__list h6 {
   font-weight: 700;
 }
-.shape__list .input__box .item img {
-  width: 17px;
+.net__tools .shape__list .input__box .item img {
+  width: 15px;
 }
-.shape__list .input__box .item select {
+.net__tools .shape__list .input__box .item select {
   border-color: #cccccc;
   color: #b3b3b3 !important;
 }
-.shape__list .card__list {
-  margin-top: 25px;
+.net__tools .shape__list .card__list {
+  margin-top: 35px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
 }
-.shape__list .card__list .cardItem {
+@media only screen and (min-width: 1400px) {
+  .net__tools .shape__list .card__list {
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .net__tools .shape__list .card__list {
+    margin-top: 15px;
+  }
+}
+.net__tools .shape__list .card__list .cardItem {
   padding: 15px;
   background-color: white;
   border-radius: 5px;
 }
-.shape__list .card__list .cardItem svg {
+.net__tools .shape__list .card__list .cardItem svg {
   width: 100%;
+}
+@media only screen and (min-width: 1400px) {
+  .net__tools .shape__list .card__list .cardItem svg {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .net__tools .shape__list .card__list .cardItem svg {
+    width: 78%;
+  }
+}
+.net__tools .net__highlight .svg {
+  width: 460px !important;
+}
+@media only screen and (min-width: 1400px) {
+  .net__tools .net__highlight .svg {
+    width: 480px !important;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .net__tools .net__highlight .svg {
+    width: 510px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

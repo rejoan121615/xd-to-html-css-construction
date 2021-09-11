@@ -441,3 +441,40 @@ $mini__border: 0.3px solid black;
         }
     }
 }
+
+
+.shape__list {
+    // heading 
+    h6 {
+        font-weight: 700;
+    }
+    // left side list 
+    .input__box {
+        .item {
+            img {
+                width: 17px;
+            }
+            select {
+                border-color: lighten($color: #000000, $amount: 80);
+                color: lighten($color: #000000, $amount: 70)!important;
+            }
+        }
+    }
+
+    // image container 
+    .card__list {
+        margin-top: 25px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        .cardItem {
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            svg {
+                width: 100%;
+            }
+        }
+    }
+}

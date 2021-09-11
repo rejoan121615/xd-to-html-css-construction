@@ -2156,4 +2156,30 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
+.shape__list h6 {
+  font-weight: 700;
+}
+.shape__list .input__box .item img {
+  width: 17px;
+}
+.shape__list .input__box .item select {
+  border-color: #cccccc;
+  color: #b3b3b3 !important;
+}
+.shape__list .card__list {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+.shape__list .card__list .cardItem {
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+.shape__list .card__list .cardItem svg {
+  width: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

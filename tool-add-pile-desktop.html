@@ -370,11 +370,11 @@
                                     </div>
                                 </div>
                                 <!-- main img and table table  -->
-                                <div class="highlight__section net__highlight bg-white w-xs-100 mt-4">
+                                <div class="highlight__section net__highlight bg-white w-xs-100 mt-4" id="main__section">
                                     <!-- image table  -->
-                                    <div class="high__img d-flex">
-                                        <div class="svg__wrap left text-center w-xs-70 h100">
-                                            <svg class="d-block h100 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 659.319 286.515">
+                                    <div class="high__img d-flex pile__high__img">
+                                        <div class="svg__wrap left text-center w-xs-70 w-xl-100 h100 p-4">
+                                            <svg class="d-block h100 mx-auto w-xl-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 659.319 286.515">
                                                 <path data-name="Rectangle 1715" fill="#f5f5f5" d="M218.143 110.089h441.176v94.118H218.143z"/>
                                                 <path data-name="Line 2638" fill="none" stroke="#4e5055" stroke-linecap="square" stroke-miterlimit="10" stroke-width="4" d="M135.953 127.642h494.819"/>
                                                 <path data-name="Line 2639" fill="none" stroke="#4e5055" stroke-linecap="square" stroke-miterlimit="10" stroke-width="4" d="M135.953 182.794h494.819"/>
@@ -493,9 +493,9 @@
                                                 </g>
                                             </svg>
                                         </div>
-                                        <div class="right text-center d-flex flex-column w-xs-30">
+                                        <div class="right text-center d-flex flex-column w-xs-30 w-xl-100" id="left__img__4547">
                                             <div class="svg__wrap text-center w-xs-100">
-                                                <svg class="d-block first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.302 156.762">
+                                                <svg class="d-inline-block first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.302 156.762">
                                                     <g data-name="Group 3920" transform="translate(-1239.893 -347.023)">
                                                         <circle data-name="Ellipse 114" cx="52.043" cy="52.043" r="52.043" transform="translate(1311.207 365.65)" fill="#fff" stroke="#4e5055" stroke-miterlimit="10" stroke-width="2"/>
                                                         <g data-name="Ellipse 115" transform="translate(1321.998 376.442)" fill="#fff" stroke="#4e5055" stroke-miterlimit="10" stroke-width="4">
@@ -531,7 +531,7 @@
                                                 </svg>
                                             </div>
                                             <div class="svg__wrap text-center w-xs-100">
-                                                <svg class="d-block mx-auto sec" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.885 108.625">
+                                                <svg class="d-inline-block mx-auto sec" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238.885 108.625">
                                                     <g transform="translate(-1480.797 -359.525)">
                                                         <circle data-name="Ellipse 114" cx="52.043" cy="52.043" r="52.043" transform="translate(1533.754 360.525)" fill="#fff" stroke="#4e5055" stroke-miterlimit="10" stroke-width="2"/>
                                                         <g data-name="Ellipse 115" transform="translate(1544.545 371.317)" fill="#fff" stroke="#4e5055" stroke-miterlimit="10" stroke-width="4">
@@ -614,7 +614,7 @@
                                                         <!-- five column  -->
                                                         <div class="two rows d-flex flex-wrap justify-content-between w-xs-100 cell">
                                                             <!-- left  -->
-                                                            <div class="left d-flex flex-column h100 bg-transparent">
+                                                            <div class="left d-flex flex-column h100 bg-transparent" id="col_9655">
                                                                 <!-- top row  -->
                                                                 <div class="top h50">
                                                                     <div class="cell w-xs-100"><p class="para text-uppercase text-center">spital</p></div>
@@ -634,7 +634,7 @@
                                                                 </div>
                                                             </div>
                                                             <!-- right  -->
-                                                            <div class="right d-flex flex-column p-0 h100">
+                                                            <div class="right d-flex flex-column p-0 h100" id="col__6325">
                                                                 <div class="cell h50"><p class="para text-uppercase text-center">length</p></div>
                                                                 <div class="cell h50 d-flex flex-column">
                                                                     <p class="para text-uppercase text-center p-0">steel</p>
@@ -802,6 +802,34 @@
                                     </div>
                                 </div>
                                 <!-- bottom section  -->
+<!-- right bottom btn row  -->
+                                    <div class="row align-items-start justify-content-around mx-0 bottom__btn__list p-lg-3">
+                                        <!-- input wrapper  -->
+                                        <div class="w-xs-30 item">
+                                            <div class="col__wrap d-flex flex-column align-xl-items-center">
+                                                <p class="para big__para text-uppercase d-inline-block mr-3">nots</p>
+                                                <input type="text" class="form-control d-inline-block mt-2 w-xl-70">
+                                            </div>
+                                        </div>
+                                        <!-- input wrapper  -->
+                                        <div class="item w-xs-35 w-xl-40">
+                                            <div class="col__wrap d-flex flex-column align-xl-items-center">
+                                                <p class="para big__para text-uppercase d-inline-block mr-3 fix__para__width">position nots</p>
+                                                <input type="text" class="form-control d-inline-block mt-2 w-xl-60">
+                                            </div>
+                                        </div>
+                                        <!-- button wrapper  -->
+                                        <div class="btn__container item d-flex flex-column justify-xl-content-between align-items-start w-xs-35 w-xl-30">
+                                            <button class="btn btn-dark text-center text-white d-flex align-items-center cus__btn">
+                                                <span class="icon__wrap mr-2"><i class="fas fa-plus"></i></span>
+                                                <h6 class="text-white text-center text-uppercase mb-0">save and add</h6>
+                                            </button>
+                                            <button class="btn btn-dark text-center text-white d-flex align-items-center cus__btn cus__btn__blue mt-2">
+                                                <span class="icon__wrap mr-2"><i class="fas fa-check"></i></span>
+                                                <h6 class="text-white text-center text-uppercase mb-0">save</h6>
+                                            </button>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>

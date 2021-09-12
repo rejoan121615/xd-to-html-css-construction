@@ -2324,7 +2324,7 @@ section.forms .container .form-check .form-check-label {
   grid-template-columns: 1.25fr 2.5fr 8fr 4fr 1.25fr 2fr !important;
 }
 .pile__tools .bottom__table .table .bottom__row {
-  grid-template-columns: 1.25fr repeat(2, 1.25fr) repeat(8, 1fr) repeat(4, 1fr) 1.25fr 1fr 1fr !important;
+  grid-template-columns: 1.25fr repeat(2, 1.25fr) 34px 47px 35px 34px 34px 34px 34px 43px repeat(4, 1fr) 1.25fr 1fr 1fr !important;
 }
 .pile__tools .pile__table .three_col_5471 .two {
   display: grid !important;
@@ -2342,7 +2342,7 @@ section.forms .container .form-check .form-check-label {
 }
 .pile__tools .pile__table .three_col_5471 .fix__unit__wrap {
   display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  grid-template-columns: 34px 47px 34px 69px 34px 34px 42px;
 }
 .pile__tools .pile__table .grid__row__4784 {
   display: grid !important;

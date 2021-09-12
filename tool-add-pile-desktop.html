@@ -40,7 +40,7 @@
                             <!-- left section  -->
                             <div class="w-xs-22 left">
                                 <!-- left wrapper one  -->
-                                <div id="left__wrapper__one" class="d-none">
+                                <div id="left__wrapper__one">
                                     <!-- text section  -->
                                     <div class="texts border__bottom p-4">
                                         <h4 class="text-left text-uppercase text-dark-500">add new item</h4>
@@ -52,7 +52,7 @@
                                         <!-- twiker btn  -->
                                         <div class="btn-group mt-2" role="group" aria-label="Basic example">
                                             <button type="button" class="btn text-dark para text-uppercase active">base</button>
-                                            <button type="button" class="btn para text-white text-uppercase">side</button>
+                                            <button type="button" class="btn para text-white text-uppercase" id="side__btn">side</button>
                                         </div>
                                         <!-- filter list s  -->
                                         <ul class="filter__list m-0 p-0 mt-3">
@@ -372,8 +372,8 @@
                                         <h6 class="text-left text-uppercase text-dark-500">cage type</h6>
                                         <!-- twiker btn  -->
                                         <div class="btn-group mt-2" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn text-dark para text-uppercase active">base</button>
-                                            <button type="button" class="btn para text-white text-uppercase">side</button>
+                                            <button type="button" class="btn text-dark para text-uppercase" id="base__btn">base</button>
+                                            <button type="button" class="btn para text-white text-uppercase active">side</button>
                                         </div>
                                         <!-- internal  -->
                                         <div class="input__wrap mt-3 border__bottom pb-2">
@@ -437,8 +437,8 @@
                                                 </div>
                                                 <!-- button group  -->
                                                 <div class="btn-group mt-2" role="group" aria-label="Basic example">
-                                                    <button type="button" class="btn text-dark para text-uppercase active">base</button>
-                                                    <button type="button" class="btn para text-white text-uppercase">side</button>
+                                                    <button type="button" class="btn text-dark para text-uppercase active">internal</button>
+                                                    <button type="button" class="btn para text-white text-uppercase">external</button>
                                                 </div>
                                                 <!-- internal  -->
                                                 <div class="input__wrap mt-3 border__bottom pb-2">
@@ -455,26 +455,42 @@
                                                         <input type="text" class="form-control bg-white" value="8">
                                                     </div>
                                                 </div>
-                                                <!-- button and input  -->
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                <div class="input__wrap mt-3 border__bottom pb-2">
-                                                    <div class="d-flex justify-content-between img__input__wrap mt-3">
-                                                        <img src="./img/icon/empty-set-mathematical-symbol.png" alt="set icon">
-                                                        <select class="form-control" class="text-capitalize">
-                                                            <option class="text-capitalize">1</option>
-                                                            <option class="text-capitalize">2</option>
-                                                            <option class="text-capitalize">5</option>
-                                                        </select>
+                                                <!-- button and input two -->
+                                                    <div class="icons d-flex py-1 pt-3">
+                                                        <span class="icon__wrap bg-success text-white mr-5"><i class="fas fa-check"></i></span>
+                                                        <p class="para text-uppercase">gama</p>
                                                     </div>
-                                                    <div class="d-flex justify-content-between img__input__wrap">
-                                                        <p class="para">amount</p>
-                                                        <input type="text" class="form-control bg-white" value="8">
+                                                    
+                                                    <div class="input__wrap mt-3 border__bottom pb-2">
+                                                        <div class="d-flex justify-content-between img__input__wrap mt-3">
+                                                            <img src="./img/icon/empty-set-mathematical-symbol.png" alt="set icon">
+                                                            <select class="form-control" class="text-capitalize">
+                                                                <option class="text-capitalize">1</option>
+                                                                <option class="text-capitalize">2</option>
+                                                                <option class="text-capitalize">5</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between img__input__wrap">
+                                                            <p class="para">amount</p>
+                                                            <input type="text" class="form-control bg-white" value="8">
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                <!-- button and input two -->
+                                                    <div class="icons d-flex py-1 pt-3">
+                                                        <span class="icon__wrap bg-success text-white mr-5"><i class="fas fa-check"></i></span>
+                                                        <p class="para text-uppercase">ear</p>
+                                                    </div>
+                                                    <div class="btn-group mt-2" role="group" aria-label="Basic example">
+                                                        <button type="button" class="btn text-dark para text-uppercase active">cartesian</button>
+                                                        <button type="button" class="btn para text-white text-uppercase">redial</button>
+                                                    </div>
+                                                    <div class="input__wrap mt-3">
+                                                        <div class="d-flex justify-content-between img__input__wrap">
+                                                            <p class="para">amount</p>
+                                                            <input type="text" class="form-control bg-white" value="8" style="width: 50px;">
+                                                            <p class="para">cm</p>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </div>
                                 </div>
@@ -973,5 +989,22 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         ></script>
+        <!-- custom toggle btn  -->
+        <script>
+            const baseBtn = document.querySelector("#base__btn");
+            const sideBtn = document.querySelector("#side__btn");
+            const baseContainer = document.querySelector("#left__wrapper__one")
+            const sideContainer = document.querySelector("#left__wrapper__two")
+        
+            baseBtn.addEventListener("click", () => {
+                baseContainer.style.display = "block";
+                sideContainer.style.display = "none";
+            })
+            sideBtn.addEventListener("click", () => {
+                baseContainer.style.display = "none";
+                sideContainer.style.display = "block";
+            })
+
+        </script>
     </body>
 </html>

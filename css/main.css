@@ -2507,4 +2507,8 @@ section.forms .container .form-check .form-check-label {
   color: #696868 !important;
 }
 
+#left__wrapper__two {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */

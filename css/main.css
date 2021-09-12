@@ -1840,6 +1840,10 @@ section.forms .container .form-check .form-check-label {
     width: 20% !important;
   }
 }
+.tools .container .tools__wrapper .tools__body .filter h6 {
+  font-size: 19px;
+  font-weight: 700;
+}
 .filter__list {
   list-style: none;
 }
@@ -1867,7 +1871,7 @@ section.forms .container .form-check .form-check-label {
 }
 
 .btn-group button {
-  padding: 5px 5px !important;
+  padding: 5px 11px !important;
   letter-spacing: 1px;
   color: black !important;
   border: 1px solid black;
@@ -2461,6 +2465,46 @@ section.forms .container .form-check .form-check-label {
   .pile__tools #left__img__4547 .svg__wrap {
     width: 50% !important;
   }
+}
+
+#left__wrapper__two .input__wrap p {
+  font-weight: 800;
+  font-size: 17px;
+}
+#left__wrapper__two .input__wrap .img__input__wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+#left__wrapper__two .input__wrap .img__input__wrap img {
+  width: 25px;
+}
+#left__wrapper__two .input__wrap .img__input__wrap select, #left__wrapper__two .input__wrap .img__input__wrap input {
+  width: 90px;
+  border-color: #484848;
+}
+#left__wrapper__two .input__wrap .img__input__wrap p.para {
+  font-weight: 500;
+  color: #484848 !important;
+}
+#left__wrapper__two .icons {
+  max-width: 150px;
+}
+#left__wrapper__two .icons .icon__wrap {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+#left__wrapper__two .icons p.para {
+  font-weight: 500;
+  color: #696868 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

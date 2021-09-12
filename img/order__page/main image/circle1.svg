@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="202.302" height="156.762" viewBox="0 0 202.302 156.762">
+  <g id="circle1" transform="translate(-1188.873 -340.898)">
+    <g id="Group_3920" data-name="Group 3920" transform="translate(-51.02 -6.125)">
+      <circle id="Ellipse_114" data-name="Ellipse 114" cx="52.043" cy="52.043" r="52.043" transform="translate(1311.207 365.65)" fill="#fff" stroke="#4e5055" stroke-miterlimit="10" stroke-width="2"/>
+      <g id="Ellipse_115" data-name="Ellipse 115" transform="translate(1321.998 376.442)" fill="#fff" stroke="#4e5055" stroke-miterlimit="10" stroke-width="4">
+        <circle cx="41.251" cy="41.251" r="41.251" stroke="none"/>
+        <circle cx="41.251" cy="41.251" r="43.251" fill="none"/>
+      </g>
+      <circle id="Ellipse_116" data-name="Ellipse 116" cx="3.656" cy="3.656" r="3.656" transform="translate(1365.594 376.84)" fill="#4e5055"/>
+      <circle id="Ellipse_126" data-name="Ellipse 126" cx="3.656" cy="3.656" r="3.656" transform="translate(1354.938 376.442)" fill="#4e5055"/>
+      <circle id="Ellipse_127" data-name="Ellipse 127" cx="3.656" cy="3.656" r="3.656" transform="translate(1344.938 378.442)" fill="#4e5055"/>
+      <circle id="Ellipse_128" data-name="Ellipse 128" cx="3.656" cy="3.656" r="3.656" transform="translate(1336.625 384.098)" fill="#4e5055"/>
+      <circle id="Ellipse_122" data-name="Ellipse 122" cx="3.656" cy="3.656" r="3.656" transform="translate(1345.938 449.633)" fill="#4e5055"/>
+      <circle id="Ellipse_129" data-name="Ellipse 129" cx="3.656" cy="3.656" r="3.656" transform="translate(1371.906 449.633)" fill="#4e5055"/>
+      <circle id="Ellipse_119" data-name="Ellipse 119" cx="3.656" cy="3.656" r="3.656" transform="translate(1329.313 391.411)" fill="#4e5055"/>
+      <circle id="Ellipse_120" data-name="Ellipse 120" cx="3.656" cy="3.656" r="3.656" transform="translate(1389.176 437.621)" fill="#4e5055"/>
+      <circle id="Ellipse_123" data-name="Ellipse 123" cx="3.656" cy="3.656" r="3.656" transform="translate(1321.998 414.037)" fill="#4e5055"/>
+      <circle id="Ellipse_117" data-name="Ellipse 117" cx="3.656" cy="3.656" r="3.656" transform="translate(1397.188 414.037)" fill="#4e5055"/>
+      <circle id="Ellipse_121" data-name="Ellipse 121" cx="3.656" cy="3.656" r="3.656" transform="translate(1330.01 437.621)" fill="#4e5055"/>
+      <circle id="Ellipse_118" data-name="Ellipse 118" cx="3.656" cy="3.656" r="3.656" transform="translate(1389.832 391.152)" fill="#4e5055"/>
+      <circle id="Ellipse_124" data-name="Ellipse 124" cx="3.656" cy="3.656" r="3.656" transform="translate(1382.832 384.152)" fill="#4e5055"/>
+      <circle id="Ellipse_125" data-name="Ellipse 125" cx="3.656" cy="3.656" r="3.656" transform="translate(1375.52 379.098)" fill="#4e5055"/>
+    </g>
+    <line id="Line_1731" data-name="Line 1731" x1="77.004" y2="76.888" transform="translate(1312.262 411.375)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+    <line id="Line_1732" data-name="Line 1732" x1="7.444" y2="7.025" transform="translate(1216.266 385.35)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+    <line id="Line_1733" data-name="Line 1733" x2="96.233" y2="96.233" transform="translate(1216.027 392.029)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="Path_992" data-name="Path 992" d="M0,0V18.795" transform="translate(1389.012 401.146)" fill="none" stroke="#4e5055" stroke-width="0.5"/>
+    <line id="Line_1735" data-name="Line 1735" y2="18.795" transform="translate(1312.26 478.865)" fill="none" stroke="#161615" stroke-miterlimit="10" stroke-width="0.3"/>
+    <line id="Line_1736" data-name="Line 1736" y2="18.795" transform="translate(1216.021 382.626)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+    <line id="Line_1737" data-name="Line 1737" y2="18.795" transform="translate(1223.709 374.951)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+    <text id="_60" data-name="60" transform="translate(1334.182 469.438) rotate(-45)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width="0.3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="15.432" y="22">60</tspan></text>
+    <text id="d_5" data-name="d’ 5" transform="translate(1189.297 378.799) rotate(-45)" fill="#161615" stroke="#161615" stroke-miterlimit="10" stroke-width="0.3" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="22">d’ 5</tspan></text>
+    <line id="Line_1738" data-name="Line 1738" x2="51.37" y2="51.37" transform="translate(1223.709 385.35)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+    <line id="Line_1739" data-name="Line 1739" x2="49.039" y2="49.619" transform="translate(1340.227 362.756)" fill="none" stroke="#4e5055" stroke-miterlimit="10" stroke-width="0.5"/>
+  </g>
+</svg>

@@ -17,15 +17,15 @@
         <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
-        <section id="add__rebak" class="tools net__tools">
+        <section id="add__rebak" class="tools pile__tools">
             <div class="container py-5">
                 <div class="tools__wrapper">
                     <!-- top section / header  -->
                     <div class="top__section px-4 d-flex justify-content-between">
                         <div class="link__wrap w-xs-40 d-flex justify-content-between">
                             <a href="./tool-add-rebak-desktop.html" class="text-center text-white text-uppercase py-3 col-4">rebar</a>
-                            <a href="#" class="active text-center text-white text-uppercase py-3 col-4">net</a>
-                            <a href="./tool-add-pile-desktop.html" class="text-center text-white text-uppercase py-3 col-4">pile</a>
+                            <a href="./tool-add-net-desktop.html" class="text-center text-white text-uppercase py-3 col-4">net</a>
+                            <a href="#" class="text-center text-white text-uppercase py-3 col-4 active">pile</a>
                         </div>
                         <!-- close  -->
                         <div class="close__wrapper d-flex align-items-center justify-content-center">
@@ -46,11 +46,11 @@
                                 </div>
                                 <!-- filter section  -->
                                 <div class="filter py-3 border__bottom pl-4">
-                                    <h6 class="text-left text-uppercase text-dark-500">net type</h6>
+                                    <h6 class="text-left text-uppercase text-dark-500">cage type</h6>
                                     <!-- twiker btn  -->
                                     <div class="btn-group mt-2" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn text-dark para text-uppercase">2D</button>
-                                        <button type="button" class="btn para text-white text-uppercase active">3D</button>
+                                        <button type="button" class="btn text-dark para text-uppercase active">base</button>
+                                        <button type="button" class="btn para text-white text-uppercase">side</button>
                                     </div>
                                     <!-- filter list s  -->
                                     <ul class="filter__list m-0 p-0 mt-3">
@@ -60,120 +60,300 @@
                                 </div>
                                 <!-- shape list  -->
                                 <div class="shape__list d-flex flex-column p-lg-3 p-xl-4">
-                                    <h6 class="text-uppercase">shape</h6>
+                                    <div class="header d-flex align-items-center">
+                                        <span class="icon__wrap mr-2 text-success">
+                                            <i class="far fa-star"></i>
+                                        </span>
+                                        <h6 class="text-uppercase mb-0">standard shapes</h6>
+                                    </div>
                                     <!-- left shape list  -->
-                                    <div class="top d-flex justify-content-between input__box">
-                                        <div class="item d-flex w-xs-45">
-                                            <div class="img__container mr-2">
-                                                <img src="./img/icon/empty-set-mathematical-symbol.png" alt="empty set icon">
-                                            </div>
-                                            <select class="form-control-sm py-0 px-2" id="exampleFormControlSelect1" text="rejoan" value="hello">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
-                                        </div>
-                                        <div class="item d-flex w-xs-45">
-                                            <div class="img__container mr-2">
-                                                <img src="./img/icon/email.png" alt="email icon">
-                                            </div>
-                                            <select class="form-control-sm py-0 px-2" id="exampleFormControlSelect1" text="rejoan" value="hello">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select>
+                                    <div class="top d-flex justify-content-between image__slider mt-3 pb-3">
+                                        <div class="img__slide">
+                                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 973.91 142.11">
+                                                <defs>
+                                                    <clipPath id="a">
+                                                    <path fill="none" d="M0 .001h973.91v142.11H0z"/>
+                                                    </clipPath>
+                                                </defs>
+                                                <g data-name="Scroll Group 19" transform="translate(0 -.001)" clip-path="url(#a)" style="isolation:isolate">
+                                                    <g data-name="Group 4059">
+                                                    <path data-name="Line 2118" fill="none" stroke="#4e5055" stroke-width="2" d="M20.834 49.317h138.764"/>
+                                                    <path data-name="Line 2119" fill="none" stroke="#4e5055" stroke-width="2" d="M20.834 54.149h138.764"/>
+                                                    <path data-name="Line 2120" fill="none" stroke="#4e5055" stroke-width="2" d="M20.834 75.09h138.764"/>
+                                                    <path data-name="Line 2121" fill="none" stroke="#4e5055" stroke-width="2" d="M20.834 79.922h138.764"/>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(88.468 27.428)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1420</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(88.112 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@10</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(151.132 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(89.331 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(32.953 114.864)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">20</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(151.325 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@20</tspan></text>
+                                                    <path data-name="Line 2122" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M121.167 96.87v44.742"/>
+                                                    <path data-name="Line 2891" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M186.41 1.391v140.221"/>
+                                                    <path data-name="Line 2889" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M186.41 96.891H.548"/>
+                                                    <path data-name="Line 3205" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M186.41 119.241H.548"/>
+                                                    <path data-name="Line 2893" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M186.41.501H.548"/>
+                                                    <path data-name="Line 2890" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M186.41 141.612H.548"/>
+                                                    <path data-name="Line 2123" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M60.787 96.87v44.742"/>
+                                                    <path data-name="Line 2892" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M.548 1.391v140.221"/>
+                                                    <g data-name="Group 4052" fill="none" stroke="#4e5055" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                                                        <path data-name="Line 2894" d="M114.294 47.062v35.184"/>
+                                                        <path data-name="Line 2904" d="M103.983 47.062v35.184"/>
+                                                        <path data-name="Line 2906" d="M93.672 47.062v35.184"/>
+                                                        <path data-name="Line 2908" d="M82.956 47.062v35.184"/>
+                                                        <path data-name="Line 2915" d="M72.645 47.062v35.184"/>
+                                                        <path data-name="Line 2917" d="M62.334 47.062v35.184"/>
+                                                        <path data-name="Line 2895" d="M125.418 47.062v35.184"/>
+                                                        <path data-name="Line 2896" d="M136.54 47.062v35.184"/>
+                                                        <path data-name="Line 2897" d="M147.663 47.062v35.184"/>
+                                                        <path data-name="Line 2898" d="M159.598 47.062v35.184"/>
+                                                        <path data-name="Line 2899" d="m114.294 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2903" d="m103.983 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2905" d="m93.672 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2907" d="m82.956 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2916" d="m72.645 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2918" d="m62.334 47.062 10.311 35.184"/>
+                                                        <g data-name="Group 4053">
+                                                        <path data-name="Line 2913" d="M55.776 47.062v35.184"/>
+                                                        <path data-name="Line 2911" d="M49.219 47.062v35.184"/>
+                                                        <path data-name="Line 2910" d="M42.403 47.062v35.184"/>
+                                                        <path data-name="Line 2914" d="m55.776 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2912" d="m49.219 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2909" d="m42.403 47.062 6.558 35.184"/>
+                                                        </g>
+                                                        <path data-name="Line 2900" d="m125.621 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2901" d="m136.946 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2902" d="m148.273 47.062 10.311 35.184"/>
+                                                    </g>
+                                                    </g>
+                                                    <g data-name="Group 4060">
+                                                    <path data-name="Path 6337" d="M195 1.391h186.41v140H195Z" fill="#fff"/>
+                                                    <path data-name="Line 2118" fill="none" stroke="#4e5055" stroke-width="2" d="M215.834 49.317h138.764"/>
+                                                    <path data-name="Line 2119" fill="none" stroke="#4e5055" stroke-width="2" d="M215.834 54.149h138.764"/>
+                                                    <path data-name="Line 2120" fill="none" stroke="#4e5055" stroke-width="2" d="M215.834 75.09h138.764"/>
+                                                    <path data-name="Line 2121" fill="none" stroke="#4e5055" stroke-width="2" d="M215.834 79.922h138.764"/>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(283.468 27.428)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1420</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(283.112 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@10</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(346.132 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(284.331 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(227.953 114.864)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">20</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(346.325 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@20</tspan></text>
+                                                    <path data-name="Line 2122" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M316.167 96.87v44.742"/>
+                                                    <path data-name="Line 2891" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M381.41 1.391v140.221"/>
+                                                    <path data-name="Line 2889" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M381.41 96.891H195.548"/>
+                                                    <path data-name="Line 3205" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M381.41 119.241H195.548"/>
+                                                    <path data-name="Line 2893" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M381.41.501H195.548"/>
+                                                    <path data-name="Line 2890" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M381.41 141.612H195.548"/>
+                                                    <path data-name="Line 2123" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M255.787 96.87v44.742"/>
+                                                    <path data-name="Line 2892" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M195.548 1.391v140.221"/>
+                                                    <g data-name="Group 4052" fill="none" stroke="#4e5055" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                                                        <path data-name="Line 2894" d="M309.294 47.062v35.184"/>
+                                                        <path data-name="Line 2904" d="M298.983 47.062v35.184"/>
+                                                        <path data-name="Line 2906" d="M288.672 47.062v35.184"/>
+                                                        <path data-name="Line 2908" d="M277.956 47.062v35.184"/>
+                                                        <path data-name="Line 2915" d="M267.645 47.062v35.184"/>
+                                                        <path data-name="Line 2917" d="M257.334 47.062v35.184"/>
+                                                        <path data-name="Line 2895" d="M320.418 47.062v35.184"/>
+                                                        <path data-name="Line 2896" d="M331.54 47.062v35.184"/>
+                                                        <path data-name="Line 2897" d="M342.663 47.062v35.184"/>
+                                                        <path data-name="Line 2898" d="M354.598 47.062v35.184"/>
+                                                        <path data-name="Line 2899" d="m309.294 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2903" d="m298.983 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2905" d="m288.672 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2907" d="m277.956 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2916" d="m267.645 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2918" d="m257.334 47.062 10.311 35.184"/>
+                                                        <g data-name="Group 4053">
+                                                        <path data-name="Line 2913" d="M250.776 47.062v35.184"/>
+                                                        <path data-name="Line 2911" d="M244.219 47.062v35.184"/>
+                                                        <path data-name="Line 2910" d="M237.403 47.062v35.184"/>
+                                                        <path data-name="Line 2914" d="m250.776 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2912" d="m244.219 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2909" d="m237.403 47.062 6.558 35.184"/>
+                                                        </g>
+                                                        <path data-name="Line 2900" d="m320.621 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2901" d="m331.946 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2902" d="m343.273 47.062 10.311 35.184"/>
+                                                    </g>
+                                                    </g>
+                                                    <g data-name="Group 4061">
+                                                    <path data-name="Path 6337" d="M390 1.391h186.41v140H390Z" fill="#fff"/>
+                                                    <path data-name="Line 2118" fill="none" stroke="#4e5055" stroke-width="2" d="M410.834 49.317h138.764"/>
+                                                    <path data-name="Line 2119" fill="none" stroke="#4e5055" stroke-width="2" d="M410.834 54.149h138.764"/>
+                                                    <path data-name="Line 2120" fill="none" stroke="#4e5055" stroke-width="2" d="M410.834 75.09h138.764"/>
+                                                    <path data-name="Line 2121" fill="none" stroke="#4e5055" stroke-width="2" d="M410.834 79.922h138.764"/>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(478.468 27.428)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1420</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(478.112 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@10</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(541.132 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(479.331 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(422.953 114.864)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">20</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(541.325 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@20</tspan></text>
+                                                    <path data-name="Line 2122" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M511.167 96.87v44.742"/>
+                                                    <path data-name="Line 2891" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M576.41 1.391v140.221"/>
+                                                    <path data-name="Line 2889" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M576.41 96.891H390.548"/>
+                                                    <path data-name="Line 3205" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M576.41 119.241H390.548"/>
+                                                    <path data-name="Line 2893" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M576.41.501H390.548"/>
+                                                    <path data-name="Line 2890" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M576.41 141.612H390.548"/>
+                                                    <path data-name="Line 2123" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M450.787 96.87v44.742"/>
+                                                    <path data-name="Line 2892" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M390.548 1.391v140.221"/>
+                                                    <g data-name="Group 4052" fill="none" stroke="#4e5055" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                                                        <path data-name="Line 2894" d="M504.294 47.062v35.184"/>
+                                                        <path data-name="Line 2904" d="M493.983 47.062v35.184"/>
+                                                        <path data-name="Line 2906" d="M483.672 47.062v35.184"/>
+                                                        <path data-name="Line 2908" d="M472.956 47.062v35.184"/>
+                                                        <path data-name="Line 2915" d="M462.645 47.062v35.184"/>
+                                                        <path data-name="Line 2917" d="M452.334 47.062v35.184"/>
+                                                        <path data-name="Line 2895" d="M515.418 47.062v35.184"/>
+                                                        <path data-name="Line 2896" d="M526.54 47.062v35.184"/>
+                                                        <path data-name="Line 2897" d="M537.663 47.062v35.184"/>
+                                                        <path data-name="Line 2898" d="M549.598 47.062v35.184"/>
+                                                        <path data-name="Line 2899" d="m504.294 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2903" d="m493.983 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2905" d="m483.672 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2907" d="m472.956 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2916" d="m462.645 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2918" d="m452.334 47.062 10.311 35.184"/>
+                                                        <g data-name="Group 4053">
+                                                        <path data-name="Line 2913" d="M445.776 47.062v35.184"/>
+                                                        <path data-name="Line 2911" d="M439.219 47.062v35.184"/>
+                                                        <path data-name="Line 2910" d="M432.403 47.062v35.184"/>
+                                                        <path data-name="Line 2914" d="m445.776 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2912" d="m439.219 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2909" d="m432.403 47.062 6.558 35.184"/>
+                                                        </g>
+                                                        <path data-name="Line 2900" d="m515.621 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2901" d="m526.946 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2902" d="m538.273 47.062 10.311 35.184"/>
+                                                    </g>
+                                                    </g>
+                                                    <g data-name="Group 4062">
+                                                    <path data-name="Path 6337" d="M585 1.391h186.41v140H585Z" fill="#fff"/>
+                                                    <path data-name="Line 2118" fill="none" stroke="#4e5055" stroke-width="2" d="M605.834 49.317h138.764"/>
+                                                    <path data-name="Line 2119" fill="none" stroke="#4e5055" stroke-width="2" d="M605.834 54.149h138.764"/>
+                                                    <path data-name="Line 2120" fill="none" stroke="#4e5055" stroke-width="2" d="M605.834 75.09h138.764"/>
+                                                    <path data-name="Line 2121" fill="none" stroke="#4e5055" stroke-width="2" d="M605.834 79.922h138.764"/>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(673.468 27.428)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1420</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(673.112 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@10</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(736.132 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(674.331 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(617.953 114.864)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">20</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(736.325 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@20</tspan></text>
+                                                    <path data-name="Line 2122" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M706.167 96.87v44.742"/>
+                                                    <path data-name="Line 2891" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M771.41 1.391v140.221"/>
+                                                    <path data-name="Line 2889" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M771.41 96.891H585.548"/>
+                                                    <path data-name="Line 3205" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M771.41 119.241H585.548"/>
+                                                    <path data-name="Line 2893" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M771.41.501H585.548"/>
+                                                    <path data-name="Line 2890" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M771.41 141.612H585.548"/>
+                                                    <path data-name="Line 2123" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M645.787 96.87v44.742"/>
+                                                    <path data-name="Line 2892" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M585.548 1.391v140.221"/>
+                                                    <g data-name="Group 4052" fill="none" stroke="#4e5055" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                                                        <path data-name="Line 2894" d="M699.294 47.062v35.184"/>
+                                                        <path data-name="Line 2904" d="M688.983 47.062v35.184"/>
+                                                        <path data-name="Line 2906" d="M678.672 47.062v35.184"/>
+                                                        <path data-name="Line 2908" d="M667.956 47.062v35.184"/>
+                                                        <path data-name="Line 2915" d="M657.645 47.062v35.184"/>
+                                                        <path data-name="Line 2917" d="M647.334 47.062v35.184"/>
+                                                        <path data-name="Line 2895" d="M710.418 47.062v35.184"/>
+                                                        <path data-name="Line 2896" d="M721.54 47.062v35.184"/>
+                                                        <path data-name="Line 2897" d="M732.663 47.062v35.184"/>
+                                                        <path data-name="Line 2898" d="M744.598 47.062v35.184"/>
+                                                        <path data-name="Line 2899" d="m699.294 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2903" d="m688.983 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2905" d="m678.672 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2907" d="m667.956 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2916" d="m657.645 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2918" d="m647.334 47.062 10.311 35.184"/>
+                                                        <g data-name="Group 4053">
+                                                        <path data-name="Line 2913" d="M640.776 47.062v35.184"/>
+                                                        <path data-name="Line 2911" d="M634.219 47.062v35.184"/>
+                                                        <path data-name="Line 2910" d="M627.403 47.062v35.184"/>
+                                                        <path data-name="Line 2914" d="m640.776 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2912" d="m634.219 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2909" d="m627.403 47.062 6.558 35.184"/>
+                                                        </g>
+                                                        <path data-name="Line 2900" d="m710.621 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2901" d="m721.946 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2902" d="m733.273 47.062 10.311 35.184"/>
+                                                    </g>
+                                                    </g>
+                                                    <g data-name="Group 4063">
+                                                    <path data-name="Path 6337" d="M780 1.391h186.41v140H780Z" fill="#fff"/>
+                                                    <path data-name="Line 2118" fill="none" stroke="#4e5055" stroke-width="2" d="M800.834 49.317h138.764"/>
+                                                    <path data-name="Line 2119" fill="none" stroke="#4e5055" stroke-width="2" d="M800.834 54.149h138.764"/>
+                                                    <path data-name="Line 2120" fill="none" stroke="#4e5055" stroke-width="2" d="M800.834 75.09h138.764"/>
+                                                    <path data-name="Line 2121" fill="none" stroke="#4e5055" stroke-width="2" d="M800.834 79.922h138.764"/>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(868.468 27.428)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1420</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(868.112 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@10</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(931.132 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-17.527" y="0">1200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(869.331 114.863)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.108" y="0">200</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(812.953 114.864)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-8.689" y="0">20</tspan></text>
+                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(931.325 134.863)" fill="#4e5055" font-size="13" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-13.477" y="0">@20</tspan></text>
+                                                    <path data-name="Line 2122" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M901.167 96.87v44.742"/>
+                                                    <path data-name="Line 2891" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M966.41 1.391v140.221"/>
+                                                    <path data-name="Line 2889" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M966.41 96.891H780.548"/>
+                                                    <path data-name="Line 3205" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M966.41 119.241H780.548"/>
+                                                    <path data-name="Line 2893" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M966.41.501H780.548"/>
+                                                    <path data-name="Line 2890" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M966.41 141.612H780.548"/>
+                                                    <path data-name="Line 2123" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M840.787 96.87v44.742"/>
+                                                    <path data-name="Line 2892" fill="none" stroke="#c3c3c3" stroke-linecap="round" d="M780.548 1.391v140.221"/>
+                                                    <g data-name="Group 4052" fill="none" stroke="#4e5055" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2">
+                                                        <path data-name="Line 2894" d="M894.294 47.062v35.184"/>
+                                                        <path data-name="Line 2904" d="M883.983 47.062v35.184"/>
+                                                        <path data-name="Line 2906" d="M873.672 47.062v35.184"/>
+                                                        <path data-name="Line 2908" d="M862.956 47.062v35.184"/>
+                                                        <path data-name="Line 2915" d="M852.645 47.062v35.184"/>
+                                                        <path data-name="Line 2917" d="M842.334 47.062v35.184"/>
+                                                        <path data-name="Line 2895" d="M905.418 47.062v35.184"/>
+                                                        <path data-name="Line 2896" d="M916.54 47.062v35.184"/>
+                                                        <path data-name="Line 2897" d="M927.663 47.062v35.184"/>
+                                                        <path data-name="Line 2898" d="M939.598 47.062v35.184"/>
+                                                        <path data-name="Line 2899" d="m894.294 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2903" d="m883.983 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2905" d="m873.672 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2907" d="m862.956 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2916" d="m852.645 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2918" d="m842.334 47.062 10.311 35.184"/>
+                                                        <g data-name="Group 4053">
+                                                        <path data-name="Line 2913" d="M835.776 47.062v35.184"/>
+                                                        <path data-name="Line 2911" d="M829.219 47.062v35.184"/>
+                                                        <path data-name="Line 2910" d="M822.403 47.062v35.184"/>
+                                                        <path data-name="Line 2914" d="m835.776 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2912" d="m829.219 47.062 6.558 35.184"/>
+                                                        <path data-name="Line 2909" d="m822.403 47.062 6.558 35.184"/>
+                                                        </g>
+                                                        <path data-name="Line 2900" d="m905.621 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2901" d="m916.946 47.062 10.311 35.184"/>
+                                                        <path data-name="Line 2902" d="m928.273 47.062 10.311 35.184"/>
+                                                    </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
                                         </div>
                                     </div>
-                                    <!-- design cards  -->
-                                    <div class="card__list">
-                                        <div class="cardItem">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.479 76.771">
-                                                <g data-name="Group 3996">
-                                                    <g data-name="Group 3995" fill="none" stroke="#4e5055" stroke-width="2">
-                                                    <path data-name="Line 2827" d="M7.731 39.123v34.298"/>
-                                                    <path data-name="Line 2828" d="M13.134 39.123v34.151"/>
-                                                    <path data-name="Line 2829" d="M19.694 39.123v34.298"/>
-                                                    <path data-name="Line 2830" d="M26.247 39.123v34.701"/>
-                                                    <path data-name="Line 2831" d="M31.498 39.123v34.298"/>
-                                                    <path data-name="Line 2832" d="M37.77 44.063H2.231"/>
-                                                    <path data-name="Line 2833" d="M37.77 52.334H2.231"/>
-                                                    <path data-name="Line 2834" d="M37.77 60.605H2.231"/>
-                                                    <path data-name="Line 2835" d="M37.77 68.876H2.231"/>
-                                                    </g>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(13 15)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-12.234" y="0">600</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 54.123)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">250</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(20 30.125)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-18.638" y="0">6@15</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 70.772)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">6@15</tspan></text>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="cardItem">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.479 76.771">
-                                                <g data-name="Group 3996">
-                                                    <g data-name="Group 3995" fill="none" stroke="#4e5055" stroke-width="2">
-                                                    <path data-name="Line 2827" d="M7.731 39.123v34.298"/>
-                                                    <path data-name="Line 2828" d="M13.134 39.123v34.151"/>
-                                                    <path data-name="Line 2829" d="M19.694 39.123v34.298"/>
-                                                    <path data-name="Line 2830" d="M26.247 39.123v34.701"/>
-                                                    <path data-name="Line 2831" d="M31.498 39.123v34.298"/>
-                                                    <path data-name="Line 2832" d="M37.77 44.063H2.231"/>
-                                                    <path data-name="Line 2833" d="M37.77 52.334H2.231"/>
-                                                    <path data-name="Line 2834" d="M37.77 60.605H2.231"/>
-                                                    <path data-name="Line 2835" d="M37.77 68.876H2.231"/>
-                                                    </g>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(13 15)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-12.234" y="0">600</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 54.123)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">250</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(20 30.125)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-18.638" y="0">6@15</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 70.772)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">6@15</tspan></text>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="cardItem">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.479 76.771">
-                                                <g data-name="Group 3996">
-                                                    <g data-name="Group 3995" fill="none" stroke="#4e5055" stroke-width="2">
-                                                    <path data-name="Line 2827" d="M7.731 39.123v34.298"/>
-                                                    <path data-name="Line 2828" d="M13.134 39.123v34.151"/>
-                                                    <path data-name="Line 2829" d="M19.694 39.123v34.298"/>
-                                                    <path data-name="Line 2830" d="M26.247 39.123v34.701"/>
-                                                    <path data-name="Line 2831" d="M31.498 39.123v34.298"/>
-                                                    <path data-name="Line 2832" d="M37.77 44.063H2.231"/>
-                                                    <path data-name="Line 2833" d="M37.77 52.334H2.231"/>
-                                                    <path data-name="Line 2834" d="M37.77 60.605H2.231"/>
-                                                    <path data-name="Line 2835" d="M37.77 68.876H2.231"/>
-                                                    </g>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(13 15)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-12.234" y="0">600</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 54.123)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">250</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(20 30.125)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-18.638" y="0">6@15</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 70.772)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">6@15</tspan></text>
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <div class="cardItem">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.479 76.771">
-                                                <g data-name="Group 3996">
-                                                    <g data-name="Group 3995" fill="none" stroke="#4e5055" stroke-width="2">
-                                                    <path data-name="Line 2827" d="M7.731 39.123v34.298"/>
-                                                    <path data-name="Line 2828" d="M13.134 39.123v34.151"/>
-                                                    <path data-name="Line 2829" d="M19.694 39.123v34.298"/>
-                                                    <path data-name="Line 2830" d="M26.247 39.123v34.701"/>
-                                                    <path data-name="Line 2831" d="M31.498 39.123v34.298"/>
-                                                    <path data-name="Line 2832" d="M37.77 44.063H2.231"/>
-                                                    <path data-name="Line 2833" d="M37.77 52.334H2.231"/>
-                                                    <path data-name="Line 2834" d="M37.77 60.605H2.231"/>
-                                                    <path data-name="Line 2835" d="M37.77 68.876H2.231"/>
-                                                    </g>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(13 15)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-12.234" y="0">600</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 54.123)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">250</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(20 30.125)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="-18.638" y="0">6@15</tspan></text>
-                                                    <text data-name="הזמנה מס׳ 2009" transform="translate(42.479 70.772)" fill="#4e5055" font-size="14" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing=".02em"><tspan x="0" y="0">6@15</tspan></text>
-                                                </g>
-                                            </svg>
-                                        </div>
+                                </div>
+                                <!-- adjustments  -->
+                                 <div class="shape__list d-flex flex-column p-lg-3 p-xl-4 border__top">
+                                    <div class="header d-flex align-items-center">
+                                        <span class="icon__wrap mr-3 text-success">
+                                            <i class="fas fa-plus"></i>
+                                        </span>
+                                        <h6 class="text-uppercase mb-0">adjustments</h6>
+                                    </div>
+                                    <!-- left shape list  -->
+                                    <ul class="filter__list m-0 p-0 mt-4">
+                                        <li class="d-flex border__bottom py-2"><span class="icon__wrap  d-flex align-items-center justify-content-center mr-3"><i class="fas fa-minus"></i></span><p class="para">Only right angels</p></li>
+                                        <li class="d-flex border__bottom py-2"><span class="icon__wrap  d-flex align-items-center justify-content-center mr-3"><i class="fas fa-minus"></i></span><p class="para">Only right angels</p></li>
+                                        <li class="d-flex py-2"><span class="icon__wrap mr-3 d-flex align-items-center justify-content-center text-white bg-success border-0"><i class="fas fa-check"></i></span><p class="para">Add radius</p></li>
+                                    </ul>
+                                    <!-- button  -->
+                                    <div class="btn-group mt-3" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn text-dark para text-uppercase active">cartesian</button>
+                                        <button type="button" class="btn para text-white text-uppercase">radial</button>
+                                    </div>
+                                    <!-- length  -->
+                                    <div class="length d-flex mt-4">
+                                        <p class="para text-capitalize ml-2" style="color: black!important;">length</p> 
+                                        <input type="text" class="form-input w-xs-25 rounded bg-white ml-2">
+                                        <p class="para text-lowercase ml-2">cm</p>
                                     </div>
                                 </div>
                             </div>

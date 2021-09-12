@@ -128,6 +128,22 @@ input {
   background-color: #2bc454;
 }
 
+.h100 {
+  height: 100%;
+}
+
+.h75 {
+  height: 100%;
+}
+
+.h50 {
+  height: 100%;
+}
+
+.h25 {
+  height: 100%;
+}
+
 .active__mark {
   background-color: #262729;
 }
@@ -1995,13 +2011,13 @@ section.forms .container .form-check .form-check-label {
 .tools .right .bottom__table #inside__table tr td .para,
 .tools .right .bottom__table #inside__table tr td select {
   font-size: 10px;
+  color: black !important;
 }
 @media only screen and (min-width: 1200px) {
   .tools .right .bottom__table #inside__table tr td .para,
 .tools .right .bottom__table #inside__table tr td select {
     font-size: 13px;
     font-weight: 600;
-    color: black !important;
   }
 }
 .tools .right .bottom__table #inside__table tr td img {
@@ -2227,6 +2243,21 @@ section.forms .container .form-check .form-check-label {
 }
 .net__tools .net__table .bottom__row {
   grid-template-columns: 1fr 1fr 1fr repeat(12, 1fr) 1.5fr 1fr 1fr !important;
+}
+.net__tools .net__table .three_col_5471 .two {
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+}
+.net__tools .net__table .three_col_5471 .unit__wrap {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+}
+.net__tools .net__table .three_col_5471 .unit__wrap .unit__cell {
+  border-right: 0.3px solid black;
+}
+.net__tools .net__table .three_col_5471 .unit__wrap .unit__cell:last-child {
+  border-right: none;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -271,10 +271,10 @@ $mini__border: 0.3px solid black;
                         .para,
                         select {
                             font-size: 10px;
+                            color: black !important;
                             @include resp($lg) {
                                 font-size: 13px;
                                 font-weight: 600;
-                                color: black !important;
                             }
                         }
                         img {
@@ -471,11 +471,11 @@ $mini__border: 0.3px solid black;
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 10px;
             grid-column-gap: 10px;
-            @include resp ($xl) {
+            @include resp($xl) {
                 grid-row-gap: 15px;
                 grid-column-gap: 15px;
             }
-            @include resp ($xxl) {
+            @include resp($xxl) {
                 margin-top: 15px;
             }
             .cardItem {
@@ -484,47 +484,65 @@ $mini__border: 0.3px solid black;
                 border-radius: 5px;
                 svg {
                     width: 100%;
-                    @include resp ($xl) {
+                    @include resp($xl) {
                         width: 85%;
                     }
-                    @include resp ($xxl) {
+                    @include resp($xxl) {
                         width: 78%;
                     }
                 }
             }
         }
     }
-    // main highlight images 
+    // main highlight images
     .net__highlight {
         .svg {
-            width: 460px!important;
-            @include resp ($xl) {
-                width: 480px!important;
+            width: 460px !important;
+            @include resp($xl) {
+                width: 480px !important;
             }
-            @include resp ($xxl) {
-                width: 510px!important;
+            @include resp($xxl) {
+                width: 510px !important;
             }
         }
     }
 
-    // table style 
+    // table style
     .net__table {
         .border__bottom__none {
             .unit__cell {
-                border-bottom: 0px solid transparent!important;
+                border-bottom: 0px solid transparent !important;
             }
         }
         tr {
             display: grid;
         }
-        // top row 
+        // top row
         .top__row {
             grid-template-columns: 1fr 2fr 6fr 6fr 1.5fr 2fr !important;
         }
-        .bottom__row{
+        .bottom__row {
             // grid-template-columns: repeat(18, 1fr)!important;
             // grid-template-columns: 60px 40px 40px repeat(9, 40px) 1fr 1fr 1fr 1fr 1fr 1.5fr!important;
             grid-template-columns: 1fr 1fr 1fr repeat(12, 1fr) 1.5fr 1fr 1fr !important;
+        }
+        // row three
+        .three_col_5471 {
+            .two {
+                display: grid !important;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 1fr;
+            }
+            .unit__wrap {
+                display: grid!important;
+                grid-template-columns: 1fr 1fr 3fr 1fr;
+                .unit__cell {
+                    border-right: $mini__border;
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+            }
         }
     }
 }

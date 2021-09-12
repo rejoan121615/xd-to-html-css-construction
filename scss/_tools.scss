@@ -506,4 +506,25 @@ $mini__border: 0.3px solid black;
             }
         }
     }
+
+    // table style 
+    .net__table {
+        .border__bottom__none {
+            .unit__cell {
+                border-bottom: 0px solid transparent!important;
+            }
+        }
+        tr {
+            display: grid;
+        }
+        // top row 
+        .top__row {
+            grid-template-columns: 1fr 2fr 6fr 6fr 1.5fr 2fr !important;
+        }
+        .bottom__row{
+            // grid-template-columns: repeat(18, 1fr)!important;
+            // grid-template-columns: 60px 40px 40px repeat(9, 40px) 1fr 1fr 1fr 1fr 1fr 1.5fr!important;
+            grid-template-columns: 1fr 1fr 1fr repeat(12, 1fr) 1.5fr 1fr 1fr !important;
+        }
+    }
 }

@@ -2216,5 +2216,17 @@ section.forms .container .form-check .form-check-label {
     width: 510px !important;
   }
 }
+.net__tools .net__table .border__bottom__none .unit__cell {
+  border-bottom: 0px solid transparent !important;
+}
+.net__tools .net__table tr {
+  display: grid;
+}
+.net__tools .net__table .top__row {
+  grid-template-columns: 1fr 2fr 6fr 6fr 1.5fr 2fr !important;
+}
+.net__tools .net__table .bottom__row {
+  grid-template-columns: 1fr 1fr 1fr repeat(12, 1fr) 1.5fr 1fr 1fr !important;
+}
 
 /*# sourceMappingURL=main.css.map */

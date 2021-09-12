@@ -2006,6 +2006,7 @@ section.forms .container .form-check .form-check-label {
 .tools .right .bottom__table #inside__table tr:last-child {
   background-color: white !important;
   border-top: none;
+  grid-template-rows: 35px !important;
 }
 .tools .right .bottom__table #inside__table tr:last-child td {
   padding-bottom: 4px !important;
@@ -2297,6 +2298,58 @@ section.forms .container .form-check .form-check-label {
 }
 .pile__tools .image__slider svg {
   height: 100%;
+}
+.pile__tools .highlight__section .high__img {
+  background-color: white !important;
+}
+.pile__tools .highlight__section .high__img .left {
+  background-color: transparent !important;
+}
+.pile__tools .highlight__section .high__img .left svg {
+  width: 445px;
+}
+.pile__tools .highlight__section .high__img .right {
+  background-color: transparent !important;
+}
+.pile__tools .highlight__section .high__img .right svg {
+  width: 135px;
+}
+.pile__tools .highlight__section .high__img .right .sec {
+  width: 155px;
+}
+.pile__tools .bottom__table .table tr {
+  display: grid;
+}
+.pile__tools .bottom__table .table .top__row {
+  grid-template-columns: 1.25fr 2.5fr 8fr 4fr 1.25fr 2fr !important;
+}
+.pile__tools .bottom__table .table .bottom__row {
+  grid-template-columns: 1.25fr repeat(2, 1.25fr) repeat(8, 1fr) repeat(4, 1fr) 1.25fr 1fr 1fr !important;
+}
+.pile__tools .pile__table .three_col_5471 .two {
+  display: grid !important;
+  grid-template-columns: 6fr 1fr;
+}
+.pile__tools .pile__table .three_col_5471 .unit__wrap {
+  display: block !important;
+}
+.pile__tools .pile__table .three_col_5471 .four__col__471 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.pile__tools .pile__table .wight__col {
+  grid-template-columns: 1fr !important;
+}
+.pile__tools .pile__table .three_col_5471 .fix__unit__wrap {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+}
+.pile__tools .pile__table .grid__row__4784 {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr);
+}
+.pile__tools .pile__table .grid__row__4784 .cell {
+  border-right: 0.3px solid black !important;
 }
 
 /*# sourceMappingURL=main.css.map */

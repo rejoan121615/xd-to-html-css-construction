@@ -101,12 +101,12 @@ $mini__border: 0.3px solid black;
                                 border-radius: 50%;
                                 border: 1px solid $border;
                                 font-size: 12px;
-                                @include resp ($xl) {
+                                @include resp($xl) {
                                     width: 25px;
                                     height: 25px;
                                     font-size: 14px;
                                 }
-                                @include resp ($xxl) {
+                                @include resp($xxl) {
                                     width: 28px;
                                     height: 28px;
                                     font-size: 16px;
@@ -117,17 +117,17 @@ $mini__border: 0.3px solid black;
                     // twiker btn
                     @at-root .btn-group {
                         button {
-                            padding: 5px 5px!important;
+                            padding: 5px 5px !important;
                             letter-spacing: 1px;
                             color: black !important;
                             border: 1px solid black;
                             font-size: 14px;
                             background-color: white !important;
-                            @include resp ($xl) {
+                            @include resp($xl) {
                                 padding: 2px 10px;
                                 font-size: 15px;
                             }
-                            @include resp ($xxl) {
+                            @include resp($xxl) {
                                 padding: 4px 16px !important;
                                 font-size: 16px;
                             }
@@ -257,6 +257,7 @@ $mini__border: 0.3px solid black;
                     &:last-child {
                         background-color: white !important;
                         border-top: none;
+                        grid-template-rows: 35px!important;
                         td {
                             padding-bottom: 4px !important;
                             padding-bottom: 5px !important;
@@ -554,7 +555,7 @@ $mini__border: 0.3px solid black;
                 grid-template-rows: 1fr;
             }
             .unit__wrap {
-                display: grid!important;
+                display: grid !important;
                 grid-template-columns: 1fr 1fr 3fr 1fr;
                 .unit__cell {
                     border-right: $mini__border;
@@ -567,16 +568,108 @@ $mini__border: 0.3px solid black;
     }
 }
 
-
-// pile page 
+// pile page
 .pile__tools {
-    // image slider 
+    // image slider
     .image__slider {
         width: 100%;
         overflow-x: scroll;
         height: 115px;
         svg {
             height: 100%;
+        }
+    }
+    // image table
+    .highlight__section {
+        .high__img {
+            background-color: white !important;
+            .left {
+                background-color: transparent !important;
+                svg {
+                    width: 445px;
+                }
+            }
+            .right {
+                background-color: transparent !important;
+                svg {
+                    width: 135px;
+                }
+                .sec {
+                    width: 155px;
+                }
+            }
+        }
+    }
+    // right bottom table
+    .bottom__table {
+        .table {
+            tr {
+                display: grid;
+            }
+            .top__row {
+                grid-template-columns: 1.25fr 2.5fr 8fr 4fr 1.25fr 2fr !important;
+            }
+            .bottom__row {
+                grid-template-columns: 1.25fr repeat(2, 1.25fr) repeat(8, 1fr) repeat(
+                        4,
+                        1fr
+                    ) 1.25fr 1fr 1fr !important;
+            }
+        }
+    }
+    // table
+    .pile__table {
+        // two column
+        .two__col__2412 {
+            // grid-template-rows:  35px 80px 35px !important;
+        }
+        // three column
+        .three_col_5471 {
+            // grid-template-rows: 35px 80px 35px !important;
+            // .one {
+            //     height: 25%;
+            // }
+            .two {
+                display: grid !important;
+                grid-template-columns: 6fr 1fr;
+                .top,
+                .bottom {
+                    
+                }
+            }
+            .unit__wrap {
+                display: block !important;
+            }
+            // lengty column
+            .four__col__471 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        // amount row
+        .amount__row {
+            // grid-template-rows: auto 35px !important;
+        }
+        // wight column 
+        .wight__col {
+            grid-template-columns: 1fr!important;
+            // grid-template-rows: 35px 80px 35px !important;
+        }
+        // unit wrapper 
+        .three_col_5471 {
+            .fix__unit__wrap {
+                display: grid!important;
+                grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+            }
+        }
+
+        // grid row 
+        .grid__row__4784 {
+            display: grid!important;
+            grid-template-columns: repeat(7, 1fr);
+            .cell {
+                border-right: $mini__border!important;
+            }
         }
     }
 }

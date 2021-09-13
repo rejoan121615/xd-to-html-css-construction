@@ -21,7 +21,9 @@ $xxl: 1800px; //xtra xtra large
     color: $main__text;
 }
 
-
+.bold {
+    font-weight: 600;
+}
 // mixing
 @mixin maxresp($width) {
     @media only screen and (max-width: $width) {
@@ -173,9 +175,11 @@ input {
     height: 100%;
 }
 
+
 // files ----------------------------------- >
 @import "new__user__page";
 @import "new__user__form";
 @import "example-of-order-page";
 @import "_example-of-order-page-phone";
 @import '_tools';
+@import '_cage';

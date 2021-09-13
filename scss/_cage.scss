@@ -1,0 +1,214 @@
+.cage__wrapper {
+    // para 
+    
+    background-color: #262729;
+    // close 
+    .close {
+        width: 100%;
+        height: 40px;
+    }
+    // top section
+    .top__section {
+        .tittle {
+            background-color: #f84343;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+        // close 
+        // icons row
+        .row {
+            .icon__wrap {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                background-color: #262729;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    display: block;
+                    width: 25px;
+                }
+            }
+            .two {
+                img {
+                    width: 25px;
+                }
+            }
+            .three {
+                img {
+                    width: 15px;
+                }
+            }
+        }
+    }
+
+
+    // main image table 
+    .main__img__table {
+        background-color: #e3fbf0;
+        border: 1px solid lighten($color: #000000, $amount: 80);
+        .left__img {
+            img {
+                @include resp ($xs) {
+                    width: 280px;
+                }
+
+            }
+        }
+        // right image 
+        .right__img {
+            img {
+                @include resp ($xs) {
+                    width: 135px;
+                }
+            }
+        }
+    }
+}
+
+// common module 
+
+// dark section 
+.dark__head {
+    background-color: $header__bg;
+    .icon__wrap {
+        width: 32px;
+    }
+    h2, .icon__wrap {
+        font-size: 1.3rem;
+        @include resp ($xs) {
+            font-size: 1.6rem;
+        }
+        @include resp ($sm) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+// image slider 
+.img__slider {
+    .img__container {
+        overflow: scroll;
+        .card__list {
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #d6d6d6;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            img {
+                width: 70px;
+                @include resp ($xs) {
+                    width: 110px;
+                }
+                @include resp ($sm) {
+                    width: 130px;
+                }
+            }
+        }
+    }
+}
+// bnt icon and heading 
+
+// icon wrapper 
+.icon__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    img {
+        width: 22px;
+        @include resp ($xs) {
+            width: 25px;
+        }
+        @include resp ($sm) {
+            width: 28px;
+        }
+    }
+}
+
+.big__para {
+    @include resp ($xs) {
+        font-size: 1.3rem;
+    }   
+    font-weight: 600;
+}
+
+// btn icon and heading 
+.cage__wrapper {
+    .cus__btn {
+        padding: 5px 10px;
+        @include resp ($xs) {
+            padding: 8px 15px;
+        } 
+        background-color: #e7e7e7!important;
+        .icon__wrap {
+            font-size: 1.25rem;
+            color: #959DAC;
+        }
+        p {
+            color: #959DAC;
+        }
+    }
+}
+
+// icon form 
+.icon__form {
+    .custom-control-input:checked~.custom-control-label::before {
+    background-color: #6EDB93!important;
+    border-color: #6EDB93!important;
+    }
+    h6.big__tittle {
+        font-size: 1.4rem;
+    }
+    .right__sec {
+        .custom-control {
+            transform: scale(1.6);
+            label {
+                &::before {
+                    // background-color: #6EDB93!important;
+                }
+            }
+        }
+    }
+}
+
+// unit 
+.unit {
+    font-size: 0.8rem;
+    color: #686868;
+    margin-left: 4px;
+    font-weight: 500;
+    @include resp ($xs) {
+        font-size: 1rem;
+        margin-left: 8px;
+    }
+}
+
+// note pad 
+.note__pad {
+    input {
+        height: 120px;
+    }
+}
+// big green btn  
+.big__btn {
+    border: 0px;
+    border-radius: 50px;
+    padding: 15px 45px;
+    background-color: #2bc454;
+    display: flex;
+    align-items: center;
+}
+
+.bottom__radius {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}

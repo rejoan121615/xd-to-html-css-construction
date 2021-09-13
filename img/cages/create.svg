@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="create" transform="translate(-23 -759)">
+    <g id="Rectangle_1894" data-name="Rectangle 1894" transform="translate(23 759)" fill="none" stroke="#2bc454" stroke-width="1">
+      <rect width="22" height="22" stroke="none"/>
+      <rect x="0.5" y="0.5" width="21" height="21" fill="none"/>
+    </g>
+    <path id="Icon_open-pencil" data-name="Icon open-pencil" d="M10.555,0,8.8,1.759l3.518,3.518,1.759-1.759ZM7.037,3.518,0,10.555v3.518H3.518l7.037-7.037Z" transform="translate(26.963 762.963)" fill="#2bc454"/>
+  </g>
+</svg>

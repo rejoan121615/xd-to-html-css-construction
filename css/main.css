@@ -2922,4 +2922,140 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
+.orderSmScreenBody .table__control__panel .para {
+  font-size: 13px;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody .table__control__panel .para {
+    font-size: 16px;
+  }
+}
+.orderSmScreenBody .table__control__panel .left__sec .icon__wrap {
+  font-size: 1rem;
+}
+.orderSmScreenBody .table__control__panel .left__sec .big__para {
+  font-size: 14px;
+  font-weight: 600;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody .table__control__panel .left__sec .big__para {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .orderSmScreenBody .table__control__panel .left__sec .big__para {
+    font-size: 17px;
+  }
+}
+.orderSmScreenBody .tableHeader .icon__head h3, .orderSmScreenBody .tableHeader .icon__head footer .link__list .row ul li a, footer .link__list .row ul li .orderSmScreenBody .tableHeader .icon__head a {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #353d4a !important;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody .tableHeader .icon__head h3, .orderSmScreenBody .tableHeader .icon__head footer .link__list .row ul li a, footer .link__list .row ul li .orderSmScreenBody .tableHeader .icon__head a {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .orderSmScreenBody .tableHeader .icon__head h3, .orderSmScreenBody .tableHeader .icon__head footer .link__list .row ul li a, footer .link__list .row ul li .orderSmScreenBody .tableHeader .icon__head a {
+    font-size: 1.85rem;
+  }
+}
+.orderSmScreenBody .tableHeader button {
+  border-color: #959dac !important;
+}
+@media only screen and (max-width: 420px) {
+  .orderSmScreenBody .tableHeader button {
+    padding: 4px 10px;
+  }
+}
+.orderSmScreenBody .tableHeader button p {
+  color: #959dac !important;
+}
+@media only screen and (max-width: 420px) {
+  .orderSmScreenBody .tableHeader button p {
+    font-size: 13px;
+  }
+}
+.orderSmScreenBody .tableHeader button .icon__wrap {
+  font-size: 1rem;
+  color: #959dac !important;
+}
+@media only screen and (max-width: 420px) {
+  .orderSmScreenBody .tableHeader button .icon__wrap {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .orderSmScreenBody .tableHeader button .icon__wrap {
+    font-size: 1.15rem;
+  }
+}
+.orderSmScreenBody table.table .para {
+  font-size: 13px;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody table.table .para {
+    font-size: 14.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .orderSmScreenBody table.table .para {
+    font-size: 16px;
+  }
+}
+.orderSmScreenBody table.table td {
+  border-top: none;
+}
+.orderSmScreenBody table.table .bold {
+  font-weight: bold;
+}
+.orderSmScreenBody table.table thead tr {
+  background-color: #e5e6ea;
+}
+.orderSmScreenBody table.table thead tr .para {
+  font-weight: bold;
+  color: #353d4a !important;
+}
+.orderSmScreenBody table.table tbody tr {
+  border-bottom: 1px solid #bfbfbf !important;
+}
+.orderSmScreenBody table.table tbody tr .para {
+  color: #353d4a !important;
+  font-weight: 400;
+}
+.orderSmScreenBody table.table tbody tr .bold {
+  font-weight: bold;
+}
+.orderSmScreenBody table.table tbody tr .icon__wrap {
+  background-color: #959DAC !important;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody table.table tbody tr .icon__wrap {
+    width: 30px;
+    height: 28px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .orderSmScreenBody table.table tbody tr .icon__wrap {
+    width: 32px;
+    height: 30px;
+  }
+}
+.orderSmScreenBody table.table tbody tr .icon__wrap img {
+  width: 15px;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody table.table tbody tr .icon__wrap img {
+    width: 18px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

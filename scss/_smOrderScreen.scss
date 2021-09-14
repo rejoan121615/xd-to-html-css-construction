@@ -1,0 +1,138 @@
+.orderSmScreenBody {
+    .table__control__panel {
+        // right sec
+        .para {
+            font-size: 13px;
+            @include resp($xs) {
+                font-size: 16px;
+            }
+        }
+        // left sec
+        .left__sec {
+            .icon__wrap {
+                font-size: 1rem;
+            }
+            .big__para {
+                font-size: 14px;
+                font-weight: 600;
+                @include resp($xs) {
+                    font-size: 16px;
+                }
+                @include resp ($sm) {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    // table header
+    .tableHeader {
+        // text
+        .icon__head {
+            h3 {
+                font-weight: 700;
+                font-size: 1.2rem;
+                color: #353d4a !important;
+                @include resp($xs) {
+                    font-size: 1.6rem;
+                }
+                @include resp($sm) {
+                    font-size: 1.85rem;
+                }
+            }
+        }
+        // button
+        button {
+            @media only screen and (max-width: 420px) {
+                padding: 4px 10px;
+            }
+            // padding: 4px 10px;
+            border-color: #959dac !important;
+            p {
+                @media only screen and (max-width: 420px) {
+                    font-size: 13px;
+                }
+                // font-size: 13px;
+                color: #959dac !important;
+            }
+            .icon__wrap {
+                font-size: 1rem;
+                @media only screen and (max-width: 420px) {
+                    font-size: 0.9rem;
+                }
+                @include resp($sm) {
+                    font-size: 1.15rem;
+                }
+                color: #959dac !important;
+            }
+        }
+    }
+
+    // table
+    table.table {
+        // paragraph
+        .para {
+            font-size: 13px;
+            @include resp($xs) {
+                font-size: 14.5px;
+            }
+            @include resp($sm) {
+                font-size: 16px;
+            }
+        }
+        // table data 
+        td {
+            border-top: none;
+        }
+        // bold 
+        .bold {
+            font-weight: bold;
+        }
+        // thead
+        thead {
+            tr {
+                background-color: #e5e6ea;
+                .para {
+                    font-weight: bold;
+                    color: #353d4a !important;
+                }
+            }
+        }
+        // tbody
+        tbody {
+            tr {
+                border-bottom: 1px solid #bfbfbf !important;
+                .para {
+                    color: #353d4a !important;
+                    font-weight: 400;
+                }
+                .bold {
+                    font-weight: bold;
+                }
+                .icon__wrap {
+                        background-color: #959DAC !important;
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 24px;
+                        height: 24px;
+                        @include resp ($xs) {
+                            width: 30px;
+                            height: 28px;
+                        }
+                        @include resp ($sm) {
+                            width: 32px;
+                            height: 30px;
+                        }
+                    img {
+                        width: 15px;
+                        @include resp ($xs) {
+                            width: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

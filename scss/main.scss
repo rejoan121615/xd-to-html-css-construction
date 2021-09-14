@@ -175,6 +175,14 @@ input {
     height: 100%;
 }
 
+// accordion 
+.accordion {
+    div {
+        &:hover {
+            text-decoration: none!important;
+        }
+    }
+}
 
 // files ----------------------------------- >
 @import "new__user__page";

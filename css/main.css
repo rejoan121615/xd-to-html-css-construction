@@ -148,6 +148,10 @@ input {
   height: 100%;
 }
 
+.accordion div:hover {
+  text-decoration: none !important;
+}
+
 .active__mark {
   background-color: #262729;
 }
@@ -2703,29 +2707,42 @@ section.forms .container .form-check .form-check-label {
   border-color: #6EDB93 !important;
 }
 
-.parent__wrap p {
+.parent__wrap p, .dark__head p {
   font-size: 1.2rem !important;
 }
 @media only screen and (min-width: 576px) {
-  .parent__wrap p {
+  .parent__wrap p, .dark__head p {
     font-size: 1.4rem !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  .parent__wrap p {
+  .parent__wrap p, .dark__head p {
     font-size: 1.7rem !important;
   }
 }
-.parent__wrap img {
+.parent__wrap .icon__wrap, .dark__head .icon__wrap {
+  font-size: 1.2rem !important;
+}
+@media only screen and (min-width: 576px) {
+  .parent__wrap .icon__wrap, .dark__head .icon__wrap {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parent__wrap .icon__wrap, .dark__head .icon__wrap {
+    font-size: 1.7rem !important;
+  }
+}
+.parent__wrap img, .dark__head img {
   width: 30px;
 }
 @media only screen and (min-width: 576px) {
-  .parent__wrap img {
+  .parent__wrap img, .dark__head img {
     font-size: 33px !important;
   }
 }
 @media only screen and (min-width: 768px) {
-  .parent__wrap img {
+  .parent__wrap img, .dark__head img {
     font-size: 40px !important;
   }
 }

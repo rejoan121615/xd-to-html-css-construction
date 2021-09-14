@@ -218,8 +218,17 @@
     border-color: #6EDB93!important;
 }
 
-.parent__wrap {
+.parent__wrap, .dark__head {
     p {
+        font-size: 1.2rem!important;
+        @include resp ($xs) {
+            font-size: 1.4rem!important;
+        }
+        @include resp ($sm) {
+            font-size: 1.7rem!important;
+        }
+    }
+    .icon__wrap {
         font-size: 1.2rem!important;
         @include resp ($xs) {
             font-size: 1.4rem!important;

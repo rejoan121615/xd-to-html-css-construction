@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./vendors/calenders/css/pignose.calendar.min.css">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrapCustom.width.css">
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body class="my-order-screen">
+        <header id="head">
+            <nav id="navbar" class="w-100 py-3 py-lg-0">
+                <div class="container">
+                    <div class="row">
+                        <!-- brand and order links  -->
+                        <div class="row col-12 col-lg-9 col-xl-7">
+                            <div
+                                class="
+                                    col-lg-4 col-12
+                                    d-flex
+                                    align-items-center
+                                "
+                            >
+                                <img
+                                    class="brand__icon"
+                                    src="./img/new__user/brand-logo.png"
+                                    alt="brand icon"
+                                />
+                            </div>
+                            <a
+                                href=""
+                                class="
+                                    d-none d-lg-block
+                                    col-4
+                                    py-lg-3
+                                    active__mark
+                                "
+                            >
+                                <img
+                                    class="order__icon"
+                                    src="./img/new__user/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p
+                                    class="
+                                        order__text
+                                        text-white text-uppercase
+                                        d-inline-block
+                                        ms-2
+                                    "
+                                >
+                                    new order
+                                </p>
+                            </a>
+                            <a href="" class="d-none d-lg-block col-4 py-lg-3">
+                                <img
+                                    class="order__icon"
+                                    src="./img/new__user/file__icon.png"
+                                    alt="file icon"
+                                />
+                                <p
+                                    class="
+                                        order__text
+                                        text-white text-uppercase
+                                        d-inline-block
+                                        ms-2
+                                    "
+                                >
+                                    my order
+                                </p>
+                            </a>
+                        </div>
+                        <!-- user section  -->
+                        <div
+                            class="
+                                user__section
+                                d-none d-lg-flex
+                                col-lg-3 col-xl-5
+                                justify-content-lg-end
+                            "
+                        >
+                            <div
+                                class="user d-flex flex-row align-items-center"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#userArea"
+                                aria-expanded="false"
+                                aria-controls="userArea"
+                            >
+                                <img
+                                    class="user__img"
+                                    src="./img/new__user/profile-user.png"
+                                    alt="profile user icon"
+                                />
+                                <h3 class="text-uppercase text-white mb-0">
+                                    daniel cohen
+                                </h3>
+                                <img
+                                    class="arrow"
+                                    src="./img/new__user/bottom-arrow.png"
+                                    alt=""
+                                />
+                            </div>
+                            <!----------------- user area ---------------------  -->
+                            <div class="collapse" id="userArea">
+                                <ul class="list-group bg-dark">
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                    <li
+                                        class="
+                                            list-group-item
+                                            bg-dark
+                                            text-center
+                                            text-capitalize
+                                            text-white
+                                        "
+                                    >
+                                        Item list
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------ user area -----------------------  -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- small screeen accordion  -->
+            <div class="sm__accordion d-lg-none">
+                <div class="container">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card border-0 bg-transparent px-0">
+                            <div class="card-header p-0" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <div
+                                        class="
+                                            btn btn-link btn-block
+                                            text-left
+                                            collapsed
+                                            px-0
+                                        "
+                                        type="button"
+                                        data-toggle="collapse"
+                                        data-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <img
+                                            class="file__icon"
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icons"
+                                        />
+                                        <span
+                                            class="
+                                                file__texts
+                                                text-uppercase text-white
+                                            "
+                                            >create new order</span
+                                        >
+                                    </div>
+                                </h2>
+                            </div>
+                            <div
+                                id="collapseTwo"
+                                class="collapse"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordionExample"
+                            >
+                                <div class="card-body py-0">
+                                    <a
+                                        href=""
+                                        class="
+                                            item
+                                            border-bottom border-white
+                                            d-block
+                                            py-2
+                                        "
+                                    >
+                                        <img
+                                            class="
+                                                sm__file__icon
+                                                d-inline-block
+                                            "
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icon"
+                                        />
+                                        <p
+                                            class="
+                                                sm__file__text
+                                                text-white text-uppercase
+                                                d-inline-block
+                                                ms-2
+                                                mb-0
+                                            "
+                                        >
+                                            new order
+                                        </p>
+                                    </a>
+                                    <a href="" class="item d-block py-2">
+                                        <img
+                                            class="
+                                                sm__file__icon
+                                                d-inline-block
+                                            "
+                                            src="./img/new__user/file__icon.png"
+                                            alt="file icon"
+                                        />
+                                        <p
+                                            class="
+                                                sm__file__text
+                                                text-white text-uppercase
+                                                d-inline-block
+                                                ms-2
+                                                mb-0
+                                            "
+                                        >
+                                            new order
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ------------------- order table section--------------------------->
+        <section>
+            <div class="container orderTableContainer">
+                <div class="row my-xl-5 pb-xl-2 border__bottom">
+                    <!-- calender section  -->
+                    <div class="col-12 calender__wrapper mt-5 col-xl-7 order-xl-2 mt-xl-0">
+                        <div class="calendar"></div>
+                    </div>
+                    <!-- order list  -->
+                    <div class="col-12 my-4 col-xl-5 order-xl-1 mt-xl-0 card__list">
+                        <div class="row flex-xl-column">
+                            <!-- card one  -->
+                            <div class="col-4 col-xl-12 mb-xl-3 card__item">
+                                <div class="card p-3 bordered bg-dark">
+                                    <h2 class="text-left text-white mb-0">8</h2>
+                                    <p class="large__para text-white text-uppercase text-left">orders created</p>
+                                    <p class="large__para text-white text-uppercase text-left">this week</p>
+                                </div>
+                            </div>
+                            <!-- card 2  -->
+                            <div class="col-4 col-xl-12 mb-xl-3 card__item">
+                                <div class="card p-3 bordered bg-dark">
+                                    <h2 class="text-left text-white mb-0">5</h2>
+                                    <p class="large__para text-white text-uppercase text-left">sites delivery</p>
+                                    <p class="large__para text-white text-uppercase text-left">for this week</p>
+                                </div>
+                            </div>
+                            <!-- card 3  -->
+                            <div class="col-4 col-xl-12 card__item">
+                                <div class="card p-3 bordered bg-dark">
+                                    <h3 class="text-left text-uppercase text-white mb-0">city center</h3>
+                                    <h3 class="text-left text-uppercase text-white mb-2">02.03.2021</h3>
+                                    <p class="large__para text-left text-uppercase text-white">next delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------------------- my order table -------------------------->
+        <section id="myOrderTable" class="tableSection">
+            <div class="container border__bottom py-4">
+                <!--------table header-------->
+                <div class="tableHeader d-flex mb-3">
+                    <h6 class="text-uppercase mr-3 text-dark-500 mb-0">my order</h6> 
+                    <div class="right d-flex">
+                        <span class="icon__wrap mr-2"><i class="fas fa-plus"></i></span>
+                        <p class="para text-uppercase">create new order</p>
+                    </div>
+                </div>
+                <!-------- table section  -------->
+                <table class="table table-striped">
+                    <!-- table head  -->
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td><h6 class="text-uppercase text-center text-dark-500 mb-0">date order create</h6></td>
+                            <td><h6 class="text-uppercase text-center text-dark-500 mb-0">order number</h6></td>
+                            <td class="d-flex">
+                                <span class="icon__wrap shortIcon f-flex flex-column justify-content-center">
+                                    <span class="top"><i class="fas fa-caret-up"></i></span>
+                                    <span class="bottom"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                                <h6 class="text-uppercase text-center text-dark-500 mb-0 ml-3">site</h6>
+                            </td>
+                            <td><h6 class="text-uppercase text-center text-dark-500 mb-0">total width</h6></td>
+                            <td><h6 class="text-uppercase text-center text-dark-500 mb-0">group number</h6></td>
+                            <td><h6 class="text-uppercase text-center text-dark-500 mb-0">delivery date</h6></td>
+                            <td class="d-flex">
+                                <span class="icon__wrap shortIcon f-flex flex-column">
+                                    <span class="top"><i class="fas fa-caret-up"></i></span>
+                                    <span class="bottom"><i class="fas fa-caret-down"></i></span>
+                                </span>
+                            </td>
+                        </tr>
+                    </thead>
+                    <!-- tabody  -->
+                    <tbody>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">city center</p></td>
+                            <td><p class="para text-uppercase">3.4 ton</p></td>
+                            <td><p class="para">1</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                </div>
+                            </td>
+                            <td><p class="para">21.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4937</p></td>
+                            <td><p class="para text-capitalize">tama rishon</p></td>
+                            <td><p class="para text-uppercase">4.2 ton</p></td>
+                            <td><p class="para">4</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">city garden</p></td>
+                            <td><p class="para text-uppercase">2.4 ton</p></td>
+                            <td><p class="para">9</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">4</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">tel aviv</p></td>
+                            <td><p class="para text-uppercase">9.4 ton</p></td>
+                            <td><p class="para">33</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">5</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">city center</p></td>
+                            <td><p class="para text-uppercase">3.4 ton</p></td>
+                            <td><p class="para">1</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">6</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">city center</p></td>
+                            <td><p class="para text-uppercase">3.4 ton</p></td>
+                            <td><p class="para">1</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">7</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">city center</p></td>
+                            <td><p class="para text-uppercase">3.4 ton</p></td>
+                            <td><p class="para">1</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- table row  -->
+                        <tr>
+                            <td>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">8</label>
+                                </div>
+                            </td>
+                            <td><p class="para">22.03.2021</p></td>
+                            <td><p class="para"><span>23.564.</span>4938</p></td>
+                            <td><p class="para text-capitalize">city center</p></td>
+                            <td><p class="para text-uppercase">3.4 ton</p></td>
+                            <td><p class="para">1</p></td>
+                            <td><p class="para">01.04.2021</p></td>
+                            <td>
+                                <div class="d-flex iconGroup">
+                                    <span class="icon__wrap mr-2"><i class="fas fa-file"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-pen"></i></span>
+                                    <span class="icon__wrap mr-2"><i class="fas fa-location-arrow"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!---------------------- my site section  ------------------------>
+        <section id="myOrderTable" class="tableSection">
+            <div class="container py-4 border__bottom">
+                <div class="row">
+                    <!--------table header-------->
+                    <div class="tableHeader d-flex col-12 order-1 my-3">
+                        <h6 class="text-uppercase mr-3 text-dark-500 mb-0">my site</h6> 
+                        <div class="right d-flex">
+                            <span class="icon__wrap mr-2"><i class="fas fa-plus"></i></span>
+                            <p class="para text-uppercase">add new site</p>
+                        </div>
+                    </div>
+                    <!-- table calender column  -->
+                    <div class="map__container col-12 col-xl-4 order-0 order-xl-3">
+                        <div class="map text-right">
+                            <img class="w-xs-50 w-xl-100 d-inline-block" src="./img/order__page/map.svg" alt="map svg">
+                        </div>
+                    </div>
+                    <!-- table column  -->
+                    <div class="col-12 col-xl-8 table__column mt-xl-0 order-2">
+                        <!-------- table section  -------->
+                        <table class="table table-striped">
+                            <!-- table head  -->
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">site name</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">address</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0 ml-3">site manager</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">contact on site</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">next delivery</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0"></h6></td>
+                                </tr>
+                            </thead>
+                            <!-- tabody  -->
+                            <tbody>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">3</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">4</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">5</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para">city center</p></td>
+                                    <td><p class="para">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">6</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">7</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input mr-2" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">8</label>
+                                        </div>
+                                    </td>
+                                    <td><p class="para text-capitalize">city center</p></td>
+                                    <td><p class="para text-capitalize">ramat gan, hayahmur 9</p></td>
+                                    <td><p class="para text-capitalize">rafi 054-3288-738</p></td>
+                                    <td><p class="para text-uppercase">daniel 055-2678-777</p></td>
+                                    <td><p class="para">1.4.21</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------- contact section  -------------------------->
+        <section id="contactTable" class="tableSection mb-4 mb-xl-5">
+            <div class="container py-4">
+                <!--------table header-------->
+                <div class="tableHeader d-flex mb-3">
+                    <h6 class="text-uppercase mr-3 text-dark-500 mb-0">my site</h6> 
+                    <div class="right d-flex">
+                        <span class="icon__wrap mr-2"><i class="fas fa-plus"></i></span>
+                        <p class="para text-uppercase">add new site</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- table calender column  -->
+                    <div class="calender__column col-12 col-xl-6">
+                        <!-------- table section  -------->
+                        <table class="table table-striped">
+                            <!-- table head  -->
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">full name</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">job</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0 ml-3">phone</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0"></h6></td>
+                                </tr>
+                            </thead>
+                            <!-- tabody  -->
+                            <tbody>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">1</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">2</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">3</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">4</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">5</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">6</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">7</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table column  -->
+                    <div class="col-12 col-xl-6 table__column mt-4 mt-xl-0">
+                        <!-------- table section  -------->
+                        <table class="table table-striped">
+                            <!-- table head  -->
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">full name</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0">job</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0 ml-3">phone</h6></td>
+                                    <td><h6 class="text-uppercase text-center text-dark-500 mb-0"></h6></td>
+                                </tr>
+                            </thead>
+                            <!-- tabody  -->
+                            <tbody>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">1</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">2</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">3</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">4</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">5</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">6</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- table row  -->
+                                <tr>
+                                    <td><p class="para text-capitalize">7</p></td>
+                                    <td><p class="para text-capitalize">raffi cohen</p></td>
+                                    <td><p class="para text-capitalize">site maneger</p></td>
+                                    <td><p class="para text-capitalize">052-4655-3924</p></td>
+                                    <td>
+                                        <div class="d-flex iconGroup justify-content-center">
+                                            <span class="icon__wrap"><i class="fas fa-pen"></i></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------------------- footer section ------------------------------->
+        <footer class="d-none d-lg-block">
+            <div class="container">
+                <div class="row justify-content-lg-between">
+                    <!-- left section  -->
+                    <div class="col-4 brand__slogan">
+                        <div class="wrap">
+                            <img
+                                class="brand__icon"
+                                src="./img/new__user/brand-logo.png"
+                                alt="brand icon"
+                            />
+                            <h3 class="text-uppercase text-white">
+                                it's easy to manage
+                            </h3>
+                            <h3 class="text-uppercase text-white">
+                                your rebar list
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- right side  -->
+                    <div class="col-8 link__list">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <ul class="list-style-none m-0 p-0">
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >support sytem</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >Questions and Questions</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >Contact</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <ul class="m-0 p-0">
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >our supplyers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >add yourself as a supplyers</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="" class="text-capitalize"
+                                            >easy-bar community</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="title text-uppercase text-white">
+                                    support
+                                </h3>
+                                <h3 class="title text-uppercase text-white">
+                                    easybar.israel@gmail.com
+                                </h3>
+                                <h3 class="title text-uppercase text-white">
+                                    08.6601780
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- js files  -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+            integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="./vendors/calenders/js/pignose.calendar.full.min.js"></script>
+        <script>
+            $('.calendar').pignoseCalendar({
+                week: 1,
+            });
+        </script>
+    </body>
+</html>

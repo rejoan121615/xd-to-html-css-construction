@@ -1,0 +1,205 @@
+.my-order-screen {
+    background-color: #F5F5F5;
+}
+
+
+// table section 
+.tableSection {
+    // table header 
+    .tableHeader {
+        h6 {
+            font-size: 1.1rem;
+        }
+        .right {
+                .icon__wrap {
+                    width: 19px;
+                    height: 19px;
+                    border-radius: 50%;
+                    background-color: $header__bg;
+                    color: white;
+                    font-size: 10px;
+                }
+                .para {
+                    font-size: 13px;
+                    color: #565656 !important;
+                    font-weight: 500;
+                }
+            }
+    }
+    // short icon 
+    .shortIcon {
+        height: 25px;
+        .top {
+            height: 10px;
+        }
+        span {
+            font-size: 1rem;
+        }
+    }
+    // table 
+    .table {
+        box-shadow: -3px -3px 5px #e8e8e8, 3px 3px 5px #e8e8e8;
+        // table head 
+        thead {
+            tr {
+                background-color: #C3C3C3;
+                td {
+                }
+            }
+        }
+        // table body 
+        tbody {
+            tr {
+                &:nth-child(odd) {
+                    background-color: white;
+                }
+            }
+        }
+        // table data 
+        td {
+            justify-content: center;
+            border-right: 2px solid #f3f3f3;
+            &:last-child {
+                border-right: 0px;
+            }
+            // border-top: none;
+            h6 {
+                font-size: 0.85rem;
+                text-align: center;
+                @include resp ($xl) {
+                    font-size: 0.95rem;
+                } 
+                @include resp ($xxl) {
+                    font-size: 1.05rem;
+                }
+            }
+            .para {
+                font-size: 13px;
+                text-align: center;
+                color: black!important;
+                font-weight: 400;
+                span {
+                    color: lighten($color: #000000, $amount: 45);
+                }
+                @include resp ($xl) {
+                    font-size: 14.5px;
+                }
+                @include resp ($xxl) {
+                    font-size: 17px;
+                }
+            }
+        }
+        // icon group 
+        .iconGroup {
+            justify-content: center;
+            .icon__wrap {
+                font-size: 10px;
+                color: white;
+                background-color: #C3C3C3;
+                border-radius: 50%;
+                padding: 7px;
+                @include resp ($xl) {
+                    font-size: 12px;
+                    padding: 9px;
+                }
+                @include resp ($xxl) {
+                    font-size: 14px;
+                    padding: 10px;
+                }
+                
+            }
+        }
+    }
+}
+
+// calendar style 
+.calendar {
+    .pignose-calendar {
+        border: none;
+        box-shadow: none;
+    }
+    // calender top year 
+    .pignose-calendar-top-year {
+        display: none!important;
+    }
+    .pignose-calendar-top-month {
+        margin-bottom: 0px!important;
+        margin-top: 10px;
+    }
+    .pignose-calendar-top {
+        // padding-top: 25px;
+        // padding-bottom: 20px;
+    }
+    .pignose-calendar .pignose-calendar-top {
+        border: 0px;
+        box-shadow: none;
+        background-color: white;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .pignose-calendar {
+        width: initial;
+        max-width: initial;
+        border-radius: 25px;   
+    }
+    .calendar {
+        border-radius: 25px;
+    }
+}
+
+// card list 
+.orderTableContainer {
+    // row 
+    .row.border__bottom {
+        @include resp ($xl) {
+            padding-bottom: 30px!important;
+            align-items: center;
+        }
+    }
+    // card list 
+    .card__list {
+        @include resp ($xl) {
+            width: 60%!important;
+            flex-basis: 60%!important;
+            max-width: initial;
+        }
+        .row {
+            @include resp ($xl) {
+                flex-flow: row wrap!important;
+            }
+        }
+        .card__item {
+            @include resp ($xl) {
+                width: 30%;
+                flex-basis: 30%;
+                margin-bottom: 0px!important;
+            }
+            .card {
+                border-radius: 30px;
+                padding: 25px 35px!important;
+                height: 100%;
+            }
+            h2 {
+                font-size: 3rem
+            }
+            h3 {
+                font-size: 1.6rem;
+            }
+            p.large__para {
+                font-weight: 600;
+                font-size: 1.15rem;
+            }
+        }
+    }
+    // main decoration 
+    .row {
+        // calender 
+        .calender__wrapper {
+            @include resp ($xl) {
+                width: 40%!important;
+                flex-basis: 40%!important;
+            }
+        }
+    }
+}
+

@@ -2747,4 +2747,179 @@ section.forms .container .form-check .form-check-label {
   }
 }
 
+.my-order-screen {
+  background-color: #F5F5F5;
+}
+
+.tableSection .tableHeader h6 {
+  font-size: 1.1rem;
+}
+.tableSection .tableHeader .right .icon__wrap {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #374051;
+  color: white;
+  font-size: 10px;
+}
+.tableSection .tableHeader .right .para {
+  font-size: 13px;
+  color: #565656 !important;
+  font-weight: 500;
+}
+.tableSection .shortIcon {
+  height: 25px;
+}
+.tableSection .shortIcon .top {
+  height: 10px;
+}
+.tableSection .shortIcon span {
+  font-size: 1rem;
+}
+.tableSection .table {
+  box-shadow: -3px -3px 5px #e8e8e8, 3px 3px 5px #e8e8e8;
+}
+.tableSection .table thead tr {
+  background-color: #C3C3C3;
+}
+.tableSection .table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+.tableSection .table td {
+  justify-content: center;
+  border-right: 2px solid #f3f3f3;
+}
+.tableSection .table td:last-child {
+  border-right: 0px;
+}
+.tableSection .table td h6 {
+  font-size: 0.85rem;
+  text-align: center;
+}
+@media only screen and (min-width: 1400px) {
+  .tableSection .table td h6 {
+    font-size: 0.95rem;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .tableSection .table td h6 {
+    font-size: 1.05rem;
+  }
+}
+.tableSection .table td .para {
+  font-size: 13px;
+  text-align: center;
+  color: black !important;
+  font-weight: 400;
+}
+.tableSection .table td .para span {
+  color: #737373;
+}
+@media only screen and (min-width: 1400px) {
+  .tableSection .table td .para {
+    font-size: 14.5px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .tableSection .table td .para {
+    font-size: 17px;
+  }
+}
+.tableSection .table .iconGroup {
+  justify-content: center;
+}
+.tableSection .table .iconGroup .icon__wrap {
+  font-size: 10px;
+  color: white;
+  background-color: #C3C3C3;
+  border-radius: 50%;
+  padding: 7px;
+}
+@media only screen and (min-width: 1400px) {
+  .tableSection .table .iconGroup .icon__wrap {
+    font-size: 12px;
+    padding: 9px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .tableSection .table .iconGroup .icon__wrap {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.calendar .pignose-calendar {
+  border: none;
+  box-shadow: none;
+}
+.calendar .pignose-calendar-top-year {
+  display: none !important;
+}
+.calendar .pignose-calendar-top-month {
+  margin-bottom: 0px !important;
+  margin-top: 10px;
+}
+.calendar .pignose-calendar .pignose-calendar-top {
+  border: 0px;
+  box-shadow: none;
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.calendar .pignose-calendar {
+  width: initial;
+  max-width: initial;
+  border-radius: 25px;
+}
+.calendar .calendar {
+  border-radius: 25px;
+}
+
+@media only screen and (min-width: 1400px) {
+  .orderTableContainer .row.border__bottom, .orderTableContainer section.forms .container .row.radio__btns, section.forms .container .orderTableContainer .row.radio__btns, .orderTableContainer .row.green__border__bottom {
+    padding-bottom: 30px !important;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .orderTableContainer .card__list {
+    width: 60% !important;
+    flex-basis: 60% !important;
+    max-width: initial;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .orderTableContainer .card__list .row {
+    flex-flow: row wrap !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .orderTableContainer .card__list .card__item {
+    width: 30%;
+    flex-basis: 30%;
+    margin-bottom: 0px !important;
+  }
+}
+.orderTableContainer .card__list .card__item .card {
+  border-radius: 30px;
+  padding: 25px 35px !important;
+  height: 100%;
+}
+.orderTableContainer .card__list .card__item h2 {
+  font-size: 3rem;
+}
+.orderTableContainer .card__list .card__item h3, .orderTableContainer .card__list .card__item footer .link__list .row ul li a, footer .link__list .row ul li .orderTableContainer .card__list .card__item a {
+  font-size: 1.6rem;
+}
+.orderTableContainer .card__list .card__item p.large__para {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+@media only screen and (min-width: 1400px) {
+  .orderTableContainer .row .calender__wrapper {
+    width: 40% !important;
+    flex-basis: 40% !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -212,3 +212,29 @@
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
+
+.green__border__bottom {
+    @extend .border__bottom;
+    border-color: #6EDB93!important;
+}
+
+.parent__wrap {
+    p {
+        font-size: 1.2rem!important;
+        @include resp ($xs) {
+            font-size: 1.4rem!important;
+        }
+        @include resp ($sm) {
+            font-size: 1.7rem!important;
+        }
+    }
+    img {
+        width: 30px;
+        @include resp ($xs) {
+            font-size: 33px!important;
+        }
+        @include resp ($sm) {
+            font-size: 40px!important;
+        }
+    }
+}

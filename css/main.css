@@ -37,7 +37,7 @@ p {
   }
 }
 
-.border__bottom, section.forms .container .radio__btns {
+.border__bottom, .green__border__bottom, section.forms .container .radio__btns {
   border-bottom: 3px solid #d2d4d6 !important;
 }
 
@@ -1672,7 +1672,7 @@ section.forms .container .form-check .form-check-label {
   border-radius: 10px;
   background-color: #eeeeee82;
 }
-#order__details .summ__detai__container ul .border__bottom, #order__details .summ__detai__container ul section.forms .container .radio__btns, section.forms .container #order__details .summ__detai__container ul .radio__btns {
+#order__details .summ__detai__container ul .border__bottom, #order__details .summ__detai__container ul .green__border__bottom, #order__details .summ__detai__container ul section.forms .container .radio__btns, section.forms .container #order__details .summ__detai__container ul .radio__btns {
   border-bottom: 0px solid transparent !important;
 }
 #order__details .save__cancel {
@@ -2697,6 +2697,37 @@ section.forms .container .form-check .form-check-label {
 .bottom__radius {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.green__border__bottom {
+  border-color: #6EDB93 !important;
+}
+
+.parent__wrap p {
+  font-size: 1.2rem !important;
+}
+@media only screen and (min-width: 576px) {
+  .parent__wrap p {
+    font-size: 1.4rem !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parent__wrap p {
+    font-size: 1.7rem !important;
+  }
+}
+.parent__wrap img {
+  width: 30px;
+}
+@media only screen and (min-width: 576px) {
+  .parent__wrap img {
+    font-size: 33px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .parent__wrap img {
+    font-size: 40px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -42,3 +42,33 @@
 .input__big {
     font-size: 16px
 }
+
+
+// add rebar section 
+.add__rebar {
+    .img__container {
+        .card__list {
+
+        }
+    }
+}
+
+// net main table image 
+.netAddMainTableImage {
+    // max-width: 300px!important;
+}
+
+// y image resize 
+.dark__head {
+    img.yImg {
+        width: 20px;
+    }
+    .right {
+        .para {
+            font-size: 16px!important;
+            @include resp ($sm) {
+                font-size: 18px!important;
+            }
+        }
+    }
+}

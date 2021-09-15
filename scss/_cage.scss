@@ -76,7 +76,13 @@
 .dark__head {
     background-color: $header__bg;
     .icon__wrap {
-        width: 32px;
+        width: 22px;
+        @include resp ($xs) {
+            width: 26px;
+        }
+        @include resp ($sm) {
+            width: 30px;
+        }
     }
     h2, .icon__wrap {
         font-size: 1.3rem;

@@ -175,6 +175,10 @@ input {
   }
 }
 
+input {
+  font-weight: 500 !important;
+}
+
 .active__mark {
   background-color: #262729;
 }
@@ -2596,7 +2600,17 @@ section.forms .container .form-check .form-check-label {
   background-color: #374051;
 }
 .dark__head .icon__wrap {
-  width: 32px;
+  width: 22px;
+}
+@media only screen and (min-width: 576px) {
+  .dark__head .icon__wrap {
+    width: 26px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .dark__head .icon__wrap {
+    width: 30px;
+  }
 }
 .dark__head h2, .dark__head .icon__wrap {
   font-size: 1.3rem;
@@ -3139,6 +3153,18 @@ section.forms .container .form-check .form-check-label {
 
 .input__big {
   font-size: 16px;
+}
+
+.dark__head img.yImg {
+  width: 20px;
+}
+.dark__head .right .para {
+  font-size: 16px !important;
+}
+@media only screen and (min-width: 768px) {
+  .dark__head .right .para {
+    font-size: 18px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

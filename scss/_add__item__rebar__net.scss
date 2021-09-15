@@ -1,0 +1,44 @@
+.cage__wrapper {
+    min-height: 100vh;
+    .body__section {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
+
+// add rebar  
+.cage__wrapper {
+ .twoRowEightIcon {
+     .row {
+         .icon__wrap {
+             width: 40px;
+             height: 40px;
+             border-radius: 50%;
+             background-color: #353D4A;
+             @include resp ($xs) {
+                 width: 44px;
+                 height: 45px;
+             }
+             @include resp ($sm) {
+                 width: 47px;
+                 height: 47px;
+             }
+             img {
+                 width: 20px;
+                 @include resp ($xs) {
+                     width: 22.5px;
+                 }
+                 @include resp ($sm) {
+                     width: 25px;
+                 }
+             }
+         }
+     }
+ }   
+}
+
+
+// input text sizing 
+.input__big {
+    font-size: 16px
+}

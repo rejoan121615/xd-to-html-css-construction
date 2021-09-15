@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="140" viewBox="0 0 136 140">
+  <g id="slider__img" transform="translate(-1613.5 -533.383)">
+    <g id="Component_17_275" data-name="Component 17 – 275" transform="translate(1613.5 533.383)">
+      <g id="Rectangle_512" data-name="Rectangle 512" fill="#fbfbfb" stroke="#f0f0f0" stroke-width="1">
+        <rect width="136" height="140" rx="5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="135" height="139" rx="4.5" fill="none"/>
+      </g>
+    </g>
+    <path id="Path_6302" data-name="Path 6302" d="M7361.642-7914h14.214v35.752h62.257V-7914h12.754" transform="translate(-5724.754 8503.383)" fill="none" stroke="#4e5055" stroke-width="5"/>
+    <text id="הזמנה_מס_2009" data-name="הזמנה מס׳ 2009" transform="translate(1681.938 619.42)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing="0.02em"><tspan x="-13.108" y="0">300</tspan></text>
+    <text id="הזמנה_מס_2009-2" data-name="הזמנה מס׳ 2009" transform="translate(1721.938 583.383)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing="0.02em"><tspan x="-8.689" y="0">60</tspan></text>
+    <text id="הזמנה_מס_2009-3" data-name="הזמנה מס׳ 2009" transform="translate(1643.5 583.383)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing="0.02em"><tspan x="-8.689" y="0">60</tspan></text>
+    <text id="הזמנה_מס_2009-4" data-name="הזמנה מס׳ 2009" transform="translate(1644.5 607.383) rotate(-90)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing="0.02em"><tspan x="-13.108" y="0">120</tspan></text>
+    <text id="הזמנה_מס_2009-5" data-name="הזמנה מס׳ 2009" transform="translate(1719.5 607.383) rotate(90)" fill="#4e5055" font-size="15" font-family="Heebo-Medium, Heebo" font-weight="500" letter-spacing="0.02em"><tspan x="-13.108" y="0">120</tspan></text>
+  </g>
+</svg>

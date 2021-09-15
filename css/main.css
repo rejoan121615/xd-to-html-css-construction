@@ -152,6 +152,29 @@ input {
   text-decoration: none !important;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.mid__bold {
+  font-weight: 500;
+}
+
+.total__big p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media only screen and (min-width: 576px) {
+  .total__big p {
+    font-size: 1.35rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .total__big p {
+    font-size: 1.5rem;
+  }
+}
+
 .active__mark {
   background-color: #262729;
 }
@@ -3072,6 +3095,50 @@ section.forms .container .form-check .form-check-label {
   .orderSmScreenBody table.table tbody tr .icon__wrap img {
     width: 18px;
   }
+}
+
+.cage__wrapper {
+  min-height: 100vh;
+}
+.cage__wrapper .body__section {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.cage__wrapper .twoRowEightIcon .row .icon__wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #353D4A;
+}
+@media only screen and (min-width: 576px) {
+  .cage__wrapper .twoRowEightIcon .row .icon__wrap {
+    width: 44px;
+    height: 45px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cage__wrapper .twoRowEightIcon .row .icon__wrap {
+    width: 47px;
+    height: 47px;
+  }
+}
+.cage__wrapper .twoRowEightIcon .row .icon__wrap img {
+  width: 20px;
+}
+@media only screen and (min-width: 576px) {
+  .cage__wrapper .twoRowEightIcon .row .icon__wrap img {
+    width: 22.5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cage__wrapper .twoRowEightIcon .row .icon__wrap img {
+    width: 25px;
+  }
+}
+
+.input__big {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

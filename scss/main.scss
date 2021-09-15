@@ -184,6 +184,27 @@ input {
     }
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.mid__bold {
+    font-weight: 500;
+}
+
+.total__big {
+    p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        @include resp ($xs) {
+            font-size: 1.35rem;
+        }
+        @include resp ($sm) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
 // files ----------------------------------- >
 @import "new__user__page";
 @import "new__user__form";
@@ -193,3 +214,4 @@ input {
 @import '_cage';
 @import '_myOrderScreen';
 @import '_smOrderScreen';
+@import '_add__item__rebar__net';

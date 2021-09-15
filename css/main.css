@@ -37,7 +37,7 @@ p {
   }
 }
 
-.border__bottom, .green__border__bottom, section.forms .container .radio__btns {
+.border__bottom, .green__border__bottom, .orderSmScreenBody .table__control__panel .active, section.forms .container .radio__btns {
   border-bottom: 3px solid #d2d4d6 !important;
 }
 
@@ -1676,7 +1676,7 @@ section.forms .container .form-check .form-check-label {
   border-radius: 10px;
   background-color: #eeeeee82;
 }
-#order__details .summ__detai__container ul .border__bottom, #order__details .summ__detai__container ul .green__border__bottom, #order__details .summ__detai__container ul section.forms .container .radio__btns, section.forms .container #order__details .summ__detai__container ul .radio__btns {
+#order__details .summ__detai__container ul .border__bottom, #order__details .summ__detai__container ul .green__border__bottom, #order__details .summ__detai__container ul .orderSmScreenBody .table__control__panel .active, .orderSmScreenBody .table__control__panel #order__details .summ__detai__container ul .active, #order__details .summ__detai__container ul section.forms .container .radio__btns, section.forms .container #order__details .summ__detai__container ul .radio__btns {
   border-bottom: 0px solid transparent !important;
 }
 #order__details .save__cancel {
@@ -2703,7 +2703,7 @@ section.forms .container .form-check .form-check-label {
   border-bottom-right-radius: 25px;
 }
 
-.green__border__bottom {
+.green__border__bottom, .orderSmScreenBody .table__control__panel .active {
   border-color: #6EDB93 !important;
 }
 
@@ -2876,7 +2876,7 @@ section.forms .container .form-check .form-check-label {
 }
 
 @media only screen and (min-width: 1400px) {
-  .orderTableContainer .row.border__bottom, .orderTableContainer section.forms .container .row.radio__btns, section.forms .container .orderTableContainer .row.radio__btns, .orderTableContainer .row.green__border__bottom {
+  .orderTableContainer .row.border__bottom, .orderTableContainer section.forms .container .row.radio__btns, section.forms .container .orderTableContainer .row.radio__btns, .orderTableContainer .row.green__border__bottom, .orderTableContainer .orderSmScreenBody .table__control__panel .row.active, .orderSmScreenBody .table__control__panel .orderTableContainer .row.active {
     padding-bottom: 30px !important;
     align-items: center;
   }
@@ -2928,6 +2928,22 @@ section.forms .container .form-check .form-check-label {
 @media only screen and (min-width: 576px) {
   .orderSmScreenBody .table__control__panel .para {
     font-size: 16px;
+  }
+}
+.orderSmScreenBody .table__control__panel .active {
+  padding-bottom: 3px;
+  color: #353D4A !important;
+  font-weight: bold;
+  font-size: 14px;
+}
+@media only screen and (min-width: 576px) {
+  .orderSmScreenBody .table__control__panel .active {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .orderSmScreenBody .table__control__panel .active {
+    font-size: 18px;
   }
 }
 .orderSmScreenBody .table__control__panel .left__sec .icon__wrap {

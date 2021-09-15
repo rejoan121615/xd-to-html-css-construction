@@ -7,6 +7,19 @@
                 font-size: 16px;
             }
         }
+        .active {
+            @extend .green__border__bottom;
+            padding-bottom: 3px;
+            color: #353D4A!important;
+            font-weight: bold;
+            font-size: 14px;
+            @include resp ($xs) {
+                font-size: 16px;
+            }
+            @include resp ($sm) {
+                font-size: 18px;
+            }
+        }
         // left sec
         .left__sec {
             .icon__wrap {
